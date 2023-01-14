@@ -1,0 +1,217 @@
+.check {
+    border: 3px solid black;
+    height: 140vh;
+}
+
+/* Navbar Start*/
+body {
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 20px;
+    color: #0B132A;
+}
+
+.nav-link.active {
+    font-weight: 700;
+    font-size: 16px;
+    color: #6A4029;
+}
+
+.nav-link {
+    font-weight: 400;
+    font-size: 16px;
+    color: #4F5665;
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid #6A4029;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Main start */
+.hero {
+    background-image: url(../img/userdata/hero.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 80rem;
+    height: 160vh;
+    width: 100vw;
+}
+
+.container-1 {
+    background-color: #F8F8F8;
+    height: 111vh;
+    width: 100%;
+    margin-top: 6.5rem;
+    border-radius: 10px;
+    opacity: 90%;
+}
+
+.table-hover {
+    opacity: 100%;
+    font-weight:500;
+}
+
+.user-profile {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    color: #FFFFFF;
+    text-shadow: 0px 6px 8px rgba(255, 255, 255, 0.26);
+}
+
+.border-primary {
+    border-color: #6A4029;
+}
+
+/* Styling */
+.s-1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #6A4029;
+}
+
+.s-lg {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #4F5665;
+}
+
+.s-md {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #9F9F9F;
+}
+
+.s-sm {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    color: #000000;
+}
+
+/* Main end */
+
+/* Footer Start */
+.pt-footer {
+    margin-top: 110px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #4F5665;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Footer End */
+
+/* Expandable search bar start */
+.searchBox {
+    position: relative;
+    width: 65px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.searchBox:hover {
+    width: 300px;
+}
+
+.searchBox input {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* border-radius: 20px; */
+    border: none;
+    padding: 0px 25px;
+    outline: none;
+    font-size: 1em;
+    color: #555;
+    /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1) */
+}
+
+.searchBox input::placeholder,
+.searchBox input {
+    color: transparent;
+}
+
+.searchBox:hover input::placeholder,
+.searchBox:hover input {
+    color: #555;
+}
+
+.searchBox img {
+    position: absolute;
+    right: 10px;
+    color: #555;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Expandable search bar end */
+
+/* ===================MODIFIKASI BADGE DARI CDN BOOTSTRAP========================== */
+
+/* Chat Notif Start*/
+.start-100 {
+    left: 91.3% !important
+}
+
+.top-0-notif {
+    top: 26% !important
+}
+
+.badge-notif {
+    --bs-badge-padding-x: 0.65em;
+    --bs-badge-padding-y: 0.35em;
+    --bs-badge-font-size: 0.75em;
+    --bs-badge-font-weight: 700;
+    --bs-badge-color: #fff;
+    --bs-badge-border-radius: 0.375rem;
+    display: inline-block;
+    padding: var(--bs-badge-padding-y) var(--bs-badge-padding-x);
+    font-size: var(--bs-badge-font-size);
+    font-weight: var(--bs-badge-font-weight);
+    line-height: 1;
+    color: var(--bs-badge-color);
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: var(--bs-badge-border-radius);
+
+    height: 20px;
+    width: 20px;
+    border-top-color: #6A4029;
+    border-radius: 360px;
+}
+
+.bg-danger-notif {
+    color: white;
+    padding-left: 6.5px;
+
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important
+}
+
+/* Chat Notif End  */

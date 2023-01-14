@@ -1,0 +1,103 @@
+body {
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+}
+
+/* Main Start*/
+.hero {
+    background-image: url(../img/login/login_background.png);
+    width: 682px;
+    height: 1100px;
+    background-size: cover;
+}
+.btn-warning {
+    background-color:  #FFBA33;
+    box-shadow: 0px 6px 20px rgba(255, 186, 51, 0.4);
+    border-radius: 20px;
+}
+.btn.btn-warning {
+    color: #6A4029;
+}
+.btn.btn-warning.signup-nav {
+    width: 150px;
+    height: 45px;
+}
+.btn.btn-warning:hover {
+    background-color: #6A4029;
+    border-color: #6A4029;
+    color: #FFFFFF;
+}
+.btn-light {
+    background-color: #FFFFFF;
+    box-shadow: 0px 6px 20px rgba(196, 196, 196, 0.67);
+    border-radius: 20px;
+}
+.form-control {
+    background-color: #FFFFFF;
+    border: 1px solid #4F5665;
+    border-radius: 20px;
+    
+}
+.input-login {
+    width: 28.75rem;
+    margin-top: 3.1rem;
+}
+/* Main End */
+
+/* Styling Start*/
+.s-1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    color: #000000;
+}
+.s-sm {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+}
+.s-md {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+}
+.s-lg {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* Styling End */
+
+/* Footer Start */
+.pt-footer {
+    margin-top: 190px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #4F5665;
+    font-size: 16px;
+    font-weight: 400;
+}
+/* Footer End */
+
+/* info panel footer */
+.info-panel-footer {
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    height: 200px;
+    margin-top: -630px;
+    padding-top: 35px;
+    padding-left: 35px;
+    position: relative;
+}
+
+.info-panel-footer button {
+    margin-left: 300px;
+    margin-top: 35px;
+}

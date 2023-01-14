@@ -1,0 +1,48 @@
+body {
+    overflow-x: hidden;
+}
+
+/* Main start*/
+.hero {
+    background-image: url(../img/register/hero2.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: -10rem;
+    background-repeat: no-repeat;
+    height: 165vh;
+    width: 100vw;
+    padding-top: 6rem;
+}
+.container-1 {
+    background-color: #FFFFFF;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.22);
+    border-radius: 20px;
+    height: 120vh;
+    width: 50%;
+}
+.card-container {
+    margin-top: 4.5rem;
+}
+img {
+    cursor: pointer;
+}
+
+.btn-success:hover {
+    color: green;
+    background-color: whitesmoke;
+}
+/* Main end */
+
+/* Footer Start */
+.pt-footer {
+    margin-top: 6rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #4F5665;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Footer End */
