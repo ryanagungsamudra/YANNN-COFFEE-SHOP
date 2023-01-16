@@ -1,0 +1,88 @@
+.hero-forgot {
+    background: url(../../../assets/forgot/bg-hero.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 120vh;
+    background-position-y: -18rem;
+}
+
+.btn-primary.forgot {
+    background-color: #6A4029;
+    border-radius: 20px;
+    border: #6A4029;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.btn-primary.forgot:hover {
+    background-color: #FFBA33;
+    color: #6A4029;
+    border: #FFBA33;
+}
+
+.btn-warning.forgot {
+    background-color: #FFBA33;
+    border-radius: 20px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.btn-warning.forgot:hover {
+    background-color: #6A4029;
+    color: #FFFFFF;
+    border: #6A4029;
+}
+
+.btn.btn-warning.send {
+    width: 13vw;
+    height: 90px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 45px;
+    text-align: center;
+    color: #6A4029;
+
+    margin-left: 2rem;
+}
+
+.btn.btn-primary.resend {
+    width: 26vw;
+    height: 90px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 45px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.btn.btn-warning.send:hover {
+    color: #FFFFFF;
+}
+
+.btn.btn-primary.resend:hover {
+    color: #6A4029;
+}
+
+.form-control-forgot {
+    background-color: #FFFFFF;
+    border: 1px solid #4F5665;
+    border-radius: 20px;
+
+    width: 55vw;
+    height: 90px;
+
+    font-size: 20px;
+    margin-left: 3.2rem;
+}

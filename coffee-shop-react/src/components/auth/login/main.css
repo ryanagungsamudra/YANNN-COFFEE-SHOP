@@ -1,0 +1,86 @@
+/* Main Start*/
+.hero-auth {
+    background-image: url(../../../assets/login//login_background.png);
+    width: 682px;
+    height: 1100px;
+    background-size: cover;
+}
+
+.btn.btn-warning.auth {
+    color: #6A4029;
+}
+
+.btn.btn-warning.auth:hover {
+    background-color: #6A4029;
+    border-color: #6A4029;
+    color: #FFFFFF;
+}
+
+.btn.btn-warning.login-nav {
+    width: 150px;
+    height: 45px;
+    background-color: #FFBA33;
+    box-shadow: 0px 6px 20px rgba(255, 186, 51, 0.4);
+    border-radius: 20px;
+}
+
+.btn.btn-warning.signup-nav {
+    width: 150px;
+    height: 45px;
+    background-color: #FFBA33;
+    box-shadow: 0px 6px 20px rgba(255, 186, 51, 0.4);
+    border-radius: 20px;
+}
+
+.btn-light {
+    background-color: #FFFFFF;
+    box-shadow: 0px 6px 20px rgba(196, 196, 196, 0.67);
+    border-radius: 20px;
+}
+
+.form-control {
+    background-color: #FFFFFF;
+    border: 1px solid #4F5665;
+    border-radius: 20px;
+
+}
+
+.input-login {
+    width: 28.75rem;
+    margin-top: 3.1rem;
+}
+
+.input-signup {
+    width: 28.75rem;
+}
+
+/* Main End */
+
+/* Styling Start*/
+.s-1-auth {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    color: #000000;
+}
+
+.s-sm-auth {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.s-md-auth {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+}
+
+.s-lg-auth {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* Styling End */

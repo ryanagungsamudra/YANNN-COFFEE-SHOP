@@ -1,0 +1,16 @@
+/* info panel footer */
+.info-panel-footer {
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    height: 200px;
+    margin-top: -630px;
+    padding-top: 35px;
+    padding-left: 35px;
+    position: relative;
+}
+
+.info-panel-footer button {
+    margin-left: 300px;
+    margin-top: 35px;
+}
