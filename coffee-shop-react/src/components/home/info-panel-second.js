@@ -1,7 +1,7 @@
 import React from 'react'
 import Scroll from "../../assets/up.svg"
 
-function InfoPanelSecond() {
+function InfoPanelSecond(props) {
     return (
         <>
             <div className="container d-lg-block d-none">

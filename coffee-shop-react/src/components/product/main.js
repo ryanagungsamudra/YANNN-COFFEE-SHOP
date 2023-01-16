@@ -1,5 +1,6 @@
 import React from 'react'
 import './main.css'
+import { Link } from 'react-router-dom'
 
 import Promo_1 from "../../assets/product/promo-1.svg"
 import Promo_2 from "../../assets/product/promo-2.svg"
@@ -24,9 +25,9 @@ function Main() {
             <div className="container">
                 <div className="row">
                     {/* LEFT SIDE */}
-                    <div className="col-4 border-end border-2 text-center">
-                        <h4 className="s-1-product" style={{ marginTop: '60px' }}>Promo Today</h4>
-                        <p className="s-2-product pt-3" style={{ marginBottom: '60px' }}>Coupons will be updated every weeks. <br />Check them out!</p>
+                    <div className="col-lg-4 border-end border-2 text-center ms-3 ms-lg-0">
+                        <h4 className="s-1-product me-4 me-lg-0" style={{ marginTop: '60px' }}>Promo Today</h4>
+                        <p className="s-2-product pt-3 me-4 me-lg-0" style={{ marginBottom: '60px' }}>Coupons will be updated every weeks. <br />Check them out!</p>
                         {/* Promo Card Start */}
                         <div>
                             <div className="box-card-1-product popup-scale">
@@ -80,9 +81,9 @@ function Main() {
                             </div>
                         </div>
                         {/* Promo Card End */}
-                        <a href="product-detail.html">
+                        <Link to="/order">
                             <button className="btn btn-warning product" style={{ margin: '50px 20px 90px 0px' }}>Apply Coupon</button>
-                        </a>
+                        </Link>
                         <p className="text-start s-3-product">
                             <b>Terms and Condition</b><br />
                             1. You can only apply 1 coupon per day<br />
@@ -92,7 +93,7 @@ function Main() {
                         </p>
                     </div>
                     {/* RIGHT SIDE */}
-                    <div className="col">
+                    <div className="col-lg-8">
                         {/* Navs & Tabs Start*/}
                         <ul className="nav justify-content-center mt-5">
                             <li className="nav-item">
@@ -115,7 +116,7 @@ function Main() {
                         {/* Card-Product Start */}
                         <div className="container">
                             <div className="row row-cols-1 row-cols-md-4 g-4 mt-5">
-                                <div className="col text-start my-5 popup popup">
+                                <div className="col-lg-3 col-6 text-start my-5 popup">
                                     <div className="card card-product" style={{ height: '212px', width: '156px' }}>
                                         <img src={P1} className="card-img-product" alt="card" style={{ margin: '-40px 0 0 -35px' }} />
                                         <div className="card-body text-center">
@@ -128,7 +129,7 @@ function Main() {
                                         </span>
                                     </div>
                                 </div>
-                                <div className="col text-start my-5 popup">
+                                <div className="col-lg-3 col-6 text-start my-5 popup">
                                     <div className="card card-product" style={{ height: '212px', width: '156px' }}>
                                         <img src={P2} className="card-img-product" alt="card" style={{ margin: '-40px 0 0 -35px' }} />
                                         <div className="card-body text-center">
@@ -137,7 +138,7 @@ function Main() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col text-start my-5 popup">
+                                <div className="col-lg-3 col-6 text-start my-5 popup">
                                     <div className="card card-product" style={{ height: '212px', width: '156px' }}>
                                         <img src={P3} className="card-img-product" alt="card" style={{ margin: '-40px 0 0 -35px' }} />
                                         <div className="card-body text-center">
@@ -150,7 +151,7 @@ function Main() {
                                         </span>
                                     </div>
                                 </div>
-                                <div className="col text-start my-5 popup">
+                                <div className="col-lg-3 col-6 text-start my-5 popup">
                                     <div className="card card-product" style={{ height: '212px', width: '156px' }}>
                                         <img src={P4} className="card-img-product" alt="card" style={{ margin: '-40px 0 0 -35px' }} />
                                         <div className="card-body text-center">
@@ -159,7 +160,7 @@ function Main() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col text-start my-5 popup">
+                                <div className="col-lg-3 col-6 text-start my-5 popup">
                                     <div className="card card-product" style={{ height: '212px', width: '156px' }}>
                                         <img src={P5} className="card-img-product" alt="card" style={{ margin: '-40px 0 0 -35px' }} />
                                         <div className="card-body text-center">
@@ -172,7 +173,7 @@ function Main() {
                                         </span>
                                     </div>
                                 </div>
-                                <div className="col text-start my-5 popup">
+                                <div className="col-lg-3 col-6 text-start my-5 popup">
                                     <div className="card card-product" style={{ height: '212px', width: '156px' }}>
                                         <img src={P6} className="card-img-product" alt="card" style={{ margin: '-40px 0 0 -35px' }} />
                                         <div className="card-body text-center">
@@ -181,7 +182,7 @@ function Main() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col text-start my-5 popup">
+                                <div className="col-lg-3 col-6 text-start my-5 popup">
                                     <div className="card card-product" style={{ height: '212px', width: '156px' }}>
                                         <img src={P7} className="card-img-product" alt="card" style={{ margin: '-40px 0 0 -35px' }} />
                                         <div className="card-body text-center">
@@ -194,7 +195,7 @@ function Main() {
                                         </span>
                                     </div>
                                 </div>
-                                <div className="col text-start my-5 popup">
+                                <div className="col-lg-3 col-6 text-start my-5 popup">
                                     <div className="card card-product" style={{ height: '212px', width: '156px' }}>
                                         <img src={P8} className="card-img-product" alt="card" style={{ margin: '-40px 0 0 -35px' }} />
                                         <div className="card-body text-center">
@@ -203,7 +204,7 @@ function Main() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col text-start my-5 popup">
+                                <div className="col-lg-3 col-6 text-start my-5 popup">
                                     <div className="card card-product" style={{ height: '212px', width: '156px' }}>
                                         <img src={P9} className="card-img-product" alt="card" style={{ margin: '-40px 0 0 -35px' }} />
                                         <div className="card-body text-center">
@@ -212,7 +213,7 @@ function Main() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col text-start my-5 popup">
+                                <div className="col-lg-3 col-6 text-start my-5 popup">
                                     <div className="card card-product" style={{ height: '212px', width: '156px' }}>
                                         <img src={P10} className="card-img-product" alt="card" style={{ margin: '-40px 0 0 -35px' }} />
                                         <div className="card-body text-center">
@@ -225,7 +226,7 @@ function Main() {
                                         </span>
                                     </div>
                                 </div>
-                                <div className="col text-start my-5 popup">
+                                <div className="col-lg-3 col-6 text-start my-5 popup">
                                     <div className="card card-product" style={{ height: '212px', width: '156px' }}>
                                         <img src={P11} className="card-img-product" alt="card" style={{ margin: '-40px 0 0 -35px' }} />
                                         <div className="card-body text-center">
@@ -234,7 +235,7 @@ function Main() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col text-start my-5 popup">
+                                <div className="col-lg-3 col-6 text-start my-5 popup">
                                     <div className="card card-product" style={{ height: '212px', width: '156px' }}>
                                         <img src={P12} className="card-img-product" alt="card" style={{ margin: '-40px 0 0 -35px' }} />
                                         <div className="card-body text-center">

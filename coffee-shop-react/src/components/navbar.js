@@ -29,7 +29,7 @@ function Navbar() {
                                 </li>
                                 <li className="nav-item">
                                     {/* <a className="nav-link mx-2" href="yourcart.html">Your Cart</a> */}
-                                    <Link to="/order" className="nav-link mx-2">Your Cart</Link>
+                                    <Link to="/payment" className="nav-link mx-2">Your Cart</Link>
                                 </li>
                                 <li className="nav-item">
                                     {/* <a className="nav-link mx-2" href="history.html">History</a> */}

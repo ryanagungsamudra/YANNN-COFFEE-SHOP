@@ -16,10 +16,6 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "product",
-    element: <Product />,
-  },
-  {
     path: "login",
     element: <Login />,
   },
@@ -30,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "forgotpassword",
     element: <Forgot />,
+  },
+  {
+    path: "product",
+    element: <Product />,
   },
 ]);
 

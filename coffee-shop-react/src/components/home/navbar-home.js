@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import CoffeeLogo from "../../assets/coffeeLogo.svg"
 import MoonLogo from "../../assets/moon.png"
 
-function Navbar() {
+function Navbar(props) {
     return (
         <header>
             <div className="container">
@@ -25,7 +25,7 @@ function Navbar() {
                                     <Link to="/product" className="nav-link mx-2">Product</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/order" className="nav-link mx-2">Your Cart</Link>
+                                    <Link to="/payment" className="nav-link mx-2">Your Cart</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link to="/history" className="nav-link mx-2">History</Link>
