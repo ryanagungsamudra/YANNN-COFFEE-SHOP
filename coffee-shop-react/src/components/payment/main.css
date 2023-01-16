@@ -1,0 +1,111 @@
+/* Main Start */
+.hero-payment {
+    background-image: url(../../assets/yourcart/hero.png);
+    background-size: cover;
+    height: 1141px;
+    width: 100vw;
+}
+
+.sticky-1 {
+    background-color: #FFF;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+    height: 737px;
+    width: 487px;
+    margin-left: -3px;
+}
+
+.sticky-2 {
+    background-color: #FFF;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    height: 198px;
+    width: 454px;
+    margin-left: 90px;
+}
+
+.sticky-3 {
+    background-color: #FFF;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    height: 259px;
+    width: 454px;
+    margin-left: 90px;
+}
+
+.btn.btn-primary.payment {
+    background-color: #6A4029;
+    border-color: #6A4029;
+    box-shadow: 0px 10px 20px rgba(137, 85, 55, 0.4);
+    border-radius: 20px;
+    padding: 20px 140px;
+    margin-left: 78px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.btn.btn-primary.payment:hover {
+    background-color: #FFBA33;
+    border-color: #FFBA33;
+    color: #6A4029;
+}
+
+/* Main End */
+
+/* Styling start */
+.s-1-payment {
+    font-family: 'Poppins';
+    font-size: 25px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.s-2-payment {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.s-3-payment {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    color: #362115;
+    padding-top: 70px;
+}
+
+.s-4-payment {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+}
+
+.s-5-payment {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #362115;
+    padding-left: 45px;
+}
+
+.s-6-payment {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    color: #362115;
+    padding-left: 43px;
+}
+
+/* Styling end */

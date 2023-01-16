@@ -1,0 +1,185 @@
+/* main start */
+.tab-link {
+    color: #4F5665;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: 60px;
+}
+
+.tab-link:hover {
+    color: #4F5665;
+}
+
+.tab-link.active {
+    color: #6A4029;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+.hero-order-desktop {
+    background-image: url(../../assets/product-detail/hero.png);
+    background-size: cover;
+    height: 26.563rem;
+    width: 26.563rem;
+    margin-left: 45px;
+}
+
+.hero-order-mobile {
+    background-image: url(../../assets/product-detail/hero.png);
+    background-size: cover;
+    height: 21rem;
+    width: 21rem;
+    margin-left: -1.4rem;
+}
+.container-order {
+    background-color: #FFFFFF;
+    min-height: 33.75rem;
+    max-width: 33.75rem;
+    margin-top: 80px;
+}
+
+/* Button start */
+.btn-primary.order {
+    background-color: #6A4029;
+    border-radius: 20px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.btn-primary.order:hover {
+    background-color: #FFBA33;
+    color: #6A4029;
+    border: #FFBA33;
+}
+
+.btn-secondary.order {
+    color: #FFFFFF;
+    background-color: #6A4029;
+    border: #6A4029;
+}
+
+.btn.btn-secondary.order:hover {
+    background-color: #FFBA33;
+    border-color: #FFBA33;
+    color: #6A4029;
+}
+
+.btn-warning.order {
+    background-color: #FFBA33;
+    color: #6A4029;
+    border-radius: 20px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.btn-warning.order:hover {
+    background-color: #6A4029;
+    color: #FFFFFF;
+    border: #6A4029;
+}
+
+.btn.btn-warning.footer.order {
+    margin-top: -35px;
+    margin-left: -47px;
+    width: 280px;
+    height: 200px;
+}
+
+.btn.btn-warning.footer.order:hover {
+    background-color: #6A4029;
+    color: #FFFFFF;
+    border: #6A4029;
+}
+
+.btn-light {
+    color: #9F9F9F;
+    background-color: #F4F4F8;
+    border: #F4F4F8;
+}
+
+/* Button end */
+
+.form-control.w-s {
+    width: 320px;
+}
+
+/* main end */
+
+/* styling start */
+.s-1-order {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    color: black;
+    margin-top: -35px;
+}
+
+.s-2-order {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+}
+
+.s-3-order {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #6A4029;
+    padding-top: 55px;
+    padding-left: 65px;
+}
+
+.s-4-order {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #6A4029;
+    padding-top: 55px;
+    padding-left: 65px;
+    margin-top: -45px;
+}
+
+.s-5-order {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    padding-top: 15px;
+    padding-left: 170px;
+}
+
+.s-6-order {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.s-7-order {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.s-8-order {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/* styling end */

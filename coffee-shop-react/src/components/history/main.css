@@ -1,0 +1,92 @@
+/* Main start */
+.hero-history {
+    background-image: url(../../assets/history/hero.png);
+    background-size: cover;
+    height: 1160px;
+}
+
+.card-style-history {
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.03);
+    border-radius: 20px;
+}
+
+.img-product-history {
+    width: 170px;
+    height: 170px;
+    margin-left: -20px;
+    margin-top: -10px;
+}
+
+.form-check-input {
+    width: 25px;
+    height: 25px;
+    background: #F5F5F8;
+    border: 2px solid #6A4029;
+    border-radius: 5px;
+}
+
+/* Main end */
+
+/* Styling start */
+.s-1-history {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #000000;
+    margin-left: -18px;
+}
+
+.s-2-history {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #895537;
+    margin-left: -18px;
+    line-height: 20px;
+}
+
+.s-3-history {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #6A4029;
+    margin-left: -18px;
+    line-height: 0px;
+}
+
+.s-4-history {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
+}
+
+.s-5-history {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
+}
+
+.select-all-history a {
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+
+.select-all-history a p {
+    margin-right: 40px;
+}
+
+/* Styling end */
