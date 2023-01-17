@@ -9,6 +9,7 @@ import Product from './pages/product/Product';
 import Order from './pages/order/Order';
 import Payment from './pages/payment/Payment';
 import History from './pages/history/History';
+import CardProduct from './components/product/cardProduct';
 
 import ScrollToTop from './components/ScrollToTop';
 import {
@@ -17,6 +18,14 @@ import {
 } from "react-router-dom";
 
 const router = createBrowserRouter([
+  {
+    path: "test",
+    element:
+      <>
+        <CardProduct />,
+        <ScrollToTop />,
+      </>
+  },
   {
     path: "/",
     element: 
