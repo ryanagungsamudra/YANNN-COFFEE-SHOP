@@ -1,6 +1,7 @@
 import React from 'react'
 import './main.css'
 import Product from "../../assets/history/product.svg"
+import { Link } from 'react-router-dom'
 
 function Main() {
     return (
@@ -14,9 +15,9 @@ function Main() {
                 </div>
                 <div className="row">
                     <div className="col text-end mt-3 select-all-history">
-                        <a href="#">
+                        <Link to="#">
                             <p>Select All</p>
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 {/* CARD START!! */}
