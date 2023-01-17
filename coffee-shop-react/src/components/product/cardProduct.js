@@ -1,6 +1,7 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
+import LoadingProduct from '../loadingProduct'
 
 function CardProduct() {
 
@@ -15,7 +16,7 @@ function CardProduct() {
         <>
             <div className="container">
                 <div className="row row-cols-1 row-cols-md-4 g-4 mt-5">
-                    {dataProduct.length === 0 ? (<h4>Loading...</h4>) : dataProduct.map((item) => {
+                    {dataProduct.length === 0 ? (<LoadingProduct />) : dataProduct.map((item) => {
                         // console.log(item.images[0].filename);
                         const img = `http://localhost:5000/uploads/images/${item.images[0].filename}`
                         return (
