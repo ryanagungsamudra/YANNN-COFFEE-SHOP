@@ -4,12 +4,13 @@ import ReactDOM from 'react-dom/client';
 import Home from './pages/home/Home';
 import Login from './pages/auth/Login';
 import Signup from './pages/auth/Signup';
-import Forgot from './pages/auth/ForgotPassword';
+import ForgotPassword from './pages/auth/ForgotPassword';
 import Product from './pages/product/Product';
 import Order from './pages/order/Order';
 import Payment from './pages/payment/Payment';
 import History from './pages/history/History';
 
+import ScrollToTop from './components/ScrollToTop';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -18,35 +19,67 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: 
+      <>
+        <Home />,
+        <ScrollToTop />,
+      </>
   },
   {
     path: "login",
-    element: <Login />,
+    element: 
+      <>
+        <Login />,
+        <ScrollToTop />,
+      </>
   },
   {
     path: "signup",
-    element: <Signup />,
+    element: 
+      <>
+        <Signup />,
+        <ScrollToTop />,
+      </>
   },
   {
     path: "forgotpassword",
-    element: <Forgot />,
+    element: 
+      <>
+        <ForgotPassword />,
+        <ScrollToTop />,
+      </>
   },
   {
     path: "product",
-    element: <Product />,
+    element: 
+    <>
+        <Product />,
+        <ScrollToTop/>,
+      </>,
   },
   {
     path: "order",
-    element: <Order />,
+    element: 
+      <>
+        <Order />,
+        <ScrollToTop />,
+      </>
   },
   {
     path: "payment",
-    element: <Payment />,
+    element: 
+      <>
+        <Payment />,
+        <ScrollToTop />,
+      </>
   },
   {
     path: "history",
-    element: <History />,
+    element: 
+      <>
+        <History />,
+        <ScrollToTop />,
+      </>
   },
 ]);
 

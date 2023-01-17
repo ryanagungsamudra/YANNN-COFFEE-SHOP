@@ -9,7 +9,7 @@ function Product() {
         History: "nav-link mx-2"
     }
     return (
-        <>
+        <>  
             <Navbar status={status} />
             <MainProduct />
             <Footer />

@@ -1,7 +1,7 @@
 import React from 'react'
-import Scroll from "../../assets/up.svg"
+import { Link } from 'react-router-dom'
 
-function InfoPanelSecond(props) {
+function InfoPanelSecond() {
     return (
         <>
             <div className="container d-lg-block d-none">
@@ -15,7 +15,7 @@ function InfoPanelSecond(props) {
                                         <p className="typo-secondary">Let's see the deals and pick yours!</p>
                                     </div>
                                     <div className="col">
-                                        <a href="product.html"><button className="btn btn-warning px-5 py-3">See Promo</button></a>
+                                        <Link to="/product"><button className="btn btn-warning px-5 py-3">See Promo</button></Link>
                                     </div>
                                 </div>
                             </div>
@@ -23,7 +23,6 @@ function InfoPanelSecond(props) {
                     </div>
                 </div>
             </div>
-            <img id="scrollTop" src={Scroll} alt="up" />
         </>
     )
 }

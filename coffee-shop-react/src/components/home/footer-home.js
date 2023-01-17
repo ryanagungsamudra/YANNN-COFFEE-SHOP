@@ -4,10 +4,15 @@ import Facebook from "../../assets/Facebook.svg"
 import Twitter from "../../assets/Twitter.svg"
 import Instagram from "../../assets/Instagram.svg"
 import { Link } from 'react-router-dom'
+import Scroll from '../../assets/up.svg'
 
 function FooterHome() {
+    const scrollTop = () => {
+        window.scrollTo(0, 0)
+    }
     return (
         <footer>
+            <img onClick={scrollTop} id="scrollTop" src={Scroll} alt="up" />
             <div className="container-fluid footer">
                 <div className="container">
                     <div className="row">

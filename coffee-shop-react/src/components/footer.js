@@ -5,10 +5,15 @@ import Twitter from "../assets/Twitter.svg"
 import Instagram from "../assets/Instagram.svg"
 import './footer.css'
 import { Link } from 'react-router-dom'
+import Scroll from "../assets/up.svg"
 
 function Footer() {
+    const scrollTop = () => {
+        window.scrollTo(0, 0)
+    }
     return (
         <footer>
+            <img onClick={scrollTop} id="scrollTop" src={Scroll} alt="up" />
             <div className="container-fluid" style={{ backgroundColor: '#F8F8F8', height: '466px' }}>
                 <div className="container">
                     <div className="row">
