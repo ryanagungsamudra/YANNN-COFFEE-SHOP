@@ -23,7 +23,7 @@ function Order() {
                             <div className="hero-order-mobile d-block d-lg-none" />
                             <h1 className="s-1-order" style={{ marginRight: '40px' }}>COLD BREW</h1>
                             <h5 className="s-2-order" style={{ marginRight: '30px' }}>IDR 30.000</h5>
-                            <button className="btn btn-primary order mt-4" style={{ marginRight: '33px', padding: '15px 100px' }}>
+                            <button className="btn btn-primary order mt-4" style={{ marginRight: '33px', padding: '15px 95px' }}>
                                 Add to Cart
                             </button>
                             <button className="btn btn-warning order mt-4" style={{ marginRight: '33px', padding: '15px 105px', marginBottom: '150px' }}>

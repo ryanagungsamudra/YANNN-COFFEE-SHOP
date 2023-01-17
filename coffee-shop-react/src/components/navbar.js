@@ -6,7 +6,7 @@ import Chat from "../assets/product/chat.svg"
 import Profile from "../assets/product/profilepic.svg"
 import './navbar.css'
 
-function Navbar() {
+function Navbar(props) {
     return (
         <header className="border-bottom border-2">
             <div className="container">
@@ -22,18 +22,16 @@ function Navbar() {
                         <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
                             <ul className="navbar-nav text-center">
                                 <li className="nav-item">
-                                    <Link to="/" className="nav-link mx-2" aria-current="page">Home</Link>
+                                    <Link to="/" className={props.status.Home} aria-current="page">Home</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/product" className="nav-link active mx-2">Product</Link>
+                                    <Link to="/product" className={props.status.Product}>Product</Link>
                                 </li>
                                 <li className="nav-item">
-                                    {/* <a className="nav-link mx-2" href="yourcart.html">Your Cart</a> */}
-                                    <Link to="/payment" className="nav-link mx-2">Your Cart</Link>
+                                    <Link to="/payment" className={props.status.Payment}>Your Cart</Link>
                                 </li>
                                 <li className="nav-item">
-                                    {/* <a className="nav-link mx-2" href="history.html">History</a> */}
-                                    <Link to="/history" className="nav-link mx-2">History</Link>
+                                    <Link to="/history" className={props.status.History}>History</Link>
                                 </li>
                             </ul>
                             <div className="d-flex d-block d-lg-none justify-content-center align-items-center" style={{ marginLeft: '-1.2rem', marginTop: '0.6rem' }}>

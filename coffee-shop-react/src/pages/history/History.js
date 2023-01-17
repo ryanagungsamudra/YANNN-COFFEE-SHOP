@@ -4,9 +4,15 @@ import Footer from '../../components/footer'
 import Main from '../../components/history/main'
 
 function History() {
+    const status = {
+        Home: "nav-link mx-2",
+        Product: "nav-link mx-2",
+        Payment: "nav-link mx-2",
+        History: "nav-link mx-2 active"
+    }
     return (
         <>
-            <Navbar />
+            <Navbar status={status} />
             <Main />
             <Footer />
         </>

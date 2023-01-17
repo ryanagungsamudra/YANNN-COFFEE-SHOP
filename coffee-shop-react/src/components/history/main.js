@@ -25,11 +25,11 @@ function Main() {
                         <div className="col">
                             <div className="row row-cols-1 row-cols-md-3 g-4">
                                 {/* card-1-start */}
-                                <div className="col">
-                                    <div className="card card-style-history" style={{ height: '130px', width: '394px' }}>
+                                <div className="col-lg-4 col-6">
+                                    <div className="card card-style-history">
                                         <div className="row">
                                             <div className="col-4">
-                                                <img src={Product} className="card-img-top img-product-history" alt="..." />
+                                                <img src={Product} className="img-product-history" alt="..." />
                                             </div>
                                             <div className="col">
                                                 <div className="row" style={{ paddingTop: '20px' }}>
@@ -42,7 +42,7 @@ function Main() {
                                                             <p className="s-3-history">Delivered</p>
                                                         </div>
                                                         {/* Checkbox start */}
-                                                        <div className="col-2" style={{ marginRight: '8px', marginTop: '16px' }}>
+                                                        <div className="col-2 form-check-position">
                                                             <div className="form-check">
                                                                 <input className="form-check-input" type="checkbox" defaultValue id="flexCheckDefault" />
                                                                 <label className="form-check-label" htmlFor="flexCheckDefault" />
@@ -57,11 +57,11 @@ function Main() {
                                 </div>
                                 {/* card-1-end */}
                                 {/* card-2-start */}
-                                <div className="col">
-                                    <div className="card card-style-history" style={{ height: '130px', width: '394px' }}>
+                                <div className="col-lg-4 col-6">
+                                    <div className="card card-style-history">
                                         <div className="row">
                                             <div className="col-4">
-                                                <img src={Product} className="card-img-top img-product-history" alt="..." />
+                                                <img src={Product} className="img-product-history" alt="..." />
                                             </div>
                                             <div className="col">
                                                 <div className="row" style={{ paddingTop: '20px' }}>
@@ -74,7 +74,7 @@ function Main() {
                                                             <p className="s-3-history">Delivered</p>
                                                         </div>
                                                         {/* Checkbox start */}
-                                                        <div className="col-2" style={{ marginRight: '8px', marginTop: '16px' }}>
+                                                        <div className="col-2 form-check-position">
                                                             <div className="form-check">
                                                                 <input className="form-check-input" type="checkbox" defaultValue id="flexCheckDefault" />
                                                                 <label className="form-check-label" htmlFor="flexCheckDefault" />
@@ -89,11 +89,11 @@ function Main() {
                                 </div>
                                 {/* card-2-end */}
                                 {/* card-3-start */}
-                                <div className="col">
-                                    <div className="card card-style-history" style={{ height: '130px', width: '394px' }}>
+                                <div className="col-lg-4 col-6">
+                                    <div className="card card-style-history">
                                         <div className="row">
                                             <div className="col-4">
-                                                <img src={Product} className="card-img-top img-product-history" alt="..." />
+                                                <img src={Product} className="img-product-history" alt="..." />
                                             </div>
                                             <div className="col">
                                                 <div className="row" style={{ paddingTop: '20px' }}>
@@ -106,7 +106,7 @@ function Main() {
                                                             <p className="s-3-history">Delivered</p>
                                                         </div>
                                                         {/* Checkbox start */}
-                                                        <div className="col-2" style={{ marginRight: '8px', marginTop: '16px' }}>
+                                                        <div className="col-2 form-check-position">
                                                             <div className="form-check">
                                                                 <input className="form-check-input" type="checkbox" defaultValue id="flexCheckDefault" />
                                                                 <label className="form-check-label" htmlFor="flexCheckDefault" />
@@ -121,11 +121,11 @@ function Main() {
                                 </div>
                                 {/* card-3-end */}
                                 {/* card-4-start */}
-                                <div className="col">
-                                    <div className="card card-style-history" style={{ height: '130px', width: '394px' }}>
+                                <div className="col-lg-4 col-6">
+                                    <div className="card card-style-history">
                                         <div className="row">
                                             <div className="col-4">
-                                                <img src={Product} className="card-img-top img-product-history" alt="..." />
+                                                <img src={Product} className="img-product-history" alt="..." />
                                             </div>
                                             <div className="col">
                                                 <div className="row" style={{ paddingTop: '20px' }}>
@@ -138,7 +138,7 @@ function Main() {
                                                             <p className="s-3-history">Delivered</p>
                                                         </div>
                                                         {/* Checkbox start */}
-                                                        <div className="col-2" style={{ marginRight: '8px', marginTop: '16px' }}>
+                                                        <div className="col-2 form-check-position">
                                                             <div className="form-check">
                                                                 <input className="form-check-input" type="checkbox" defaultValue id="flexCheckDefault" />
                                                                 <label className="form-check-label" htmlFor="flexCheckDefault" />
@@ -153,11 +153,11 @@ function Main() {
                                 </div>
                                 {/* card-4-end */}
                                 {/* card-5-start */}
-                                <div className="col">
-                                    <div className="card card-style-history" style={{ height: '130px', width: '394px' }}>
+                                <div className="col-lg-4 col-6">
+                                    <div className="card card-style-history">
                                         <div className="row">
                                             <div className="col-4">
-                                                <img src={Product} className="card-img-top img-product-history" alt="..." />
+                                                <img src={Product} className="img-product-history" alt="..." />
                                             </div>
                                             <div className="col">
                                                 <div className="row" style={{ paddingTop: '20px' }}>
@@ -170,7 +170,7 @@ function Main() {
                                                             <p className="s-3-history">Delivered</p>
                                                         </div>
                                                         {/* Checkbox start */}
-                                                        <div className="col-2" style={{ marginRight: '8px', marginTop: '16px' }}>
+                                                        <div className="col-2 form-check-position">
                                                             <div className="form-check">
                                                                 <input className="form-check-input" type="checkbox" defaultValue id="flexCheckDefault" />
                                                                 <label className="form-check-label" htmlFor="flexCheckDefault" />
@@ -185,11 +185,11 @@ function Main() {
                                 </div>
                                 {/* card-5-end */}
                                 {/* card-6-start */}
-                                <div className="col">
-                                    <div className="card card-style-history" style={{ height: '130px', width: '394px' }}>
+                                <div className="col-lg-4 col-6">
+                                    <div className="card card-style-history">
                                         <div className="row">
                                             <div className="col-4">
-                                                <img src={Product} className="card-img-top img-product-history" alt="..." />
+                                                <img src={Product} className="img-product-history" alt="..." />
                                             </div>
                                             <div className="col">
                                                 <div className="row" style={{ paddingTop: '20px' }}>
@@ -202,7 +202,7 @@ function Main() {
                                                             <p className="s-3-history">Delivered</p>
                                                         </div>
                                                         {/* Checkbox start */}
-                                                        <div className="col-2" style={{ marginRight: '8px', marginTop: '16px' }}>
+                                                        <div className="col-2 form-check-position">
                                                             <div className="form-check">
                                                                 <input className="form-check-input" type="checkbox" defaultValue id="flexCheckDefault" />
                                                                 <label className="form-check-label" htmlFor="flexCheckDefault" />
@@ -217,11 +217,11 @@ function Main() {
                                 </div>
                                 {/* card-6-end */}
                                 {/* card-7-start */}
-                                <div className="col">
-                                    <div className="card card-style-history" style={{ height: '130px', width: '394px' }}>
+                                <div className="col-lg-4 col-6">
+                                    <div className="card card-style-history">
                                         <div className="row">
                                             <div className="col-4">
-                                                <img src={Product} className="card-img-top img-product-history" alt="..." />
+                                                <img src={Product} className="img-product-history" alt="..." />
                                             </div>
                                             <div className="col">
                                                 <div className="row" style={{ paddingTop: '20px' }}>
@@ -234,7 +234,7 @@ function Main() {
                                                             <p className="s-3-history">Delivered</p>
                                                         </div>
                                                         {/* Checkbox start */}
-                                                        <div className="col-2" style={{ marginRight: '8px', marginTop: '16px' }}>
+                                                        <div className="col-2 form-check-position">
                                                             <div className="form-check">
                                                                 <input className="form-check-input" type="checkbox" defaultValue id="flexCheckDefault" />
                                                                 <label className="form-check-label" htmlFor="flexCheckDefault" />
@@ -249,11 +249,11 @@ function Main() {
                                 </div>
                                 {/* card-7-end */}
                                 {/* card-8-start */}
-                                <div className="col">
-                                    <div className="card card-style-history" style={{ height: '130px', width: '394px' }}>
+                                <div className="col-lg-4 col-6">
+                                    <div className="card card-style-history">
                                         <div className="row">
                                             <div className="col-4">
-                                                <img src={Product} className="card-img-top img-product-history" alt="..." />
+                                                <img src={Product} className="img-product-history" alt="..." />
                                             </div>
                                             <div className="col">
                                                 <div className="row" style={{ paddingTop: '20px' }}>
@@ -266,7 +266,7 @@ function Main() {
                                                             <p className="s-3-history">Delivered</p>
                                                         </div>
                                                         {/* Checkbox start */}
-                                                        <div className="col-2" style={{ marginRight: '8px', marginTop: '16px' }}>
+                                                        <div className="col-2 form-check-position">
                                                             <div className="form-check">
                                                                 <input className="form-check-input" type="checkbox" defaultValue id="flexCheckDefault" />
                                                                 <label className="form-check-label" htmlFor="flexCheckDefault" />
@@ -281,11 +281,11 @@ function Main() {
                                 </div>
                                 {/* card-8-end */}
                                 {/* card-9-start */}
-                                <div className="col">
-                                    <div className="card card-style-history" style={{ height: '130px', width: '394px' }}>
+                                <div className="col-lg-4 col-6">
+                                    <div className="card card-style-history">
                                         <div className="row">
                                             <div className="col-4">
-                                                <img src={Product} className="card-img-top img-product-history" alt="..." />
+                                                <img src={Product} className="img-product-history" alt="..." />
                                             </div>
                                             <div className="col">
                                                 <div className="row" style={{ paddingTop: '20px' }}>
@@ -298,7 +298,7 @@ function Main() {
                                                             <p className="s-3-history">Delivered</p>
                                                         </div>
                                                         {/* Checkbox start */}
-                                                        <div className="col-2" style={{ marginRight: '8px', marginTop: '16px' }}>
+                                                        <div className="col-2 form-check-position">
                                                             <div className="form-check">
                                                                 <input className="form-check-input" type="checkbox" defaultValue id="flexCheckDefault" />
                                                                 <label className="form-check-label" htmlFor="flexCheckDefault" />
@@ -313,11 +313,11 @@ function Main() {
                                 </div>
                                 {/* card-9-end */}
                                 {/* card-10-start */}
-                                <div className="col">
-                                    <div className="card card-style-history" style={{ height: '130px', width: '394px' }}>
+                                <div className="col-lg-4 col-6">
+                                    <div className="card card-style-history">
                                         <div className="row">
                                             <div className="col-4">
-                                                <img src={Product} className="card-img-top img-product-history" alt="..." />
+                                                <img src={Product} className="img-product-history" alt="..." />
                                             </div>
                                             <div className="col">
                                                 <div className="row" style={{ paddingTop: '20px' }}>
@@ -330,7 +330,7 @@ function Main() {
                                                             <p className="s-3-history">Delivered</p>
                                                         </div>
                                                         {/* Checkbox start */}
-                                                        <div className="col-2" style={{ marginRight: '8px', marginTop: '16px' }}>
+                                                        <div className="col-2 form-check-position">
                                                             <div className="form-check">
                                                                 <input className="form-check-input" type="checkbox" defaultValue id="flexCheckDefault" />
                                                                 <label className="form-check-label" htmlFor="flexCheckDefault" />
@@ -345,11 +345,11 @@ function Main() {
                                 </div>
                                 {/* card-10-end */}
                                 {/* card-11-start */}
-                                <div className="col">
-                                    <div className="card card-style-history" style={{ height: '130px', width: '394px' }}>
+                                <div className="col-lg-4 col-6">
+                                    <div className="card card-style-history">
                                         <div className="row">
                                             <div className="col-4">
-                                                <img src={Product} className="card-img-top img-product-history" alt="..." />
+                                                <img src={Product} className="img-product-history" alt="..." />
                                             </div>
                                             <div className="col">
                                                 <div className="row" style={{ paddingTop: '20px' }}>
@@ -362,7 +362,7 @@ function Main() {
                                                             <p className="s-3-history">Delivered</p>
                                                         </div>
                                                         {/* Checkbox start */}
-                                                        <div className="col-2" style={{ marginRight: '8px', marginTop: '16px' }}>
+                                                        <div className="col-2 form-check-position">
                                                             <div className="form-check">
                                                                 <input className="form-check-input" type="checkbox" defaultValue id="flexCheckDefault" />
                                                                 <label className="form-check-label" htmlFor="flexCheckDefault" />
@@ -377,11 +377,11 @@ function Main() {
                                 </div>
                                 {/* card-11-end */}
                                 {/* card-12-start */}
-                                <div className="col">
-                                    <div className="card card-style-history" style={{ height: '130px', width: '394px' }}>
+                                <div className="col-lg-4 col-6">
+                                    <div className="card card-style-history">
                                         <div className="row">
                                             <div className="col-4">
-                                                <img src={Product} className="card-img-top img-product-history" alt="..." />
+                                                <img src={Product} className="img-product-history" alt="..." />
                                             </div>
                                             <div className="col">
                                                 <div className="row" style={{ paddingTop: '20px' }}>
@@ -394,7 +394,7 @@ function Main() {
                                                             <p className="s-3-history">Delivered</p>
                                                         </div>
                                                         {/* Checkbox start */}
-                                                        <div className="col-2" style={{ marginRight: '8px', marginTop: '16px' }}>
+                                                        <div className="col-2 form-check-position">
                                                             <div className="form-check">
                                                                 <input className="form-check-input" type="checkbox" defaultValue id="flexCheckDefault" />
                                                                 <label className="form-check-label" htmlFor="flexCheckDefault" />
@@ -409,11 +409,11 @@ function Main() {
                                 </div>
                                 {/* card-12-end */}
                                 {/* card-13-start */}
-                                <div className="col">
-                                    <div className="card card-style-history" style={{ height: '130px', width: '394px' }}>
+                                <div className="col-lg-4 col-6">
+                                    <div className="card card-style-history">
                                         <div className="row">
                                             <div className="col-4">
-                                                <img src={Product} className="card-img-top img-product-history" alt="..." />
+                                                <img src={Product} className="img-product-history" alt="..." />
                                             </div>
                                             <div className="col">
                                                 <div className="row" style={{ paddingTop: '20px' }}>
@@ -426,7 +426,7 @@ function Main() {
                                                             <p className="s-3-history">Delivered</p>
                                                         </div>
                                                         {/* Checkbox start */}
-                                                        <div className="col-2" style={{ marginRight: '8px', marginTop: '16px' }}>
+                                                        <div className="col-2 form-check-position">
                                                             <div className="form-check">
                                                                 <input className="form-check-input" type="checkbox" defaultValue id="flexCheckDefault" />
                                                                 <label className="form-check-label" htmlFor="flexCheckDefault" />
@@ -441,11 +441,11 @@ function Main() {
                                 </div>
                                 {/* card-13-end */}
                                 {/* card-14-start */}
-                                <div className="col">
-                                    <div className="card card-style-history" style={{ height: '130px', width: '394px' }}>
+                                <div className="col-lg-4 col-6">
+                                    <div className="card card-style-history">
                                         <div className="row">
                                             <div className="col-4">
-                                                <img src={Product} className="card-img-top img-product-history" alt="..." />
+                                                <img src={Product} className="img-product-history" alt="..." />
                                             </div>
                                             <div className="col">
                                                 <div className="row" style={{ paddingTop: '20px' }}>
@@ -458,7 +458,7 @@ function Main() {
                                                             <p className="s-3-history">Delivered</p>
                                                         </div>
                                                         {/* Checkbox start */}
-                                                        <div className="col-2" style={{ marginRight: '8px', marginTop: '16px' }}>
+                                                        <div className="col-2 form-check-position">
                                                             <div className="form-check">
                                                                 <input className="form-check-input" type="checkbox" defaultValue id="flexCheckDefault" />
                                                                 <label className="form-check-label" htmlFor="flexCheckDefault" />
@@ -473,11 +473,11 @@ function Main() {
                                 </div>
                                 {/* card-14-end */}
                                 {/* card-15-start */}
-                                <div className="col">
-                                    <div className="card card-style-history" style={{ height: '130px', width: '394px' }}>
+                                <div className="col-lg-4 col-6">
+                                    <div className="card card-style-history">
                                         <div className="row">
                                             <div className="col-4">
-                                                <img src={Product} className="card-img-top img-product-history" alt="..." />
+                                                <img src={Product} className="img-product-history" alt="..." />
                                             </div>
                                             <div className="col">
                                                 <div className="row" style={{ paddingTop: '20px' }}>
@@ -490,7 +490,7 @@ function Main() {
                                                             <p className="s-3-history">Delivered</p>
                                                         </div>
                                                         {/* Checkbox start */}
-                                                        <div className="col-2" style={{ marginRight: '8px', marginTop: '16px' }}>
+                                                        <div className="col-2 form-check-position">
                                                             <div className="form-check">
                                                                 <input className="form-check-input" type="checkbox" defaultValue id="flexCheckDefault" />
                                                                 <label className="form-check-label" htmlFor="flexCheckDefault" />

@@ -8,6 +8,8 @@
 .card-style-history {
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.03);
     border-radius: 20px;
+    height: 130px;
+    width: 394px;
 }
 
 .img-product-history {
@@ -23,6 +25,11 @@
     background: #F5F5F8;
     border: 2px solid #6A4029;
     border-radius: 5px;
+}
+
+.form-check-position {
+    margin-right: 8px;
+    margin-top: 16px;
 }
 
 /* Main end */
@@ -90,3 +97,64 @@
 }
 
 /* Styling end */
+
+/* Responsive */
+@media screen and (max-width: 576px) {
+    .hero-history {
+        background-image: url(../../assets/history/hero.png);
+        background-size: cover;
+        height: 210vh;
+    }
+
+    .select-all-history a p {
+        margin-right: 6.5rem;
+    }
+
+    .card-style-history {
+        box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.03);
+        border-radius: 20px;
+        height: 130px;
+        width: 142px;
+    }
+
+    .img-product-history {
+        width: 100px;
+        height: 100px;
+        margin-left: -1rem;
+        margin-top: -0.1rem;
+    }
+
+    .form-check-position {
+        margin-right: 0.8rem;
+        margin-top: -0.3rem;
+    }
+
+    .s-1-history {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        color: #000000;
+        margin-left: 15px;
+    }
+
+    .s-2-history {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        color: #895537;
+        margin-left: -2.8rem;
+        line-height: 5px;
+    }
+
+    .s-3-history {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        color: #6A4029;
+        margin-left: -2.8rem;
+        line-height: 0px;
+    }
+}
