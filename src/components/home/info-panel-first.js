@@ -5,26 +5,26 @@ import Customers from "../../assets/homepage/Server.png"
 
 function InfoPanelFirst() {
     return (
-        <div className="container d-lg-block d-none">
+        <div className="container">
             <div className="row">
-                <div className="col info-panel">
+                <div className="col info-panel mobile">
                     <div className="row">
-                        <div className="col-lg">
+                        <div className="col-3 col-lg panel-first-mobile">
                             <img src={Staff} alt="icon" className="float-lg-start" />
                             <h4>90+</h4>
                             <p>Staff</p>
                         </div>
-                        <div className="col-lg">
+                        <div className="col-3 col-lg panel-first-mobile">
                             <img src={Stores} alt="icon" className="float-lg-start" />
                             <h4>30+</h4>
                             <p>Stores</p>
-                            <div className="vertical-line" />
+                            <div className="vertical-line d-none d-lg-block" />
                         </div>
-                        <div className="col-lg">
+                        <div className="col-3 col-lg panel-first-mobile">
                             <img src={Customers} alt="icon" className="float-lg-start" />
                             <h4>800+</h4>
                             <p>Customers</p>
-                            <div className="vertical-line" />
+                            <div className="vertical-line d-none d-lg-block" />
                         </div>
                     </div>
                 </div>

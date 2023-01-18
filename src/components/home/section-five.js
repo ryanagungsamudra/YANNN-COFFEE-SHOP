@@ -2,21 +2,65 @@ import React from 'react'
 import Testi1 from "../../assets/homepage/testi1.svg"
 import Testi2 from "../../assets/homepage/testi2.svg"
 import Testi3 from "../../assets/homepage/testi3.svg"
+import Netflix from "../../assets/homepage/sponsored-netflix.png"
+import Reddit from "../../assets/homepage/sponsored-reddit.png"
+import Amazon from "../../assets/homepage/sponsored-amazon.png"
+import Discord from "../../assets/homepage/sponsored-discord.png"
+import Spotify from "../../assets/homepage/sponsored-spotify.png"
 
 function SectionFive() {
     return (
-        <section className="section-5">
-            <div className="container d-lg-block d-none">
+        <section className="section-5 mobile">
+            <div className="container">
                 <div className="row text-center">
                     <div className="col">
                         <h4 className="typo-primary">Our Partner</h4>
+                        <div className="width-based mobile">
+                            <div className="row width-based-product mobile">
+                                <div className="col-4 col-lg width-based-product mobile">
+                                    <img
+                                        src={Netflix}
+                                        className="img-partener-thumbnail mobile"
+                                        alt="partner img"
+                                    />
+                                </div>
+                                <div className="col-4 col-lg width-based-product mobile">
+                                    <img
+                                        src={Reddit}
+                                        className="img-partener-thumbnail mobile"
+                                        alt="partner img"
+                                    />
+                                </div>
+                                <div className="col-4 col-lg width-based-product mobile">
+                                    <img
+                                        src={Amazon}
+                                        className="img-partener-thumbnail mobile"
+                                        alt="partner img"
+                                    />
+                                </div>
+                                <div className="col-4 col-lg width-based-product mobile">
+                                    <img
+                                        src={Discord}
+                                        className="img-partener-thumbnail mobile"
+                                        alt="partner img"
+                                    />
+                                </div>
+                                <div className="col-4 col-lg width-based-product mobile">
+                                    <img
+                                        src={Spotify}
+                                        className="img-partener-thumbnail mobile"
+                                        alt="partner img"
+                                    />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div className="sponsored" />
+                {/* <div className="sponsored mobile" /> */}
             </div>
             <div className="row text-center">
                 <div className="col">
-                    <h4 className="typo-primary">Loved by Thousands of <br />Happy Customer</h4>
+                    <h4 className="typo-primary mobile">Loved by Thousands of <br />Happy Customer</h4>
                     <p className="typo-secondary py-3">These are the stories of our customers who have visited us with great <br />pleasure.</p>
                 </div>
             </div>

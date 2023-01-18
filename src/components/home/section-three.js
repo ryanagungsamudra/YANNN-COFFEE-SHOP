@@ -9,7 +9,7 @@ function SectionThree() {
         <section className="section-3">
             <div className="container">
                 <div className="row text-center">
-                    <div className="col">
+                    <div className="col text-mobile">
                         <h4 className="typo-primary">Here is People’s Favorite</h4>
                         <p className="typo-secondary">Let’s choose and have a bit taste of poeple’s favorite. It might be yours too!</p>
                     </div>
@@ -119,7 +119,7 @@ function SectionThree() {
             </div>
             {/* mobile version */}
             <div className="container mt-card d-lg-none">
-                <div className="row row-cols-1 row-cols-md-3 g-4" style={{ marginLeft: '-1.3rem' }}>
+                <div className="row row-cols-1 row-cols-md-3 g-4 card-mobile" style={{ marginLeft: '-1.3rem' }}>
                     <div className="col text-start ms-5 card-transition-1">
                         <div className="card" style={{ height: '580px', width: '300px' }}>
                             <img src={Card1} className="card-img-top" alt="card" style={{ marginTop: '-90px' }} />

@@ -2,7 +2,7 @@ import React from 'react'
 
 function SectionFour() {
     return (
-        <section className="section-4 d-lg-block d-none">
+        <section className="section-4 mobile">
             <div className="container mt-5">
                 <div className="container">
                     <div className="row text-center">
@@ -11,7 +11,7 @@ function SectionFour() {
                             <p className="typo-secondary">See our store in every city on the spot and spen your good day there. See you soon!</p>
                         </div>
                     </div>
-                    <div className="hero-map" />
+                    <div className="hero-map mobile" />
                 </div>
             </div>
         </section>
