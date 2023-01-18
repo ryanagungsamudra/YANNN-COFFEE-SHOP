@@ -86,23 +86,23 @@ function MainLogin() {
                             {/* desktop version */}
                             <div className="row d-lg-block d-none">
                                 <div className="col mt-4">
-                                    <a href="#">
+                                    <Link to="#">
                                         <div className="btn btn-light d-flex rounded-4">
                                             <img src={GoogleLogo} alt="google" style={{ marginLeft: '120px' }} />
                                             <p className="s-1-auth" style={{ marginTop: '19px', marginLeft: '10px' }}>Login with Google</p>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             {/* mobile version */}
                             <div className="row d-lg-none mb-5">
                                 <div className="col mt-4">
-                                    <a href="#">
+                                    <Link to="#">
                                         <div className="btn btn-light d-flex rounded-4">
                                             <img src={GoogleLogo} alt="google" style={{ marginLeft: '20px' }} />
                                             <p className="s-1-auth" style={{ marginTop: '19px', marginLeft: '10px' }}>Login with Google</p>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </form>

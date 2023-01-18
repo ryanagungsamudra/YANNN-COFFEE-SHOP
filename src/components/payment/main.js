@@ -168,7 +168,7 @@ function Main() {
                                         <h3 className="s-1-payment" style={{ margin: '55px 0 0 85px' }}>Address details</h3>
                                     </div>
                                     <div className="col">
-                                        <a href="/payment" className="s-2-payment"><p style={{ margin: '60px 0 0 0' }}>edit</p></a>
+                                        <Link to="#" className="s-2-payment"><p style={{ margin: '60px 0 0 0' }}>edit</p></Link>
                                     </div>
                                 </div>
                                 <div className="row">
@@ -228,9 +228,9 @@ function Main() {
                                         <h3 className="s-1-payment" style={{ marginLeft: '-1rem' }}>Address details</h3>
                                     </div>
                                     <div className="col-2">
-                                        <a href="#" className="s-2-payment">
+                                        <Link to="#" className="s-2-payment">
                                             <p>edit</p>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="row">

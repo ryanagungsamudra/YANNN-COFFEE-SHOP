@@ -1,13 +1,3 @@
-@media screen and (max-width : 576px) {
-    body {
-        overflow-x: hidden;
-    }
-
-    .hero-1 {
-        background-position-x: -48rem;
-    }
-}
-
 body {
     font-family: 'Rubik', sans-serif;
     background: var(--basic-color);
@@ -84,11 +74,6 @@ a {
     text-decoration: none;
 }
 
-/* img {
-    max-width: 100%;
-    height: auto;
-} */
-
 .btn.btn-warning.get-started {
     width: 250px;
     height: 60px;
@@ -105,6 +90,55 @@ a {
     background-color: #6A4029;
     border-color: #6A4029;
     color: #FFFFFF;
+}
+
+@media screen and (max-width : 576px) {
+    body {
+        overflow-x: hidden;
+    }
+    .hero-1 {
+        background-position-x: -48rem;
+    }
+
+    .info-panel-footer {
+        box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5);
+        border-radius: 12px;
+        background-color: var(--panel-color);
+        min-height: 14rem;
+        max-width: 22rem;
+        margin-top: -630px;
+        margin-left: 0.5rem;
+        padding-top: 35px;
+        padding-left: 35px;
+    }
+
+    .see-promo-btn {
+        margin-top: 4rem;
+        margin-left: -22.5rem;
+    }
+
+    .btn.btn-warning.home {
+        border-radius: 20px;
+        width: 18rem;
+        height: 4rem;
+        margin-left: 3rem;
+        margin-top: 2.7rem;
+    }
+
+    .typo-primary-secondpanel {
+        font-weight: 500;
+        font-size: 35px;
+        color: var(--secondary-color);
+        margin-left: -3rem;
+        margin-top: -1rem;
+    }
+
+    .typo-secondary-secondpanel {
+        font-weight: 400;
+        font-size: 16px;
+        color: var(--primary-color);
+        margin-left: -3rem;
+    }
 }
 
 /* SECTION 1 */

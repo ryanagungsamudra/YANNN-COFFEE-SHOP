@@ -1,11 +1,11 @@
 import React from 'react'
-import CoffeeLogo from "../assets/coffeeLogo.svg"
-import Facebook from "../assets/Facebook.svg"
-import Twitter from "../assets/Twitter.svg"
-import Instagram from "../assets/Instagram.svg"
+import CoffeeLogo from "../../assets/coffeeLogo.svg"
+import Facebook from "../../assets/Facebook.svg"
+import Twitter from "../../assets/Twitter.svg"
+import Instagram from "../../assets/Instagram.svg"
 import './footer.css'
 import { Link } from 'react-router-dom'
-import Scroll from "../assets/up.svg"
+import Scroll from "../../assets/up.svg"
 
 function Footer() {
     const scrollTop = () => {

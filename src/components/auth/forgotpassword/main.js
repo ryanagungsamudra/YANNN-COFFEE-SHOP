@@ -19,7 +19,7 @@ function MainForgot() {
                         <input type="email" className="form-control-forgot py-3" id="emailForgot" aria-describedby="emailHelp" placeholder="Enter your email adress to get link" />
                     </div>
                     <div className="col-3" style={{ marginLeft: '3rem' }}>
-                        <a href="/forgotpassword"><button className="btn btn-warning forgot send" onclick="getData()">Send</button></a>
+                        <Link to="/forgotpassword"><button className="btn btn-warning forgot send" onclick="getData()">Send</button></Link>
                     </div>
                     <div className="col-1" />
                 </div>
@@ -29,7 +29,7 @@ function MainForgot() {
                         <input type="email" className="form-control-forgot py-3" id="emailForgotMobile" aria-describedby="emailHelp" placeholder="Enter your email adress to get link" />
                     </div>
                     <div className="col-3" style={{ marginLeft: '4rem' }}>
-                        <a href="/forgotpassword"><button className="btn btn-warning forgot send" onclick="getDataMobile()" style={{ width: '7rem' }}>Send</button></a>
+                        <Link to="/forgotpassword"><button className="btn btn-warning forgot send" onclick="getDataMobile()" style={{ width: '7rem' }}>Send</button></Link>
                     </div>
                 </div>
                 <div className="row" style={{ marginTop: '75px' }}>

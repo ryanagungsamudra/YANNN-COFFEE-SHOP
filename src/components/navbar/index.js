@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import CoffeeLogo from "../assets/coffeeLogo.svg"
-import Search from "../assets/product/search.svg"
-import Chat from "../assets/product/chat.svg"
-import Profile from "../assets/product/profilepic.svg"
+import CoffeeLogo from "../../assets/coffeeLogo.svg"
+import Search from "../../assets/product/search.svg"
+import Chat from "../../assets/product/chat.svg"
+import Profile from "../../assets/product/profilepic.svg"
 import './navbar.css'
 
 function Navbar(props) {
@@ -39,12 +39,12 @@ function Navbar(props) {
                                     <input type="text" placeholder="Search Anything You Want..." />
                                     <img src={Search} alt="searchBox" />
                                 </div>
-                                <a className="mx-4" href="chat.html">
+                                <Link to="#" className="mx-4">
                                     <img src={Chat} alt="chat" />
-                                </a>
-                                <a href="profile.html">
+                                </Link>
+                                <Link to="#">
                                     <img src={Profile} alt="profile" />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="d-lg-flex d-lg-block d-none">
@@ -52,15 +52,16 @@ function Navbar(props) {
                                 <input type="text" placeholder="Search Anything You Want..." />
                                 <img src={Search} alt="searchBox" />
                             </div>
-                            <a className="mx-4" href="chat.html" style={{ marginTop: '0.7rem' }}>
+                            <Link to="#" className="mx-4" style={{ marginTop: '0.7rem' }}>
                                 <img src={Chat} alt="chat" />
                                 <span className="position-absolute top-0-notif start-100 translate-middle badge-notif bg-danger-notif d-none d-lg-block">
                                     1
                                     <span className="visually-hidden">unread messages</span>
-                                </span></a>
-                            <a href="profile.html" style={{ marginTop: '0.65rem' }}>
+                                </span>
+                            </Link>
+                            <Link to="#" style={{ marginTop: '0.65rem' }}>
                                 <img src={Profile} alt="profile" />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </nav>
