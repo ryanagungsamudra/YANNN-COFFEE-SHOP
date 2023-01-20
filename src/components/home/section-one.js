@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function SectionOne() {
     return (
-        <section className="section-1">
+        <section className="section-1" style={{marginTop: '6rem'}}>
             <div className="mt-4 p-5 bg-primary text-white hero-1"> {/*Jumbotron*/}
                 <div className="container">
                     <div className="row">

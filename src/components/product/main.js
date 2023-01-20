@@ -10,7 +10,7 @@ import CardProduct from './cardProduct'
 
 function Main() {
     return (
-        <main>
+        <main style={{ marginTop: '6rem' }}>
             <div className="container">
                 <div className="row">
                     {/* LEFT SIDE */}

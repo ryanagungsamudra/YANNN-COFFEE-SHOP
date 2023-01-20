@@ -1,11 +1,14 @@
 import React from 'react'
-import { NavbarHome, SectionOne, InfoPanelFirst, SectionTwo, SectionThree, SectionFour, SectionFive, FooterHome, InfoPanelSecond } from "../../components/home/index";
+import { Navbar, SectionOne, InfoPanelFirst, SectionTwo, SectionThree, SectionFour, SectionFive, FooterHome, InfoPanelSecond } from "../../components/home/index";
 import './Home.css';
 
 function Home() {
+    const status = {
+        Home: "active-nav",
+    }
     return (
         <>
-            <NavbarHome />
+            <Navbar status={status}/>
             <SectionOne />
             <InfoPanelFirst />
             <SectionTwo />

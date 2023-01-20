@@ -1,14 +1,11 @@
 import React from 'react'
-import Navbar from '../../components/navbar'
+import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/footer'
 import Main from '../../components/history/main'
 
 function History() {
     const status = {
-        Home: "nav-link mx-2",
-        Product: "nav-link mx-2",
-        Payment: "nav-link mx-2",
-        History: "nav-link mx-2 active"
+        History: "active-nav"
     }
     return (
         <>

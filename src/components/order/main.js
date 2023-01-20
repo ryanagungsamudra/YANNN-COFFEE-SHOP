@@ -1,13 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './main.css'
+import extraLarge from "../../assets/product-detail/XL.jpg"
 import small from "../../assets/product-detail/R.jpg"
 import large from "../../assets/product-detail/L.jpg"
-import extraLarge from "../../assets/product-detail/XL.jpg"
-import { Link } from 'react-router-dom'
 
 function Order() {
     return (
-        <main>
+        <main style={{ marginTop: '6rem' }}>
             <div className="container-fluid" style={{ backgroundColor: '#EFEEEE', paddingBottom: '60px' }}>
                 <div className="container">
                     <div className="row">

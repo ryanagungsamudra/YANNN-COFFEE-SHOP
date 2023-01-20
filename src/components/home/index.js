@@ -1,4 +1,4 @@
-export { default as NavbarHome } from "./navbar-home"
+export { default as Navbar } from "../Navbar/Navbar"
 export { default as FooterHome } from "./footer-home"
 export { default as SectionOne } from "./section-one"
 export { default as SectionTwo } from "./section-two"

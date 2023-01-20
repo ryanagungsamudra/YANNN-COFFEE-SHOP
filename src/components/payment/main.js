@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom'
 
 function Main() {
     return (
-        <main>
+        <main style={{ marginTop: '6rem' }}>
             <div className="p-5 bg-primary text-white hero-payment">
                 <div className="container ">
                     <div className="row">

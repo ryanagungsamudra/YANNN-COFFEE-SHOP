@@ -10,6 +10,7 @@ import Order from './pages/order/Order';
 import Payment from './pages/payment/Payment';
 import History from './pages/history/History';
 import CardProduct from './components/product/cardProduct';
+import OrderProduct from './components/order/orderProduct';
 
 import ScrollToTop from './components/ScrollToTop';
 import {
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
     path: "test",
     element:
       <>
+        <OrderProduct />
         <CardProduct />,
         <ScrollToTop />,
       </>
