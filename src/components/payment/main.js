@@ -173,11 +173,11 @@ function Main() {
                                 </div>
                                 <div className="row">
                                     <div className="sticky-2 my-3">
-                                        <p className="s-5-payment" style={{ fontSize: '20px', fontWeight: 400, color: '#000000', marginTop: '30px', paddingTop: '-5px' }}><b>Delivery</b> to Iskandar Street</p>
+                                        <p className="s-5-payment" style={{ fontSize: '20px', fontWeight: 400, marginTop: '30px', paddingTop: '-5px' }}><b>Delivery</b> to Iskandar Street</p>
                                         <hr style={{ opacity: '0.1', border: '0.5px solid #000000', marginTop: '-12px' }} />
-                                        <p className="s-5-payment" style={{ fontSize: '20px', fontWeight: 400, color: '#000000', marginTop: '-10px' }}>Km 5 refinery road oppsite republic road, effurun, Jakarta</p>
+                                        <p className="s-5-payment" style={{ fontSize: '20px', fontWeight: 400, marginTop: '-10px' }}>Km 5 refinery road oppsite republic road, effurun, Jakarta</p>
                                         <hr style={{ opacity: '0.1', border: '0.5px solid #000000', marginTop: '-10px' }} />
-                                        <p className="s-5-payment mb-5" style={{ fontSize: '20px', fontWeight: 400, color: '#000000', marginTop: '-7px' }}>+62 81348287878</p>
+                                        <p className="s-5-payment mb-5" style={{ fontSize: '20px', fontWeight: 400, marginTop: '-7px' }}>+62 81348287878</p>
                                     </div>
                                 </div>
                                 <div className="row">
@@ -235,13 +235,13 @@ function Main() {
                                 </div>
                                 <div className="row">
                                     <div className="sticky-2-mobile my-3">
-                                        <p className="s-5-payment" style={{ fontSize: '20px', fontWeight: 400, color: '#000000', marginTop: '30px', paddingTop: '-5px' }}>
+                                        <p className="s-5-payment" style={{ fontSize: '20px', fontWeight: 400, marginTop: '30px', paddingTop: '-5px' }}>
                                             <b>Delivery</b> to Iskandar Street</p>
                                         <hr style={{ opacity: '0.1', border: '0.5px solid #000000', marginTop: '-12px' }} />
-                                        <p className="s-5-payment" style={{ fontSize: '20px', fontWeight: 400, color: '#000000', marginTop: '-10px' }}>Km 5 refinery
+                                        <p className="s-5-payment" style={{ fontSize: '20px', fontWeight: 400, marginTop: '-10px' }}>Km 5 refinery
                                             road oppsite republic road, effurun, Jakarta</p>
                                         <hr style={{ opacity: '0.1', border: '0.5px solid #000000', marginTop: '-10px' }} />
-                                        <p className="s-5-payment mb-5" style={{ fontSize: '20px', fontWeight: 400, color: '#000000', marginTop: '-7px' }}>+62
+                                        <p className="s-5-payment mb-5" style={{ fontSize: '20px', fontWeight: 400, marginTop: '-7px' }}>+62
                                             81348287878</p>
                                     </div>
                                 </div>

@@ -1,14 +1,14 @@
 .Navbar {
-  height: 95px;
+  height: 97px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--basic-color);
+  background: var(--panel-color);
 }
 
 .Navbar.fixed-top {
   width: 100%;
-  background-color: var(--basic-color);
+  background-color: var(--panel-color);
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -169,6 +169,7 @@
       background-color: #FFBA33;
       color: #6A4029;
       border-radius: 10px;
+      border: 0.5px solid rgba(0, 0, 0, 0.5);
   
       font-family: 'Poppins';
       font-style: normal;
@@ -180,5 +181,15 @@
       background-color: #6A4029;
       color: #FFFFFF;
       border: #6A4029;
+    }
+    .btn-light.login-mobile {
+        border-radius: 10px;
+        color:#000000;
+        border: 0.5px solid rgba(0, 0, 0, 0.5);
+      
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
     }
 }

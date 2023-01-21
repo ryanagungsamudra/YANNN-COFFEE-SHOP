@@ -7,7 +7,7 @@
 }
 
 .sticky-1 {
-    background-color: #FFF;
+    background-color: var(--panel-color);
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.35);
     border-radius: 20px;
     height: 737px;
@@ -16,7 +16,7 @@
 }
 
 .sticky-2 {
-    background-color: #FFF;
+    background-color: var(--panel-color);
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     height: 198px;
@@ -25,7 +25,7 @@
 }
 
 .sticky-3 {
-    background-color: #FFF;
+    background-color: var(--panel-color);
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     height: 259px;
@@ -55,7 +55,7 @@
 
     /* mobile */
         .sticky-1-mobile {
-            background-color: #FFF;
+            background-color: var(--panel-color);
             box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.35);
             border-radius: 20px;
             min-height: 38.5rem;
@@ -64,7 +64,7 @@
         }
     
         .sticky-2-mobile {
-            background-color: #FFF;
+            background-color: var(--panel-color);
             box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
             border-radius: 20px;
             max-height: 15rem;
@@ -73,7 +73,7 @@
         }
     
         .sticky-3-mobile {
-            background-color: #FFF;
+            background-color: var(--panel-color);
             box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
             border-radius: 20px;
             min-height: 15.6rem;
@@ -117,7 +117,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
-    color: #FFFFFF;
+    color: var(--basic-color);
     text-decoration: none;
 }
 
@@ -126,7 +126,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 35px;
-    color: #362115;
+    color: var(--hover-color);
     padding-top: 70px;
 }
 
@@ -135,7 +135,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    color: #000000;
+    color: var(--carousel-color);
 }
 
 .s-5-payment {
@@ -143,7 +143,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    color: #362115;
+    color: var(--hover-color);
     padding-left: 45px;
 }
 
@@ -153,7 +153,7 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 45px;
-    color: #362115;
+    color: var(--hover-color);
     padding-left: 43px;
 }
 

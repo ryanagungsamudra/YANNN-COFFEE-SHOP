@@ -17,17 +17,19 @@ html {
     --hover-color: #6A4029;
     --carousel-color: #111;
     --footerh5-color: #0B132A;
+    --container-order: #EFEEEE;
 }
 
 body.dark {
     --basic-color: #121212;
     --primary-color: #f6f6f6;
     --secondary-color: #f6f6f6;
-    --tersier-color: #121212;
+    --tersier-color: #222222;
     --panel-color: #222222;
     --hover-color: #f6f6f6;
     --carousel-color: #f6f6f6;
     --footerh5-color: #f6f6f6;
+    --container-order: #121212;
 }
 
 /* Responsive */

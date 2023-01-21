@@ -39,7 +39,7 @@ function MainSignup() {
                                             <div className="col-7">
                                                 <Link to="/" className="navbar-brand">
                                                     <img src={CoffeeLogo} alt="logo" className="pb-2" />
-                                                    <p className="d-inline ps-2 s-lg-auth" style={{ fontSize: '20px', color: '#0B132A' }}>YANNN COFFEE</p>
+                                                    <p className="d-inline ps-2 s-lg-auth">YANNN COFFEE</p>
                                                 </Link>
                                             </div>
                                             <div className="col-5">
@@ -58,22 +58,22 @@ function MainSignup() {
                     </div>
                     <div className="container w-75">
                         <div className="row">
-                            <div className="col text-center s-lg-auth pt-5" style={{ fontSize: '35px', color: '#6A4029', marginTop: '50px', marginBottom: '60px' }}>
+                            <div className="col text-center form-title-auth pt-5">
                                 <h3>Sign Up</h3>
                             </div>
                         </div>
                         {/* FORM START */}
                         <form name="signUpForm">
                             <div className="mb-3">
-                                <label htmlFor="exampleInputEmail1" className="form-label s-md-auth" style={{ fontSize: '20px', color: '#4F5665' }}>Email Address :</label>
+                                <label htmlFor="exampleInputEmail1" className="form-label s-md-auth">Email Address :</label>
                                 <input name="email" type="email" className="form-control py-3" id="emailSignUp" aria-describedby="emailHelp" placeholder="Enter your email adress" />
                             </div>
                             <div className="mb-3">
-                                <label htmlFor="exampleInputPassword1" className="form-label s-md-auth" style={{ fontSize: '20px', color: '#4F5665' }}>Password :</label>
+                                <label htmlFor="exampleInputPassword1" className="form-label s-md-auth">Password :</label>
                                 <input name="password" type="password" className="form-control py-3" id="passwordSignUp" placeholder="Enter your password" />
                             </div>
                             <div className="mb-3">
-                                <label htmlFor="exampleInputPassword1" className="form-label s-md-auth" style={{ fontSize: '20px', color: '#4F5665' }}>Phone Number :</label>
+                                <label htmlFor="exampleInputPassword1" className="form-label s-md-auth">Phone Number :</label>
                                 <input name="mobileNumber" type="number" className="form-control py-3" id="mobileNumberSignUp" placeholder="Enter your phone number" />
                             </div>
                             <div className="mb-3 form-check" />

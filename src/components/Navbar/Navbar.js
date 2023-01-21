@@ -24,7 +24,7 @@ const Navbar = (props) => {
           <Link to="/history" className={props.status.History}>History</Link>
           {/* Auth button on mobile */}
           <div className="auth-nav-items-mobile mx-auto">
-            <Link to="/login" className="d-block d-sm-none d-md-none d-lg-none btn btn-primary login-mobile mb-2 py-2 ">Login</Link>
+            <Link to="/login" className="d-block d-sm-none d-md-none d-lg-none btn btn-light login-mobile mb-2 py-2 ">Login</Link>
             <Link to="/signup" className="d-block d-sm-none d-md-none d-lg-none btn btn-warning signup-mobile py-2 ">Sign Up</Link>
           </div>
         </div>

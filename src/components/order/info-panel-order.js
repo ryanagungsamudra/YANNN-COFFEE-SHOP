@@ -1,8 +1,8 @@
 import React from 'react'
 import './info-panel-footer.css'
 import heroSmall from "../../assets/product-detail/hero-small.png"
-import minus from "../../assets/product-detail/minus.jpg"
-import plus from "../../assets/product-detail/plus.jpg"
+import minus from "../../assets/product-detail/minus.png"
+import plus from "../../assets/product-detail/plus.png"
 import { Link } from 'react-router-dom'
 
 function InfoPanelOrder() {

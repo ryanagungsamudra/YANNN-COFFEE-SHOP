@@ -1,6 +1,6 @@
 /* main start */
 .tab-link {
-    color: #4F5665;
+    color: var(--primary-color);
     font-size: 16px;
     font-weight: 400;
     margin-top: 50px;
@@ -9,7 +9,7 @@
 }
 
 .tab-link:hover {
-    color: #4F5665;
+    color: var(--primary-color);
 }
 
 .tab-link.active {
@@ -35,10 +35,15 @@
     margin-left: -1.4rem;
 }
 .container-order {
-    background-color: #FFFFFF;
+    background-color: var(--panel-color);
     min-height: 33.75rem;
     max-width: 33.75rem;
     margin-top: 80px;
+}
+
+.container-fluid.order {
+    background-color: var(--container-order); 
+    padding-bottom: 60px;
 }
 
 /* Button start */
@@ -119,7 +124,7 @@
     font-family: 'Poppins', sans-serif;
     font-size: 50px;
     font-weight: 900;
-    color: black;
+    color: var(--secondary-color);
     margin-top: -35px;
 }
 
@@ -127,7 +132,7 @@
     font-family: 'Poppins', sans-serif;
     font-size: 25px;
     font-weight: 500;
-    color: black;
+    color: var(--secondary-color);
 }
 
 .s-3-order {
@@ -135,7 +140,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    color: #6A4029;
+    color: var(--hover-color);
     padding-top: 55px;
     padding-left: 65px;
 }
@@ -145,7 +150,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    color: #6A4029;
+    color: var(--hover-color);
     padding-top: 55px;
     padding-left: 65px;
     margin-top: -45px;
@@ -156,7 +161,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    color: #000000;
+    color: var(--secondary-color);
     padding-top: 15px;
     padding-left: 170px;
 }
@@ -166,6 +171,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
+    color: var(--secondary-color);
 }
 
 .s-7-order {
@@ -173,6 +179,7 @@
     font-style: normal;
     font-weight: 900;
     font-size: 25px;
+    color: var(--secondary-color);
 }
 
 .s-8-order {
@@ -180,6 +187,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
+    color: var(--secondary-color);
 }
 
 /* styling end */
