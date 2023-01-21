@@ -19,7 +19,7 @@ html {
     --footerh5-color: #0B132A;
 }
 
-.dark-theme {
+body.dark {
     --basic-color: #121212;
     --primary-color: #f6f6f6;
     --secondary-color: #f6f6f6;
@@ -175,7 +175,7 @@ html {
         font-size: 22px;
     }
 
-    .typo-primary-secondpanel {
+    .typo1-secondpanel {
         font-weight: 500;
         font-size: 32px;
         color: var(--secondary-color);
@@ -183,7 +183,7 @@ html {
         margin-top: -1rem;
     }
 
-    .typo-secondary-secondpanel {
+    .typo2-secondpanel {
         font-weight: 400;
         font-size: 18px;
         color: var(--primary-color);
@@ -192,22 +192,19 @@ html {
 }
 
 /* Navbar */
-#switchMode {
-    width: 45px;
-    cursor: pointer;
-    padding-left: 1rem;
-}
-
 .navbar-brand {
     font-weight: 700;
     font-size: 20px;
     color: var(--secondary-color);
 }
 
+.navbar-brand:hover {
+    color: var(--hover-color);
+}
+
 .nav-link.active {
     font-weight: 700;
     font-size: 16px;
-
 }
 
 .nav-link {
@@ -217,7 +214,7 @@ html {
 }
 
 .nav-link:hover {
-    border-bottom: 1px solid var(--hover-color);
+    color: #6A4029;
 }
 
 .nav-home {
@@ -473,6 +470,7 @@ a {
     margin-top: -630px;
     padding-top: 35px;
     padding-left: 35px;
+    
 }
 
 .info-panel-footer button {
@@ -480,11 +478,25 @@ a {
     margin-top: 35px;
 }
 
+.typo1-secondpanel {
+    font-weight: 500;
+    font-size: 35px;
+    color: var(--secondary-color);
+    /* margin-top: 1rem; */
+}
+
+.typo2-secondpanel {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--primary-color);
+    /* margin-left: -3rem; */
+}
+
 .pt-footer {
     margin-top: 220px;
 }
 
-footer a {
+.pt-footer a {
     text-decoration: none;
     color: var(--primary-color);
     font-size: 16px;

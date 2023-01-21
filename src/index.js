@@ -9,10 +9,12 @@ import Product from './pages/product/Product';
 import Order from './pages/order/Order';
 import Payment from './pages/payment/Payment';
 import History from './pages/history/History';
+import ErrorPage from './pages/error-page';
+
 import CardProduct from './components/product/cardProduct';
 import OrderProduct from './components/order/orderProduct';
 
-import ScrollToTop from './components/ScrollToTop';
+import ScrollToTop from './components/utility/ScrollToTop';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -34,7 +36,8 @@ const router = createBrowserRouter([
       <>
         <Home />,
         <ScrollToTop />,
-      </>
+      </>,
+    errorElement: <ErrorPage />,
   },
   {
     path: "login",

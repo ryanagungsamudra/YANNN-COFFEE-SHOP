@@ -189,8 +189,8 @@ function Main() {
                                                     <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
                                                     <label className="form-check-label" htmlFor="flexRadioDefault1" />
                                                 </div>
-                                                <img src={Card} alt="logo" style={{ width: '200px', height: '50px', marginLeft: '-60px', marginTop: '30px' }} />
-                                                <p className="s-4-payment" style={{ marginTop: '40px', marginLeft: '-55px' }}>Card</p>
+                                                <img src={Card} alt="logo" style={{ width: '55px', height: '50px', marginLeft: '1rem', marginTop: '30px' }} />
+                                                <p className="s-4-payment" style={{ marginTop: '40px', marginLeft: '1rem' }}>Card</p>
                                             </div>
                                         </div>
                                         <hr style={{ opacity: '0.1', border: '0.5px solid #000000', marginTop: '-5px' }} />
@@ -200,19 +200,19 @@ function Main() {
                                                     <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
                                                     <label className="form-check-label" htmlFor="flexRadioDefault1" />
                                                 </div>
-                                                <img src={Bank} alt="logo" style={{ width: '200px', height: '50px', marginLeft: '-60px', marginTop: '30px' }} />
-                                                <p className="s-4-payment" style={{ marginTop: '40px', marginLeft: '-55px' }}>Bank account</p>
+                                                <img src={Bank} alt="logo" style={{ width: '55px', height: '50px', marginLeft: '1rem', marginTop: '35px' }} />
+                                                <p className="s-4-payment" style={{ marginTop: '45px', marginLeft: '1rem' }}>Bank account</p>
                                             </div>
                                         </div>
                                         <hr style={{ opacity: '0.1', border: '0.5px solid #000000', marginTop: '10px' }} />
                                         <div className="row">
-                                            <div className="col d-flex" style={{ marginTop: '-35px' }}>
+                                            <div className="col d-flex" style={{ marginTop: '-43px' }}>
                                                 <div className="form-check" style={{ padding: '45px 0px 0px 60px' }}>
                                                     <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
                                                     <label className="form-check-label" htmlFor="flexRadioDefault1" />
                                                 </div>
-                                                <img src={Delivery} alt="logo" style={{ width: '200px', height: '50px', marginLeft: '-60px', marginTop: '30px' }} />
-                                                <p className="s-4-payment" style={{ marginTop: '40px', marginLeft: '-55px' }}>Cash on delivery</p>
+                                                <img src={Delivery} alt="logo" style={{ width: '55px', height: '50px', marginLeft: '1rem', marginTop: '35px' }} />
+                                                <p className="s-4-payment" style={{ marginTop: '45px', marginLeft: '1rem' }}>Cash on delivery</p>
                                             </div>
                                         </div>
                                     </div>
@@ -254,8 +254,8 @@ function Main() {
                                                     <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
                                                     <label className="form-check-label" htmlFor="flexRadioDefault1" />
                                                 </div>
-                                                <img src={Card} alt="logo" style={{ width: '200px', height: '50px', marginLeft: '-60px', marginTop: '30px' }} />
-                                                <p className="s-4-payment" style={{ marginTop: '40px', marginLeft: '-55px' }}>Card</p>
+                                                <img src={Card} alt="logo" style={{ width: '55px', height: '50px', marginLeft: '1rem', marginTop: '30px' }} />
+                                                <p className="s-4-payment" style={{ marginTop: '40px', marginLeft: '1rem' }}>Card</p>
                                             </div>
                                         </div>
                                         <hr style={{ opacity: '0.1', border: '0.5px solid #000000', marginTop: '-5px' }} />
@@ -265,19 +265,19 @@ function Main() {
                                                     <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
                                                     <label className="form-check-label" htmlFor="flexRadioDefault1" />
                                                 </div>
-                                                <img src={Bank} alt="logo" style={{ width: '200px', height: '50px', marginLeft: '-60px', marginTop: '30px' }} />
-                                                <p className="s-4-payment" style={{ marginTop: '40px', marginLeft: '-55px' }}>Bank account</p>
+                                                <img src={Bank} alt="logo" style={{ width: '55px', height: '50px', marginLeft: '1rem', marginTop: '35px' }} />
+                                                <p className="s-4-payment" style={{ marginTop: '45px', marginLeft: '1rem' }}>Bank account</p>
                                             </div>
                                         </div>
                                         <hr style={{ opacity: '0.1', border: '0.5px solid #000000', marginTop: '10px' }} />
                                         <div className="row">
-                                            <div className="col d-flex" style={{ marginTop: '-35px' }}>
+                                            <div className="col d-flex" style={{ marginTop: '-43px' }}>
                                                 <div className="form-check" style={{ padding: '45px 0px 0px 60px' }}>
                                                     <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
                                                     <label className="form-check-label" htmlFor="flexRadioDefault1" />
                                                 </div>
-                                                <img src={Delivery} alt="logo" style={{ width: '200px', height: '50px', marginLeft: '-60px', marginTop: '30px' }} />
-                                                <p className="s-4-payment" style={{ marginTop: '40px', marginLeft: '-55px' }}>Cash on delivery</p>
+                                                <img src={Delivery} alt="logo" style={{ width: '55px', height: '50px', marginLeft: '1rem', marginTop: '35px' }} />
+                                                <p className="s-4-payment" style={{ marginTop: '45px', marginLeft: '1rem' }}>Cash on delivery</p>
                                             </div>
                                         </div>
                                     </div>

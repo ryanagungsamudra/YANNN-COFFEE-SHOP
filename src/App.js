@@ -1,17 +1,9 @@
-import './App.css';
-
-// import Product from './pages/product/Product';
-import Home from './pages/main/Home';
-// import '../src/pages/main/Home.css'
+import React from 'react'
 
 function App() {
   return (
-    <div>
-      <Home />
-    </div>
-  );
+    <div>App</div>
+  )
 }
 
-export default App;
-
-
+export default App

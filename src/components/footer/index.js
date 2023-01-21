@@ -14,16 +14,16 @@ function Footer() {
     return (
         <footer>
             <img onClick={scrollTop} id="scrollTop" src={Scroll} alt="up" />
-            <div className="container-fluid" style={{ backgroundColor: '#F8F8F8', height: '466px' }}>
+            <div className="container-fluid footer-global" style={{ height: '466px' }}>
                 <div className="container">
                     <div className="row">
                         <div className="col-8 pt-footer-global">
                             <Link to="/">
                                 <img src={CoffeeLogo} alt="logo" className="pb-2" />
-                                <p className="d-inline ps-2" style={{ textDecoration: 'none', color: '#0B132A', fontSize: '20px', fontWeight: 700 }}>YANNN
+                                <p className="d-inline ps-2 footer-name-tag">YANNN
                                     COFFEE</p>
                             </Link>
-                            <p className="mt-3" style={{ fontSize: '16px', fontWeight: 500, color: '#4F5665' }}>
+                            <p className="mt-3 footer-p">
                                 Coffee Shop is a store that sells some good <br />meals, and especially coffee. We provide
                                 <br />high quality beans
                             </p>
@@ -41,7 +41,7 @@ function Footer() {
                             <p style={{ color: '#AFB5C0', fontSize: '16px', fontWeight: 400 }}>©2022CoffeeStore</p>
                         </div>
                         <div className="col-2 pt-footer-global">
-                            <h5 className="mb-4">Product</h5>
+                            <h5 className="mb-4 footer-h5">Product</h5>
                             <a href="/">
                                 <p>Download</p>
                             </a>
@@ -59,7 +59,7 @@ function Footer() {
                             </a>
                         </div>
                         <div className="col-2 pt-footer-global d-none d-lg-block">
-                            <h5 className="mb-4">Engage</h5>
+                            <h5 className="mb-4 footer-h5">Engage</h5>
                             <a href="/">
                                 <p>Coffe Shop ?</p>
                             </a>

@@ -6,6 +6,7 @@ function Home() {
     const status = {
         Home: "active-nav",
     }
+
     return (
         <>
             <Navbar status={status}/>

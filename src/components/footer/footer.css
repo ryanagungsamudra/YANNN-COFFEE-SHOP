@@ -3,10 +3,14 @@
     margin-top: 110px;
 }
 
-footer a {
+.pt-footer-global a {
     text-decoration: none;
-    color: #4F5665;
+    color: var(--primary-color);
     font-size: 16px;
     font-weight: 400;
+}
+
+.footer-global {
+    background-color: var(--tersier-color);
 }
 /* Footer End */

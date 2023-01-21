@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #ffffff;
+  background: var(--basic-color);
 }
 
 .Navbar.fixed-top {
@@ -16,11 +16,11 @@
   font-weight: 700;
   font-size: 21px;
   margin: 15px;
-  color: #000000;
+  color: var(--carousel-color);
 }
 
 .Navbar > .nav-items > a {
-  color: #4F5665;
+  color: var(--primary-color);
   font-size: 16px;
   text-decoration: none;
   margin: 15px;
@@ -39,7 +39,7 @@
   bottom: 0;
   width: 0;
   height: 2px;
-  background: #6A4029;
+  background: var(--hover-color);
   transition: all 0.45s;
 }
 
@@ -52,12 +52,12 @@
 }
 
 .Navbar>.nav-items>.active-nav {
-  color:#6A4029;
+  color:var(--hover-color);
   font-weight: 700;
 }
 
 .active-nav {
-  color: #6A4029;
+  color: var(--hover-color);
 }
 
 .auth-nav-items-desktop {
@@ -68,10 +68,10 @@
 @media (max-width: 700px) {
   .Navbar > .nav-items {
     position: fixed;
-    top: 95px;
+    top: 96px;
     display: flex;
     flex-direction: column;
-    background: #ffffff;
+    background: var(--panel-color);
     box-shadow: 0 3px 0px rgba(0, 0, 0, 0.5);
     left: 0;
     width: 100%;
@@ -101,7 +101,7 @@
     position: relative;
     width: 32px;
     height: 2px;
-    background: #000000;
+    background: var(--carousel-color);
     transition: all 0.45s ease-in-out;
   }
 
@@ -110,7 +110,7 @@
     content: "";
     position: absolute;
     height: 2px;
-    background: #000000;
+    background: var(--carousel-color);
     border-radius: 2px;
     transition: all 0.45s ease-in-out;
   }
@@ -157,7 +157,7 @@
       font-style: normal;
       font-weight: 400;
       font-size: 18px;
-}
+    }
   
     .btn-primary.login-mobile:hover {
       background-color: #FFBA33;
