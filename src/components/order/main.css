@@ -67,6 +67,11 @@
     color: #FFFFFF;
     background-color: #6A4029;
     border: #6A4029;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 .btn.btn-secondary.order:hover {

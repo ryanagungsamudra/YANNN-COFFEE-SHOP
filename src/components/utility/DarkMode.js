@@ -6,7 +6,6 @@ function DarkMode() {
     const body = document.body;
     const lightTheme = "light";
     const darkTheme = 'dark'
-    const status = 'checked'
     let theme;
 
     if (localStorage) {
@@ -39,15 +38,6 @@ function DarkMode() {
         id="darkMode"
         onClick={(e) => switchTheme(e)}
     ></button>
-
-    // <div>
-    //     <input
-    //         type="checkbox"
-    //         className={theme === "dark" ? cLickedClass : ""}
-    //         id="darkMode"
-    //         onClick={(e) => switchTheme(e)}
-    //     />
-    // </div>
   )
 }
 

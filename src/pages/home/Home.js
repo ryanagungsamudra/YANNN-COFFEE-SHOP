@@ -1,6 +1,6 @@
 import React from 'react'
 import { Navbar, SectionOne, InfoPanelFirst, SectionTwo, SectionThree, SectionFour, SectionFive, FooterHome, InfoPanelSecond } from "../../components/home/index";
-import './Home.css';
+// import './Home.css';
 
 function Home() {
     const status = {
@@ -9,7 +9,7 @@ function Home() {
 
     return (
         <>
-            <Navbar status={status}/>
+            <Navbar AuthShown={true} status={status}/>
             <SectionOne />
             <InfoPanelFirst />
             <SectionTwo />

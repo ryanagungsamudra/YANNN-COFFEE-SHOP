@@ -15,7 +15,7 @@ function InfoPanelSecond() {
                                         <p className="typo2-secondpanel mobile">Let's see the deals and pick yours!</p>
                                     </div>
                                     <div className="col col-lg see-promo-btn">
-                                        <Link to="/product"><button className="btn btn-warning home px-5 py-3">See Promo</button></Link>
+                                        <Link to="/products"><button className="btn btn-warning home px-5 py-3">See Promo</button></Link>
                                     </div>
                                 </div>
                             </div>

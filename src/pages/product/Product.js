@@ -9,7 +9,7 @@ function Product() {
 
     return (
         <>
-            <Navbar status={status} />
+            <Navbar ProfileShown={false} status={status} />
             <MainProduct />
             <Footer />
         </>

@@ -70,7 +70,7 @@ function Main() {
                             </div>
                         </div>
                         {/* Promo Card End */}
-                        <Link to="/order">
+                        <Link to="/products/:id">
                             <button className="btn btn-warning product" style={{ margin: '50px 20px 90px 0px' }}>Apply Coupon</button>
                         </Link>
                         <p className="text-start s-3-product">

@@ -1,11 +1,44 @@
 import React from 'react'
 import './main.css'
 import { Link } from 'react-router-dom'
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import CoffeeLogo from "../../../assets/coffeeLogo.svg"
 import GoogleLogo from  "../../../assets/login/googleLogo.svg"
 
 function MainLogin() {
+    const [loginForm, setLoginForm] = useState({
+        email: '',
+        password: ''
+    })
+    const [validate, setValidate] = useState({ error: false, message: '' })
+    const navigate = useNavigate()
+
+    const handleLogin = (event) => {
+        event.preventDefault()
+        axios({
+            url: 'http://localhost:5000/api/auth/login',
+            method: 'POST',
+            data: loginForm
+        }).then((res) => {
+            // console.log(res.data.data);
+            localStorage.setItem('@userLogin', JSON.stringify(res.data.data))
+            navigate('/products')
+        }).catch((err) => {
+            // console.log(err.response.data.message);
+            setValidate({ error: true, message: err.response.data.message })
+        })
+    }
+
+    // console.log(localStorage.getItem('@userLogin'))
+    useEffect(() => {
+        if (localStorage.getItem('@userLogin')) {
+            navigate('/products')
+        }
+    }, [navigate])
+
     return (
         <div className="row">
                 {/* LEFT SIDE */}
@@ -63,14 +96,27 @@ function MainLogin() {
                             </div>
                         </div>
                         {/* FORM START */}
-                        <form name="loginForm">
+                        <form onSubmit={handleLogin} name="loginForm">
+                            {validate.error && (
+                                <div className="alert alert-danger" role="alert" style={{borderRadius: '15px', marginTop: '-2rem'}}>
+                                    {validate.message}
+                                </div>
+                            )}
                             <div className="mb-3">
                                 <label htmlFor="exampleInputEmail1" className="form-label s-md-auth">Email Address :</label>
-                                <input name="email" type="email" className="form-control py-3" id="emailLogin" aria-describedby="emailHelp" placeholder="Enter your email adress" />
+                                <input name="email" type="email" className="form-control py-3" aria-describedby="emailHelp" placeholder="Enter your email adress" 
+                                onChange={(e) => setLoginForm({
+                                    ...loginForm,
+                                    email: e.target.value
+                                })}/>
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="exampleInputPassword1" className="form-label s-md-auth">Password :</label>
-                                <input name="password" type="password" className="form-control py-3" id="passwordLogin" placeholder="Enter your password" />
+                                <input name="password" type="password" className="form-control py-3" placeholder="Enter your password" 
+                                onChange={(e) => setLoginForm({
+                                    ...loginForm,
+                                    password: e.target.value
+                                })}/>
                             </div>
                             <div className="mb-3 form-check">
                             </div>

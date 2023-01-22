@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './global.css'
 
 import Home from './pages/home/Home';
 import Login from './pages/auth/Login';
@@ -11,23 +12,19 @@ import Payment from './pages/payment/Payment';
 import History from './pages/history/History';
 import ErrorPage from './pages/error-page';
 
-import CardProduct from './components/product/cardProduct';
-import OrderProduct from './components/order/orderProduct';
-
 import ScrollToTop from './components/utility/ScrollToTop';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import DropdownProfile from './components/auth/conditional-rendering/DropdownProfile';
 
 const router = createBrowserRouter([
   {
     path: "test",
     element:
       <>
-        <OrderProduct />
-        <CardProduct />,
-        <ScrollToTop />,
+        <DropdownProfile />
       </>
   },
   {
@@ -64,7 +61,7 @@ const router = createBrowserRouter([
       </>
   },
   {
-    path: "product",
+    path: "products",
     element: 
     <>
         <Product />,
@@ -72,7 +69,7 @@ const router = createBrowserRouter([
       </>,
   },
   {
-    path: "order",
+    path: "products/:id",
     element: 
       <>
         <Order />,
