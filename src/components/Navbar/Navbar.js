@@ -4,7 +4,6 @@ import Unauthenticated from "./unauthenticated";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import CoffeeLogo from "../../assets/coffeeLogo.svg"
-// import Search from "../../assets/product/search.svg"
 
 const Navbar = ({status}) => {
   // State untuk hamburger button

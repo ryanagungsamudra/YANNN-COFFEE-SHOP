@@ -11,22 +11,14 @@ import Order from './pages/order/Order';
 import Payment from './pages/payment/Payment';
 import History from './pages/history/History';
 import ErrorPage from './pages/error-page';
-
 import ScrollToTop from './components/utility/ScrollToTop';
+
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import DropdownProfile from './components/auth/conditional-rendering/DropdownProfile';
 
 const router = createBrowserRouter([
-  {
-    path: "test",
-    element:
-      <>
-        <DropdownProfile />
-      </>
-  },
   {
     path: "/",
     element: 

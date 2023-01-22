@@ -1,24 +1,49 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './main.css'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
 
 import Promo_1 from "../../assets/product/promo-1.svg"
 import Promo_2 from "../../assets/product/promo-2.svg"
 import Promo_3 from "../../assets/product/promo-3.svg"
 import Promo_4 from "../../assets/product/promo-4.svg"
-import CardProduct from './cardProduct'
+// import CardProduct from './cardProduct'
+import Search from "../../assets/product/search.svg"
+import LoadingProduct from './loadingProduct'
 
 function Main() {
+    const [data, setData] = useState([]);
+    // const [refetch, setRefetch] = useState(false);
+    const [keyword, setKeyword] = useState('');
+
+    useEffect(() => {
+        axios
+            .get(`http://localhost:5000/api/products?search=${keyword}`)
+            .then((res) => {
+                setData(res.data.data);
+            })
+            .catch((err) => {
+                console.log(err);
+            });
+    }, [keyword])
+
     return (
         <main style={{ marginTop: '6rem' }}>
             <div className="container">
                 <div className="row">
                     {/* LEFT SIDE */}
+
                     <div className="col-lg-4 border-end border-2 text-center ms-3 ms-lg-0">
                         <h4 className="s-1-product me-4 me-lg-0" style={{ marginTop: '60px' }}>Promo Today</h4>
                         <p className="s-2-product pt-3 me-4 me-lg-0" style={{ marginBottom: '60px' }}>Coupons will be updated every weeks. <br />Check them out!</p>
+                        
+                        <div className="searchBox" style={{ marginLeft: '1.4rem', marginTop: '-2rem' }}>
+                            <input type="text" placeholder="Search Anything You Want..." onChange={(e) => setKeyword(e.target.value)} />
+                            <img src={Search} alt="searchBox" />
+                        </div>
+
                         {/* Promo Card Start */}
-                        <div>
+                        <div style={{marginTop: '7rem'}}>
                             <div className="box-card-1-product popup-scale">
                                 <div className="container-fluid">
                                     <div className="row">
@@ -102,8 +127,27 @@ function Main() {
                             </li>
                         </ul>
                         {/* Navs & Tabs End */}
+
                         {/* Card-Product Start */}
-                        <CardProduct />
+                        <div className="container">
+                            <div className="row row-cols-1 row-cols-md-4 g-4 mt-5">
+                                {data.length === 0 ? (<LoadingProduct />) : data.map((item) => {
+                                    const img = `http://localhost:5000/uploads/images/${item.images[0].filename}`
+                                    return (
+                                        <div key={item.id} className="col-lg-3 col-6 text-start my-5 popup">
+                                            <div className="card card-product" style={{ height: '212px', width: '156px' }}>
+                                                <img src={img} className="card-img-product" alt="card" style={{ margin: '-40px 0 0 -35px' }} />
+                                                <div className="card-body text-center">
+                                                    <h5 className="card-title-product" style={{ marginTop: '-100px' }}>{item.title}</h5>
+                                                    <p className="s-4-product" style={{ marginTop: '-10px' }}>{item.price}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    )
+                                })}
+                            </div>
+                        </div>
+                        {/* <CardProduct /> */}
                         <p className="s-5-product ms-3">*the price has been cutted by discount appears</p>
                         {/* Card-Product End */}
                     </div>

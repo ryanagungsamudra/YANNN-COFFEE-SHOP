@@ -32,7 +32,7 @@ function MainLogin() {
         })
     }
 
-    // console.log(localStorage.getItem('@userLogin'))
+    // Ini digunakan untuk private route, ketika user sudah login maka tidak bisa lagi ke login page
     useEffect(() => {
         if (localStorage.getItem('@userLogin')) {
             navigate('/products')

@@ -9,7 +9,7 @@ function Home() {
 
     return (
         <>
-            <Navbar AuthShown={true} status={status}/>
+            <Navbar status={status}/>
             <SectionOne />
             <InfoPanelFirst />
             <SectionTwo />

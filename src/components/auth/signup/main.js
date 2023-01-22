@@ -1,10 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../login/main.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import CoffeeLogo from "../../../assets/coffeeLogo.svg"
 import GoogleLogo from "../../../assets/login/googleLogo.svg"
 
 function MainSignup() {
+    // Ini digunakan untuk private route, ketika user sudah login maka tidak bisa lagi ke signup page
+    const navigate = useNavigate()
+    useEffect(() => {
+        if (localStorage.getItem('@userLogin')) {
+            navigate('/products')
+        }
+    }, [navigate])
+
     return (
         <main>
             <div className="row">
