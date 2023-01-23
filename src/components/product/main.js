@@ -17,6 +17,9 @@ function Main() {
     // Load search data product
     const [searchData, setSearchData] = useState([]);
     const [keyword, setKeyword] = useState('');
+    // Pagination
+    const [pageLimit] = useState(2)
+    const [currentPage, setCurrentPage] = useState(1)
 
     // get data product
     useEffect(() => {
@@ -25,15 +28,15 @@ function Main() {
             .catch((err) => console.log(err))
     }, [])
     // get search data product
-    useEffect( () => {
-        axios.get(`http://localhost:5000/api/products?search=${keyword}`)
-            .then((res) => {
-                setSearchData(res.data.data);
-            })
-            .catch((err) => {
-                console.log(err);
-            });
-    }, [keyword])
+    // useEffect( () => {
+    //     axios.get(`http://localhost:5000/api/products?search=${keyword}`)
+    //         .then((res) => {
+    //             setSearchData(res.data.data);
+    //         })
+    //         .catch((err) => {
+    //             console.log(err);
+    //         });
+    // }, [keyword])
     // get sort data product
     const handleSort = async (e) => {
         let value = e.target.value
@@ -52,6 +55,68 @@ function Main() {
                 setSearchData(response.data.data)
             })
             .catch((err) => console.log(err))
+    }
+    // Pagination and search
+    useEffect(() => {
+        loadProductData(2, 1, 0)
+    }, [keyword])
+    const loadProductData = async (limit, page, increase) => {
+        axios.get(`http://localhost:5000/api/products?search=${keyword}&limit=${limit}&page=${page}`)
+            .then((res) => {
+                setSearchData(res.data.data);
+                setCurrentPage(currentPage + increase)
+            })
+            .catch((err) => {
+                console.log(err);
+            });
+    }
+    const renderPagination = () => {
+        if (currentPage === 1) {
+            // console.log(currentPage);
+            return (
+                <nav aria-label="Page navigation example">
+                    <ul className="pagination justify-content-center">
+                        <li className="page-item">
+                            <Link to="#" className="page-link">1</Link>
+                        </li>
+                        <li className="page-item">
+                            <Link to="#" className="page-link" onClick={() => loadProductData(2,2,1)}>Next</Link>
+                        </li>
+                    </ul>
+                </nav>
+            )
+        } else if (currentPage > pageLimit - 1 && searchData.length === pageLimit) {
+            // console.log(currentPage);
+            return (
+                <nav aria-label="Page navigation example">
+                    <ul className="pagination justify-content-center">
+                        <li className="page-item">
+                            <Link to="#" className="page-link" onClick={() => loadProductData(2, (currentPage - 1), -1)}>Previous</Link>
+                        </li>
+                        <li className="page-item">
+                            <Link to="#" className="page-link">{currentPage}</Link>
+                        </li>
+                        <li className="page-item">
+                            <Link to="#" className="page-link" onClick={() => loadProductData(2, (currentPage + 1), +1)}>Next</Link>
+                        </li>
+                    </ul>
+                </nav>
+            )
+        } else {
+            // console.log(currentPage);
+            return (
+                <nav aria-label="Page navigation example">
+                    <ul className="pagination justify-content-center">
+                        <li className="page-item">
+                            <Link to="#" className="page-link" onClick={() => loadProductData(2, (currentPage - 1), -1)}>Previous</Link>
+                        </li>
+                        <li className="page-item">
+                            <Link to="#" className="page-link">{currentPage}</Link>
+                        </li>
+                    </ul>
+                </nav>
+            )
+        }
     }
 
     // Handle server error or data not found!
@@ -193,19 +258,7 @@ function Main() {
                             </div>
                         </div>
                         {/* Pagination start */}
-                        <nav aria-label="Page navigation example">
-                            <ul className="pagination justify-content-center">
-                                <li className="page-item">
-                                    <a className="page-link">Previous</a>
-                                </li>
-                                <li className="page-item"><a className="page-link" href="#">1</a></li>
-                                <li className="page-item"><a className="page-link" href="#">2</a></li>
-                                <li className="page-item"><a className="page-link" href="#">3</a></li>
-                                <li className="page-item">
-                                    <a className="page-link" href="#">Next</a>
-                                </li>
-                            </ul>
-                        </nav>
+                        {renderPagination()}
                         {/* Pagination end */}
                         <p className="s-5-product ms-3">*the price has been cutted by discount appears</p>
                         {/* Card-Product End */}
