@@ -11,9 +11,20 @@
   padding-bottom: 28rem;
   color: var(--secondary-color);
 }
+.notfound-loading {
+  width: min(50vw, 350px);
+}
+.notfound-loading.gif {
+  margin-top: -6rem;
+  margin-left: -2rem;
+}
 
 @media screen and (max-width: 576px) {
   .coffee-loading.gif{
+    margin-top: -8rem;
+    margin-left: 5rem;
+  }
+  .notfound-loading.gif {
     margin-top: -8rem;
     margin-left: 5rem;
   }

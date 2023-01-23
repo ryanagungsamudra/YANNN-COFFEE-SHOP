@@ -16,9 +16,9 @@ function MainLogin() {
     const [validate, setValidate] = useState({ error: false, message: '' })
     const navigate = useNavigate()
 
-    const handleLogin = (event) => {
+    const handleLogin = async (event) => {
         event.preventDefault()
-        axios({
+        return await axios({
             url: 'http://localhost:5000/api/auth/login',
             method: 'POST',
             data: loginForm

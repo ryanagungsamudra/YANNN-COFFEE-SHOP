@@ -1,12 +1,37 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../login/main.css'
 import { Link, useNavigate } from 'react-router-dom'
 import CoffeeLogo from "../../../assets/coffeeLogo.svg"
 import GoogleLogo from "../../../assets/login/googleLogo.svg"
+import axios from 'axios'
 
 function MainSignup() {
-    // Ini digunakan untuk private route, ketika user sudah login maka tidak bisa lagi ke signup page
+    const [signupForm, setSignupForm] = useState({
+        email: '',
+        password: '',
+        mobile_number: ''
+    })
+    const [validate, setValidate] = useState({ error: false, message: '' })
     const navigate = useNavigate()
+
+    const handleSignup = async (event) => {
+        event.preventDefault()
+        return await axios({
+            url: 'http://localhost:5000/api/auth/register',
+            method: 'POST',
+            data: signupForm
+        }).then((res) => {
+            // console.log(res.data.data);
+            localStorage.setItem('@userLogin', JSON.stringify(res.data.data))
+            alert(res.data.data)
+            navigate('/products')
+        }).catch((err) => {
+            // console.log(err);
+            setValidate({ error: true, message: err.response.data.errors })
+        })
+    }
+
+    // Ini digunakan untuk private route, ketika user sudah login maka tidak bisa lagi ke signup page
     useEffect(() => {
         if (localStorage.getItem('@userLogin')) {
             navigate('/products')
@@ -71,18 +96,35 @@ function MainSignup() {
                             </div>
                         </div>
                         {/* FORM START */}
-                        <form name="signUpForm">
+                        <form onSubmit={handleSignup} name="signUpForm">
+                            {validate.error && (
+                                <div className="alert alert-danger" role="alert" style={{ borderRadius: '15px', marginTop: '-2rem' }}>
+                                    {validate.message}
+                                </div>
+                            )}
                             <div className="mb-3">
                                 <label htmlFor="exampleInputEmail1" className="form-label s-md-auth">Email Address :</label>
-                                <input name="email" type="email" className="form-control py-3" id="emailSignUp" aria-describedby="emailHelp" placeholder="Enter your email adress" />
+                                <input name="email" type="email" className="form-control py-3" id="emailSignUp" aria-describedby="emailHelp" placeholder="Enter your email adress" 
+                                    onChange={(e) => setSignupForm({
+                                        ...signupForm,
+                                        email: e.target.value
+                                    })}/>
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="exampleInputPassword1" className="form-label s-md-auth">Password :</label>
-                                <input name="password" type="password" className="form-control py-3" id="passwordSignUp" placeholder="Enter your password" />
+                                <input name="password" type="password" className="form-control py-3" id="passwordSignUp" placeholder="Enter your password" 
+                                    onChange={(e) => setSignupForm({
+                                        ...signupForm,
+                                        password: e.target.value
+                                    })}/>
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="exampleInputPassword1" className="form-label s-md-auth">Phone Number :</label>
-                                <input name="mobileNumber" type="number" className="form-control py-3" id="mobileNumberSignUp" placeholder="Enter your phone number" />
+                                <input name="mobileNumber" type="number" className="form-control py-3" id="mobileNumberSignUp" placeholder="Enter your phone number" 
+                                    onChange={(e) => setSignupForm({
+                                        ...signupForm,
+                                        mobile_number: e.target.value
+                                    })}/>
                             </div>
                             <div className="mb-3 form-check" />
                             {/* desktop version */}

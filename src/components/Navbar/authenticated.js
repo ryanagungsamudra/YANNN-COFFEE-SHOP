@@ -1,5 +1,5 @@
 import DarkMode from "../utility/DarkMode";
-import DropdownProfile from "../auth/conditional-rendering/DropdownProfile";
+import DropdownProfile from "./conditional-rendering/DropdownProfile";
 
 // import Search from "../../assets/product/search.svg"
 

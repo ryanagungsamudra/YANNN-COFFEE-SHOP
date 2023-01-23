@@ -111,3 +111,74 @@
 }
 
 /* styling end */
+
+/* Expandable search bar start */
+.searchBox {
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    margin-left: 7.3rem;
+    margin-top: -3.1rem;
+}
+
+.form-select.product {
+    color: var(--carousel-color);
+    background-color: var(--panel-color);
+    width: 20.5%;
+    height: 50px;
+    border-radius: 20px;
+    margin-left: 35.2rem;
+    margin-top: 3rem;
+}
+.form-select.product:hover {
+    color: var(--hover-color);
+    transition: 1s;
+    font-weight: 400;
+}
+
+.searchBox input {
+    position: absolute;
+    width: 172%;
+    height: 94%;
+    border: 1px solid #ced4da;
+    padding: 0px 25px;
+    outline: none;
+    font-size: 1em;
+    border-radius: 20px;
+    color: var(--carousel-color);
+    background-color: var(--panel-color);
+    margin-left: 1.4rem;
+}
+
+.searchBox:hover input::placeholder,
+.searchBox:hover input {
+    color: var(--hover-color);
+    transition: 1s;
+    font-weight: 400;
+}
+
+.searchBox img {
+    position: absolute;
+    right: -11.3rem;
+    color: #555;
+    font-size: 1.5em;
+    cursor: pointer;
+    width: 59%;
+    height: 59%;
+}
+
+/* Expandable search bar end */
+
+/* pagination */
+.page-link {
+    color: var(--secondary-color);
+    font-size: 18px;
+    background-color: var(--panel-color);
+}
+.page-link:hover {
+    color: #555;
+}

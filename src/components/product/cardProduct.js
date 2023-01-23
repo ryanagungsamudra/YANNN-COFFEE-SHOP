@@ -1,15 +1,15 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import LoadingProduct from './loadingProduct'
+import LoadingProduct from './errorHandling'
 
 function CardProduct() {
 
     const [dataProduct, setDataProduct] = useState([])
     useEffect(() => {
         axios.get('http://localhost:5000/api/products')
-        .then(res => setDataProduct(res.data.data))
-        .catch((err) => console.log(err))
+            .then(res => setDataProduct(res.data.data))
+            .catch((err) => console.log(err))
     }, [])
 
     return (
