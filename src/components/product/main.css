@@ -112,6 +112,41 @@
 
 /* styling end */
 
+@media (max-width: 700px) {
+    .searchBox.mobile {
+        position: absolute;
+        width: 137px;
+        height: 50px;
+        margin-left: 3.8rem;
+        margin-top: -3.15rem;
+    }
+    .searchBox.mobile img {
+        position: absolute;
+        right: -4.3rem;
+        color: #555;
+        font-size: 1.5em;
+        cursor: pointer;
+        width: 59%;
+        height: 59%;
+    }
+    .searchBox.mobile input::placeholder {
+        font-size: 13px;
+        position: absolute;
+        top: 15px;
+        right: 50px;
+    }
+    .form-select.product.mobile {
+        font-size: 13px;
+        color: var(--carousel-color);
+        background-color: var(--panel-color);
+        width: 21.5%;
+        height: 50px;
+        border-radius: 20px;
+        margin-left: 16.9rem;
+        margin-top: 1rem;
+    }
+}
+
 /* Expandable search bar start */
 .searchBox {
     position: absolute;

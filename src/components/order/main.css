@@ -1,3 +1,19 @@
+@media screen and (max-width : 576px) {
+    .leftcontent-order.mobile {
+        padding-bottom: 0rem;
+    }
+    .s-7-order.mobile {
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .s-8-order.mobile {
+        font-weight: 400;
+        font-size: 18px;
+    }
+}
+.leftcontent-order {
+    padding-bottom: 3rem;
+}
 /* main start */
 .tab-link {
     color: var(--primary-color);
@@ -20,7 +36,6 @@
 }
 
 .hero-order-desktop {
-    background-image: url(../../assets/product-detail/hero.png);
     background-size: cover;
     height: 26.563rem;
     width: 26.563rem;
@@ -28,11 +43,11 @@
 }
 
 .hero-order-mobile {
-    background-image: url(../../assets/product-detail/hero.png);
     background-size: cover;
     height: 21rem;
     width: 21rem;
     margin-left: -1.4rem;
+    margin-top: -1rem;
 }
 .container-order {
     background-color: var(--panel-color);
@@ -130,7 +145,7 @@
     font-size: 50px;
     font-weight: 900;
     color: var(--secondary-color);
-    margin-top: -35px;
+    margin-top: -5.5rem;
 }
 
 .s-2-order {
