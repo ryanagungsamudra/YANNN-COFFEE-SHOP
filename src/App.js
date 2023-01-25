@@ -10,8 +10,12 @@ import Products from './pages/product/Product';
 import Order from './pages/order/Order';
 import Payment from './pages/payment/Payment';
 import History from './pages/history/History';
+import Dashboard from './pages/admin/Dashboard';
+import AddProduct from './pages/admin/AddProduct';
+
 import InvalidRoute from './pages/InvalidRoute';
 import ScrollToTop from './components/utility/ScrollToTop';
+import EditProduct from './pages/admin/EditProduct';
 
 function App() {
   return (
@@ -27,35 +31,28 @@ function App() {
 
             {/* Private Route */}
             {/* <Route element={<PrivateRoute />}> */}
-                {/* <Route element={<AdminOnly />}>
-                    <Route path='dashboard' element={<Dashboard />} />
-                    <Route path='product/add' element={<Addproduct />} />
-                    <Route path='product/edit/:id' element={<Editproduct />} />
-                    <Route path='order' element={<ManageOrder />} />
-                    <Route path='addpromo' element={<Addpromo />} />
-                    <Route path='editpromo/:id' element={<Editpromo />} />
-                </Route>
-                <Route path='dashboard' element={<Dashboard />} /> */}
-                {/* <Route element={<UserOnly />}> */}
-                    <Route path='payment' element={<Payment />}></Route>
-                {/* </Route> */}
+            {/* <Route element={<AdminOnly />}> */}
+                <Route path='dashboard' element={<Dashboard />} />
+                <Route path='addproducts' element={<AddProduct />} />
+                <Route path='editproducts' element={<EditProduct />} />
+                {/* <Route path='order' element={<ManageOrder />} /> */}
+                {/* <Route path='addpromo' element={<Addpromo />} /> */}
+                {/* <Route path='editpromo/:id' element={<Editpromo />} /> */}
+            {/* </Route> */}
+
+            {/* <Route element={<UserOnly />}> */}
+                <Route path='payment' element={<Payment />} />
                 {/* <Route path='profile' element={<Profile />} /> */}
                 {/* <Route path='chat' element={<Chat />} /> */}
                 {/* <Route path='room-chat' element={<RoomChat />} /> */}
-                <Route path='history' element={<History />}></Route>
+                <Route path='history' element={<History />} />
             {/* </Route> */}
             
             <Route path='404' element={<InvalidRoute />} />
             <Route path='*' exact element={<Navigate to='404' />} />
             <Route path='/' element={<Home/>}></Route>
-            <Route path='products' element={<Products/>}>
-                {/* <Route path="favourite" element={<ProductFavourite />} />
-                <Route path="coffee" element={<ProductCoffee />} />
-                <Route path="noncoffee" element={<ProductNonCoffee />} />
-                <Route path="foods" element={<ProductFoods />} />
-                <Route path="addon" element={<ProductAddOn />} /> */}
-            </Route>
-            <Route path='products/detail/:id' element={<Order/>}></Route>
+            <Route path='products' element={<Products/>} />
+            <Route path='products/detail/:id' element={<Order/>} />
         </Routes>
     </BrowserRouter>
   )

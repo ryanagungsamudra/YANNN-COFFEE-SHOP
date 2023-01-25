@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import '../login/main.css'
 import { Link, useNavigate } from 'react-router-dom'
 import CoffeeLogo from "../../../assets/coffeeLogo.svg"
@@ -6,6 +6,7 @@ import GoogleLogo from "../../../assets/login/googleLogo.svg"
 import axios from 'axios'
 
 function MainSignup() {
+    const url = process.env.REACT_APP_HOST
     const [signupForm, setSignupForm] = useState({
         email: '',
         password: '',
@@ -17,7 +18,7 @@ function MainSignup() {
     const handleSignup = async (event) => {
         event.preventDefault()
         return await axios({
-            url: 'http://localhost:5000/api/auth/register',
+            url: `${url}/api/auth/register`,
             method: 'POST',
             data: signupForm
         }).then((res) => {
@@ -30,13 +31,6 @@ function MainSignup() {
             setValidate({ error: true, message: err.response.data.errors })
         })
     }
-
-    // Ini digunakan untuk private route, ketika user sudah login maka tidak bisa lagi ke signup page
-    useEffect(() => {
-        if (localStorage.getItem('@userLogin')) {
-            navigate('/products')
-        }
-    }, [navigate])
 
     return (
         <main>

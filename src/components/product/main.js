@@ -26,25 +26,15 @@ function Main() {
 
     // get data product
     useEffect(() => {
-        axios.get(`${url}/products`)
+        axios.get(`${url}/api/products`)
             .then(res => setDataProduct(res.data.data))
             .catch((err) => console.log(err))
     }, [])
-    // get search data product
-    // useEffect( () => {
-    //     axios.get(`${url}/products?search=${keyword}`)
-    //         .then((res) => {
-    //             setSearchData(res.data.data);
-    //         })
-    //         .catch((err) => {
-    //             console.log(err);
-    //         });
-    // }, [keyword])
     // get sort data product
     const handleSort = async (e) => {
         let value = e.target.value
         return await axios
-            .get(`${url}/products?search=${keyword}&sortBy=${value}&limit=${pageLimit}&page=1`)
+            .get(`${url}/api/products?search=${keyword}&sortBy=${value}&limit=${pageLimit}&page=1`)
             .then((response) => {
                 setSearchData(response.data.data)
             })
@@ -53,7 +43,7 @@ function Main() {
     // Category
     const category = async (value) => {
         return await axios
-            .get(`${url}/products?category=${value}`)
+            .get(`${url}/api/products?category=${value}`)
             .then((response) => {
                 setSearchData(response.data.data)
             })
@@ -65,7 +55,7 @@ function Main() {
     }, [keyword])
     const loadProductData = async (limit, page, increase) => {
         return await axios
-            .get(`${url}/products?search=${keyword}&limit=${limit}&page=${page}`)
+            .get(`${url}/api/products?search=${keyword}&limit=${limit}&page=${page}`)
             .then((res) => {
                 setSearchData(res.data.data);
                 setCurrentPage(currentPage + increase)
@@ -141,7 +131,7 @@ function Main() {
             <div className="container" style={{ marginTop: '-1rem' }}>
                 <div className="row row-cols-1 row-cols-md-4 g-4 mt-5">
                     {searchData.length === 0 ? isLoad() : searchData.map((item) => {
-                        const img = `http://localhost:5000/uploads/images/${item.images[0].filename}`
+                        const img = `${url}/uploads/images/${item.images[0].filename}`
                         const idProduct = item.images[0].id_product;
                         // console.log(item.images[0].id_product);
                         return (
@@ -253,23 +243,23 @@ function Main() {
                                 <img src={Search} alt="searchBox" />
                             </div>
                             {/* search bar end */}
-                        
+
                         {/* Navs & Tabs Start*/}
                         <ul className="nav justify-content-center mt-4">
                             <li className="nav-item">
-                                <Link to="#" onClick={() => loadProductData(pageLimit, 1, 0)} className="nav-link active" style={{ fontSize: '20px', fontWeight: 700 }} aria-current="page">Favorite &amp; Promo</Link>
+                                <Link to="#" onClick={() => loadProductData(pageLimit, 1, 0)} className='nav-link products'>Favorite &amp; Promo</Link>
                             </li>
                             <li className="nav-item mx-3">
-                                <Link to="#" onClick={() => category("Coffee")} className="nav-link" style={{ fontSize: '20px', fontWeight: 400, color: '#9F9F9F' }}>Coffee</Link>
+                                <Link to="#" onClick={() => category("Coffee")} className='nav-link products'>Coffee</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="#" onClick={() => category("Non Coffee")} className="nav-link" style={{ fontSize: '20px', fontWeight: 400, color: '#9F9F9F' }}>Non Coffee</Link>
+                                <Link to="#" onClick={() => category("Non Coffee")} className='nav-link products'>Non Coffee</Link>
                             </li>
                             <li className="nav-item mx-3">
-                                <Link to="#" onClick={() => category("Foods")}  className="nav-link" style={{ fontSize: '20px', fontWeight: 400, color: '#9F9F9F' }}>Foods</Link>
+                                <Link to="#" onClick={() => category("Foods")} className='nav-link products'>Foods</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="#" onClick={() => category("Add On")}  className="nav-link" style={{ fontSize: '20px', fontWeight: 400, color: '#9F9F9F' }}>Add-on</Link>
+                                <Link to="#" onClick={() => category("Add On")} className='nav-link products'>Add-on</Link>
                             </li>
                         </ul>
                         {/* Navs & Tabs End */}

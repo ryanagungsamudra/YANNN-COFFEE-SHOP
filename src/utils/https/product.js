@@ -1,5 +1,5 @@
 import axios from 'axios';
-const url = process.env.REACT_APP_HOST + '/products';
+const url = process.env.REACT_APP_HOST + 'api/products';
 
 export const searchList = (filter) => {
     const urlSearch = url + '/search' + filter;

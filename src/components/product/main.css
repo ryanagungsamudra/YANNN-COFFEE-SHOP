@@ -1,3 +1,16 @@
+.nav-link.products {
+    color: #9F9F9F;
+    font-size: 20px;
+    font-weight: 400;
+}
+.nav-link.products:hover {
+    color: var(--hover-color);
+    font-weight: 500;
+    transform: scale(1.1);
+    transition-delay: 70ms;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
 /* Main Start */
 .box-card-1-product {
     border-radius: 20px;

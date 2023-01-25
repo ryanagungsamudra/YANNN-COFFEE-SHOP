@@ -1,0 +1,1340 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,600&display=swap');
+.input-file-btn input[type="file"] {
+    display: none;
+}
+
+.input-file-btn label {
+    /* color: black; */
+    height: 70px;
+    width: 100%;
+    background-color: "yellow";
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-file-edit-btn {
+    /* color: black; */
+    height: 70px;
+    width: 100%;
+    background-color: "yellow";
+    position: absolute;
+    z-index: 2;
+    /* left: 20%; */
+    top: 16%;
+    left: 21rem;
+    background-color: brown;
+}
+
+.img-edit-promo {
+    /* display: none; */
+    /* background-color: transparent; */
+    /* width: 100px; */
+    left: 21rem;
+    cursor: pointer;
+    z-index: 3;
+    opacity: 0.1;
+    position: absolute;
+}
+
+.img-edit-promo input[type="file"] {
+    display: none;
+}
+
+.Add-product-wrapper {
+    margin: 50px auto auto auto;
+    width: 100%;
+    border-top: 1px solid rgba(145, 145, 145, 0.63);
+}
+
+.breadcrumb {
+    background-color: white;
+    padding-left: 100px;
+}
+
+.breadcrumb>li+li:before {
+    content: "\3E"/* Hex code for > */
+}
+
+.breadcrumb-page {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    color: #4F5665;
+}
+
+.active-page {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #6A4029;
+}
+
+.add-product-content {
+    margin: auto;
+    width: 95%;
+}
+
+.add-product-content aside {
+    margin: auto;
+    text-align: center;
+}
+
+.add-image {
+    width: 300px;
+    height: 300px;
+    margin: auto auto 20px auto;
+    border-radius: 48%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.btn-take-picture {
+    width: 70%;
+    height: 80px;
+    background-color: #0B132A;
+    border-radius: 20px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    margin: 20px auto;
+}
+
+.btn-add-byGallery {
+    margin: 20px auto;
+    height: 80px;
+    border-radius: 20px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.btn-save-changes {
+    margin: 20px auto;
+    height: 80px;
+    border-radius: 20px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.btn-add-toCart {
+    /* margin: 20px auto; */
+    height: 80px;
+    border-radius: 20px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.margin-additional {
+    margin-top: 30px;
+}
+
+.btn-width-container {
+    width: 70%;
+}
+
+.aside-title-input {
+    width: 90%;
+    text-align: left;
+    margin: auto;
+}
+
+.add-product-title {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #6A4029;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.start-hour-btn {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1rem;
+    text-align: left;
+    color: #9F9F9F;
+    width: 70%;
+    margin: 10px auto;
+    height: 80px;
+    background-color: white;
+    border: 1px solid #9F9F9F;
+    border-radius: 20px;
+}
+
+.start-hour-btn-coupon {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1rem;
+    text-align: left;
+    color: #9F9F9F;
+    width: 80%;
+    margin: 10px auto;
+    height: 80px;
+    background-color: white;
+    border: 1px solid #9F9F9F;
+    border-radius: 20px;
+}
+
+.start-hour-btn-coupon-discount {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1rem;
+    text-align: left;
+    color: #9F9F9F;
+    width: 100%;
+    margin: 10px auto;
+    height: 80px;
+    background-color: white;
+    border: 1px solid #9F9F9F;
+    border-radius: 20px;
+}
+
+.add-product-input {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #9F9F9F;
+}
+
+.add-code-input {
+    /* border: none; */
+    border: 1px solid #9F9F9F;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.add-product-input:focus {
+    border-bottom: 2px solid #e9a317;
+}
+
+.btn-radio {
+    width: 70px;
+    height: 70px;
+    font-size: 1.5rem;
+    border-radius: 35px;
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+    margin: 10px;
+    /* padding: auto; */
+}
+
+.textSize {
+    /* margin-top: auto;
+    margin-bottom: auto; */
+    font-size: 2rem;
+}
+
+.btn-radio-load {
+    width: 70px;
+    height: 70px;
+    font-size: 1rem;
+    border-radius: 35px;
+    background-color: rgba(186, 186, 186, 0.35);
+    text-align: center;
+    font-weight: bolder;
+    color: #4F5665;
+    margin: 10px;
+}
+
+.form-desc {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    color: #9F9F9F;
+}
+
+.btn-width-form-input-add {
+    width: max(150px, 30%);
+}
+
+.btn-take-away {
+    margin: 20px auto;
+    height: 80px;
+    border-radius: 20px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: rgba(186, 186, 186, 0.35);
+    color: #4F5665;
+}
+
+.font-brown-color {
+    color: #6A4029;
+}
+
+.font-white-color {
+    color: white;
+}
+
+.btn-yellow-color {
+    background-color: #FFBA33;
+}
+
+.btn-brown-color {
+    background-color: #6A4029;
+    box-shadow: 0px 6px 20px rgba(106, 64, 41, 0.4);
+}
+
+
+/* EDIT PRODUCT */
+
+.edit-product-input {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3rem;
+    color: #000000;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #9F9F9F;
+    width: 70%;
+}
+
+.edit-product-input:focus {
+    border-bottom: 2px solid #e9a317;
+}
+
+.edit-product-input::placeholder {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3rem;
+    color: #000000;
+}
+
+.edit-product-input-price {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: #000000;
+    width: 70%;
+}
+
+.edit-product-input-price::placeholder {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: #000000;
+}
+
+.description-product-input {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3rem;
+    color: #000000;
+    width: 70%;
+}
+
+.description-product-inpute::placeholder {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3rem;
+    color: #000000;
+}
+
+.save-change-btn {
+    width: 70%;
+    float: left;
+}
+
+.count-wrapper {
+    width: 89px;
+    height: 66px;
+    margin: auto 10px auto 0;
+    align-items: center;
+    text-align: center;
+    background-color: #FFFFFF;
+    border: 1px solid #9F9F9F;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.edit-product-btn-count {
+    margin: auto;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: #9F9F9F;
+}
+
+.edit-product-number {
+    margin: auto;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #000000;
+}
+
+.edit-image {
+    width: 100%;
+    height: max(100%, 600px);
+    margin: auto auto 20px auto;
+}
+
+.product-img-edit {
+    width: 100%;
+    height: max(100%, 600px);
+    position: relative;
+}
+
+.change-img-btn {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    border-radius: 35px;
+    border: 0.5rem solid #e9a317;
+}
+
+.bi-trash {
+    font-size: 2rem;
+}
+
+.product-time-desc {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3rem;
+    text-align: left;
+    color: #000000;
+}
+
+.card-coupon-edit {
+    width: 80%;
+    margin: auto;
+    height: 650px;
+    background-color: #FFCB65;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+    vertical-align: baseline;
+}
+
+.coupon-edit-card-title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.3rem;
+    margin: auto 20px;
+    text-align: center;
+    color: #000000;
+}
+
+.coupon-edit-card-desc-title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    color: #000000;
+}
+
+.coupon-edit-card-desc-product {
+    margin: 20px 30px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #000000;
+}
+
+.coupon-edit-card-regulation {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #000000;
+}
+
+.dashed {
+    border-top: 3px dashed rgb(7, 7, 7);
+}
+
+.coupon-edit-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 90px;
+    border: none;
+    margin: 30px auto;
+    display: relative;
+}
+
+.change-promo-img-btn {
+    position: absolute;
+    top: 172px;
+    right: 168px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: #6A4029;
+    color: white;
+}
+
+.btn-cancel-edit-promo {
+    height: 30px;
+    text-align: center;
+    padding-bottom: 3px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration-line: underline;
+    color: #6A4029;
+    background-color: white;
+}
+
+.title-dashboard {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 50px;
+    /* identical to box height, or 167% */
+    text-align: center;
+    color: #6A4029;
+}
+
+.btn-downlaod-report {
+    width: 100%;
+    height: 70px;
+    margin: 30px auto;
+    background-color: #6A4029;
+    box-shadow: 0px 6px 20px rgba(106, 64, 41, 0.6);
+    border-radius: 20px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.title-dashboard {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+.title-dashboard-desc {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    text-align: center;
+    color: #7C828A;
+}
+
+@media screen and (max-width: 1024px) {
+    .breadcrumb {
+        padding-left: 20px;
+        font-size: 0.8rem;
+    }
+    .add-image {
+        width: 200px;
+        height: 200px;
+    }
+    .btn-take-picture {
+        width: 90%;
+        font-size: 1rem;
+        margin: 5px;
+    }
+    .btn-add-byGallery {
+        font-size: 0.9rem;
+        width: 100%;
+        border-radius: 10px;
+        height: 60px;
+        margin: 5px;
+    }
+    .btn-add-toCart {
+        font-size: 1rem;
+        width: 90%;
+        border-radius: 10px;
+        height: 40px;
+    }
+    .count-wrapper {
+        height: 43px;
+        margin: auto 19px auto 17px;
+    }
+    .btn-take-picture {
+        font-size: 1rem;
+        width: 90%;
+        border-radius: 10px;
+        height: 60px;
+    }
+    .btn-take-away {
+        font-size: 1rem;
+        width: 100%;
+        border-radius: 10px;
+        height: 60px;
+        margin: 5px;
+    }
+    .start-hour-btn {
+        border-radius: 10px;
+        font-size: 1rem;
+        width: 100%;
+        height: 40px;
+    }
+    .btn-radio {
+        width: 50px;
+        height: 50px;
+        font-size: 1rem;
+    }
+    .btn-radio-load {
+        width: 50px;
+        height: 50px;
+        font-size: 0.8rem;
+    }
+    .add-product-title {
+        font-size: 1rem;
+        text-align: left;
+    }
+    .edit-product-input {
+        font-size: 2rem;
+        width: 90%;
+    }
+    .edit-product-input-price {
+        font-size: 1.5rem;
+        width: 90%;
+    }
+    .description-product-input {
+        font-size: 1rem;
+        width: 90%;
+    }
+    .card-coupon-edit {
+        width: 100%;
+    }
+    .coupon-edit-img {
+        width: 140px;
+        height: 140px;
+        border-radius: 80px;
+        margin-top: 20%;
+    }
+    .dashed {
+        margin: 2rem auto;
+    }
+    .change-promo-img-btn {
+        top: 143px;
+        right: 117px;
+    }
+    .coupon-edit-card-title {
+        font-size: 1.8rem;
+    }
+    .coupon-edit-card-desc-product {
+        font-size: 1rem;
+    }
+    .coupon-edit-card-desc-title {
+        font-size: 1.8rem;
+    }
+    .coupon-edit-card-regulation {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .btn-take-away {
+        font-size: 0.8rem;
+        width: 100%;
+        margin: 5px auto;
+    }
+    .btn-add-byGallery {
+        font-size: 0.8rem;
+        width: 100%;
+        margin: 5px auto;
+    }
+    .start-hour-btn-coupon {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+    .btn-take-picture {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .edit-product-btn-count {
+        font-size: 1rem;
+    }
+    .bi-trash {
+        font-size: 1rem;
+    }
+    .change-img-btn {
+        border: 3px solid #e9a317;
+    }
+    .edit-product-input {
+        font-size: 1.5rem;
+        width: 90%;
+    }
+    .edit-product-input::placeholder {
+        font-size: 1rem;
+    }
+    .edit-product-input-price {
+        font-size: 1rem;
+        width: 90%;
+    }
+    .edit-product-input-price::placeholder {
+        font-size: 1rem;
+    }
+    .description-product-input {
+        font-size: 0.8rem;
+        width: 90%;
+    }
+}
+
+.Add-product-wrapper {
+    margin: 50px auto auto auto;
+    width: 100%;
+    border-top: 1px solid rgba(145, 145, 145, 0.63);
+}
+
+.breadcrumb {
+    background-color: white;
+    padding-left: 100px;
+}
+
+.breadcrumb>li+li:before {
+    content: '\3E';
+    /* Hex code for > */
+}
+
+.breadcrumb-page {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    color: #4f5665;
+}
+
+.active-page {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #6a4029;
+}
+
+.add-product-content {
+    margin: auto;
+    width: 95%;
+}
+
+.add-product-content aside {
+    margin: auto;
+    text-align: center;
+}
+
+.add-image {
+    width: 300px;
+    height: 300px;
+    margin: auto auto 20px auto;
+    border-radius: 48%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.btn-take-picture {
+    width: 70%;
+    height: 80px;
+    background-color: #0b132a;
+    border-radius: 20px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin: 20px auto;
+}
+
+.btn-add-byGallery {
+    margin: 20px auto;
+    height: 80px;
+    border-radius: 20px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.btn-save-changes {
+    margin: 20px auto;
+    height: 80px;
+    border-radius: 20px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.btn-add-toCart {
+    /* margin: 20px auto; */
+    height: 80px;
+    border-radius: 20px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.margin-additional {
+    margin-top: 30px;
+}
+
+.btn-width-container {
+    width: 70%;
+}
+
+.aside-title-input {
+    width: 90%;
+    text-align: left;
+    margin: auto;
+}
+
+.add-product-title {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+    /* width: 100%; */
+    width: 69%;
+    color: #6a4029;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.start-hour-btn {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1rem;
+    text-align: left;
+    color: #9f9f9f;
+    width: 70%;
+    margin: 10px auto;
+    height: 80px;
+    background-color: white;
+    border: 1px solid #9f9f9f;
+    border-radius: 20px;
+}
+
+.start-hour-btn-ctg {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1rem;
+    text-align: left;
+    color: #9f9f9f;
+    width: 100%;
+    margin: 10px auto;
+    height: 80px;
+    background-color: white;
+    border: 1px solid #9f9f9f;
+    border-radius: 20px;
+}
+
+.start-hour-btn-coupon {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1rem;
+    text-align: left;
+    color: #9f9f9f;
+    width: 80%;
+    margin: 10px auto;
+    height: 80px;
+    background-color: white;
+    border: 1px solid #9f9f9f;
+    border-radius: 20px;
+}
+
+.start-hour-btn-coupon-discount {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1rem;
+    text-align: left;
+    color: #9f9f9f;
+    width: 100%;
+    margin: 10px auto;
+    height: 80px;
+    background-color: white;
+    border: 1px solid #9f9f9f;
+    border-radius: 20px;
+}
+
+.add-product-input {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #9f9f9f;
+}
+
+.add-product-input:focus {
+    border-bottom: 2px solid #e9a317;
+}
+
+.btn-radio {
+    width: 70px;
+    height: 70px;
+    font-size: 1.5rem;
+    border-radius: 35px;
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+.btn-radio-load {
+    width: 70px;
+    height: 70px;
+    font-size: 1rem;
+    border-radius: 35px;
+    background-color: rgba(186, 186, 186, 0.35);
+    text-align: center;
+    font-weight: bolder;
+    color: #4f5665;
+    margin: 10px;
+}
+
+.form-desc {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    color: #9f9f9f;
+}
+
+.btn-width-form-input-add {
+    width: max(150px, 30%);
+}
+
+.btn-take-away {
+    margin: 20px auto;
+    height: 80px;
+    border-radius: 20px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: rgba(186, 186, 186, 0.35);
+    color: #4f5665;
+}
+
+.font-brown-color {
+    color: #6a4029;
+}
+
+.font-white-color {
+    color: white;
+}
+
+.btn-yellow-color {
+    background-color: #ffba33;
+}
+
+.btn-brown-color {
+    background-color: #6a4029;
+    box-shadow: 0px 6px 20px rgba(106, 64, 41, 0.4);
+}
+
+
+/* EDIT PRODUCT */
+
+.edit-product-input {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3rem;
+    color: #000000;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #9f9f9f;
+    width: 70%;
+}
+
+.edit-product-input:focus {
+    border-bottom: 2px solid #e9a317;
+}
+
+.edit-product-input::placeholder {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3rem;
+    color: #000000;
+}
+
+.edit-product-input-price {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: #000000;
+    width: 70%;
+}
+
+.edit-product-input-price::placeholder {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: #000000;
+}
+
+.description-product-input {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3rem;
+    color: #000000;
+    width: 70%;
+}
+
+.description-product-inpute::placeholder {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3rem;
+    color: #000000;
+}
+
+.save-change-btn {
+    width: 70%;
+    float: left;
+}
+
+.count-wrapper {
+    width: 89px;
+    height: 66px;
+    margin: auto 10px auto 0;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #9f9f9f;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.edit-product-btn-count {
+    margin: auto;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: #9f9f9f;
+}
+
+.edit-product-number {
+    margin: auto;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #000000;
+}
+
+.edit-image {
+    width: 100%;
+    height: max(100%, 600px);
+    margin: auto auto 20px auto;
+}
+
+.product-img-edit {
+    width: 100%;
+    height: max(100%, 600px);
+    position: relative;
+}
+
+.change-img-btn {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    border-radius: 35px;
+    border: 0.5rem solid #e9a317;
+}
+
+.bi-trash {
+    font-size: 2rem;
+}
+
+.product-time-desc {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3rem;
+    text-align: left;
+    color: #000000;
+}
+
+.card-coupon-edit {
+    width: 80%;
+    margin: auto;
+    height: 650px;
+    background-color: #ffcb65;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+    vertical-align: baseline;
+}
+
+.coupon-edit-card-title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.3rem;
+    margin: auto 20px;
+    text-align: center;
+    color: #000000;
+}
+
+.coupon-edit-card-desc-title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    color: #000000;
+}
+
+.coupon-edit-card-desc-product {
+    margin: 20px 30px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #000000;
+}
+
+.coupon-edit-card-regulation {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #000000;
+}
+
+.dashed {
+    border-top: 3px dashed rgb(7, 7, 7);
+}
+
+.coupon-edit-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 90px;
+    border: none;
+    margin: 30px auto;
+    display: relative;
+}
+
+.change-promo-img-btn {
+    position: absolute;
+    top: 172px;
+    right: 168px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: #6a4029;
+    color: white;
+}
+
+.btn-cancel-edit-promo {
+    height: 30px;
+    text-align: center;
+    padding-bottom: 3px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration-line: underline;
+    color: #6a4029;
+    background-color: white;
+}
+
+@media screen and (max-width: 1024px) {
+    .breadcrumb {
+        padding-left: 20px;
+        font-size: 0.8rem;
+    }
+    .add-image {
+        width: 200px;
+        height: 200px;
+    }
+    .btn-take-picture {
+        width: 90%;
+        font-size: 1rem;
+        margin: 5px;
+    }
+    .btn-add-byGallery {
+        font-size: 0.9rem;
+        width: 100%;
+        border-radius: 10px;
+        height: 60px;
+        margin: 5px;
+    }
+    .btn-add-toCart {
+        font-size: 1rem;
+        width: 90%;
+        border-radius: 10px;
+        height: 40px;
+    }
+    .count-wrapper {
+        height: 43px;
+        margin: auto 19px auto 17px;
+    }
+    .btn-take-picture {
+        font-size: 1rem;
+        width: 90%;
+        border-radius: 10px;
+        height: 60px;
+    }
+    .btn-take-away {
+        font-size: 1rem;
+        width: 100%;
+        border-radius: 10px;
+        height: 60px;
+        margin: 5px;
+    }
+    .start-hour-btn {
+        border-radius: 10px;
+        font-size: 1rem;
+        width: 100%;
+        height: 40px;
+    }
+    .btn-radio {
+        width: 50px;
+        height: 50px;
+        font-size: 1rem;
+    }
+    .btn-radio-load {
+        width: 50px;
+        height: 50px;
+        font-size: 0.8rem;
+    }
+    .add-product-title {
+        font-size: 1rem;
+        text-align: left;
+    }
+    .edit-product-input {
+        font-size: 2rem;
+        width: 90%;
+    }
+    .edit-product-input-price {
+        font-size: 1.5rem;
+        width: 90%;
+    }
+    .description-product-input {
+        font-size: 1rem;
+        width: 90%;
+    }
+    .card-coupon-edit {
+        width: 100%;
+    }
+    .coupon-edit-img {
+        width: 140px;
+        height: 140px;
+        border-radius: 80px;
+        margin-top: 20%;
+    }
+    .dashed {
+        margin: 2rem auto;
+    }
+    .change-promo-img-btn {
+        top: 143px;
+        right: 117px;
+    }
+    .coupon-edit-card-title {
+        font-size: 1.8rem;
+    }
+    .coupon-edit-card-desc-product {
+        font-size: 1rem;
+    }
+    .coupon-edit-card-desc-title {
+        font-size: 1.8rem;
+    }
+    .coupon-edit-card-regulation {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .btn-take-away {
+        font-size: 0.8rem;
+        width: 100%;
+        margin: 5px auto;
+    }
+    .btn-add-byGallery {
+        font-size: 0.8rem;
+        width: 100%;
+        margin: 5px auto;
+    }
+    .start-hour-btn-coupon {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+    .btn-take-picture {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .edit-product-btn-count {
+        font-size: 1rem;
+    }
+    .bi-trash {
+        font-size: 1rem;
+    }
+    .change-img-btn {
+        border: 3px solid #e9a317;
+    }
+    .edit-product-input {
+        font-size: 1.5rem;
+        width: 90%;
+    }
+    .edit-product-input::placeholder {
+        font-size: 1rem;
+    }
+    .edit-product-input-price {
+        font-size: 1rem;
+        width: 90%;
+    }
+    .edit-product-input-price::placeholder {
+        font-size: 1rem;
+    }
+    .description-product-input {
+        font-size: 0.8rem;
+        width: 90%;
+    }
+}
+
+.size-selected {
+    border: 2px solid crimson;
+}

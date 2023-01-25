@@ -2,13 +2,14 @@ import React from 'react'
 import './main.css'
 import { Link } from 'react-router-dom'
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import CoffeeLogo from "../../../assets/coffeeLogo.svg"
 import GoogleLogo from  "../../../assets/login/googleLogo.svg"
 
 function MainLogin() {
+    const url = process.env.REACT_APP_HOST
     const [loginForm, setLoginForm] = useState({
         email: '',
         password: ''
@@ -19,7 +20,7 @@ function MainLogin() {
     const handleLogin = async (event) => {
         event.preventDefault()
         return await axios({
-            url: 'http://localhost:5000/api/auth/login',
+            url: `${url}/api/auth/login`,
             method: 'POST',
             data: loginForm
         }).then((res) => {
@@ -31,13 +32,6 @@ function MainLogin() {
             setValidate({ error: true, message: err.response.data.message })
         })
     }
-
-    // Ini digunakan untuk private route, ketika user sudah login maka tidak bisa lagi ke login page
-    useEffect(() => {
-        if (localStorage.getItem('@userLogin')) {
-            navigate('/products')
-        }
-    }, [navigate])
 
     return (
         <div className="row">

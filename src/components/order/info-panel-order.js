@@ -14,7 +14,7 @@ function InfoPanelOrder() {
     let { id } = useParams()
 
     useEffect(() => {
-        axios.get(`${url}/products`)
+        axios.get(`${url}/api/products`)
             .then(res => setDataProduct(res.data.data))
             .catch((err) => err)
     }, [])
@@ -32,7 +32,7 @@ function InfoPanelOrder() {
     return (
         dataProduct.map((item) => {
             if (id === item.id) {
-                const img = `http://localhost:5000/uploads/images/${item.images[0].filename}`
+                const img = `${url}/uploads/images/${item.images[0].filename}`
                 return (
                     <div>
                         {/* Desktop */}
