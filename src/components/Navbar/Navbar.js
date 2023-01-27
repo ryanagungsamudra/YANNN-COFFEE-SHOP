@@ -9,6 +9,30 @@ const Navbar = ({status}) => {
   // State untuk hamburger button
   const [isOpen, setIsOpen] = useState(false);
 
+  // Conditional rendering navbar (admin or user)
+  const isAdmin = () => {
+    const role = localStorage.getItem('@userRole')
+    if (role === 'admin') {
+      return (
+        <>
+          <Link to="/" className={status.Home}>Home</Link>
+          <Link to="/products" className={status.Product}>Product</Link>
+          <Link to="/payment" className={status.Payment}>Order</Link>
+          <Link to="/dashboard" className={status.History}>Dashboard</Link>
+        </>
+      )
+    } else {
+      return (
+        <>
+          <Link to="/" className={status.Home}>Home</Link>
+          <Link to="/products" className={status.Product}>Product</Link>
+          <Link to="/payment" className={status.Payment}>Your Cart</Link>
+          <Link to="/history" className={status.History}>History</Link>
+        </>
+      )
+    }
+  }
+
   return (
     <div className="Navbar fixed-top">
       <div className="container Navbar">
@@ -21,11 +45,7 @@ const Navbar = ({status}) => {
 
         {/* List */}
         <div className={`nav-items ${isOpen && "open"}`}>
-          <Link to="/" className={status.Home}>Home</Link>
-          <Link to="/products" className={status.Product}>Product</Link>
-          <Link to="/payment" className={status.Payment}>Your Cart</Link>
-          <Link to="/history" className={status.History}>History</Link>
-          {/* Auth button on mobile */}
+          {isAdmin()}
           {localStorage.getItem('@userLogin') ? ('') : (
             <div className="auth-nav-items-mobile mx-auto">
               <Link to="/login" className="d-block d-sm-none d-md-none d-lg-none btn btn-light login-mobile mb-2 py-2 ">Login</Link>

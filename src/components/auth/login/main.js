@@ -24,8 +24,9 @@ function MainLogin() {
             method: 'POST',
             data: loginForm
         }).then((res) => {
-            // console.log(res.data.data);
+            // console.log(res.data.data.user.email)
             localStorage.setItem('@userLogin', JSON.stringify(res.data.data))
+            localStorage.setItem('@userRole', (res.data.data.user.role))
             navigate('/products')
         }).catch((err) => {
             // console.log(err.response.data.message);

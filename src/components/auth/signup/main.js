@@ -23,9 +23,8 @@ function MainSignup() {
             data: signupForm
         }).then((res) => {
             // console.log(res.data.data);
-            localStorage.setItem('@userLogin', JSON.stringify(res.data.data))
             alert(res.data.data)
-            navigate('/products')
+            navigate('/login')
         }).catch((err) => {
             // console.log(err);
             setValidate({ error: true, message: err.response.data.errors })

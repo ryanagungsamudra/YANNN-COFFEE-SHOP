@@ -27,17 +27,19 @@ a {
   overflow: hidden;
   cursor: pointer;
   background-color: var(--panel-color);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); */
+  border: 2.5px solid var(--hover-color);
+  
 }
 
 .dropdown-menu-profile{
   position: absolute;
   top: 85px;
-  right: 130px;
+  right: 122px;
   background-color: var(--panel-color);
   border-radius:8px;
   padding: 10px 20px;
-  width: 200px;
+  width: 240px;
   box-shadow: 0 3px 10px var(--carousel-color);
 }
 
@@ -69,19 +71,19 @@ a {
 
 .profile-title {
   width: 100%;
-  text-align: center;
-  font-size: 18px;
-  padding: 20px 0;
+  /* text-align: center; */
+  padding-top: 20px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--secondary-color);
   line-height: 1.2rem;
 }
 
-.profile-title span{
+.profile-status{
   font-size: 14px;
   color: var(--carousel-color);
   font-weight: 400;
+  text-align: center;
 }
 
 .dropdown-menu-profile ul li{

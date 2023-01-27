@@ -125,7 +125,7 @@ function Main() {
             return (<DataNotFound/>)
         }
     }
-
+    // Product content
     const loopCard = () => {
         return(
             <div className="container" style={{ marginTop: '-1rem' }}>
@@ -153,6 +153,33 @@ function Main() {
         )
     }
 
+    // ADMIN 
+    const editPromoAdmin = () => {
+        const role = localStorage.getItem('@userRole')
+        if (role === 'admin') {
+            return (
+                <div className='text-start' style={{marginTop: '3.5rem', paddingBottom: '3rem'}}>
+                    <Link to='#'><h5 className='edit-product-admin'>Edit promo</h5></Link>
+                    <Link to='#'><h5 className='edit-product-admin'>Add new promo</h5></Link>
+                </div>
+            )
+        } else {
+            return ('')
+        }
+    }
+    const editProductAdmin = () => {
+        const role = localStorage.getItem('@userRole')
+        if (role === 'admin') {
+            return (
+                <div className='text-start' style={{ marginTop: '3.5rem', marginLeft: '1rem' }}>
+                    <Link to='/editproducts'><h5 className='edit-product-admin'>Edit product</h5></Link>
+                    <Link to='/addproducts'><h5 className='edit-product-admin'>Add new product</h5></Link>
+                </div>
+            )
+        } else {
+            return ('')
+        }
+    }
     return (
         <main style={{ marginTop: '6rem' }}>
             <div className="container">
@@ -218,13 +245,14 @@ function Main() {
                         <Link to="#">
                             <button className="btn btn-warning product" style={{ margin: '50px 20px 90px 0px' }}>Apply Coupon</button>
                         </Link>
-                        <p className="text-start s-3-product">
+                        <p className="text-start s-3-product" style={{marginTop: '-1rem'}}>
                             <b>Terms and Condition</b><br />
                             1. You can only apply 1 coupon per day<br />
                             2. It only for dine in<br />
                             3. Buy 1 get 1 only for new user<br />
                             4. Should make member card to apply coupon<br />
                         </p>
+                        {editPromoAdmin()}
                     </div>
                     {/* RIGHT SIDE */}
                     <div className="col-lg-8">
@@ -272,7 +300,7 @@ function Main() {
 
                         <p className="s-5-product ms-3">*the price has been cutted by discount appears</p>
                         {/* Card-Product End */}
-
+                        {editProductAdmin()}
                     </div>
                 </div>
             </div>

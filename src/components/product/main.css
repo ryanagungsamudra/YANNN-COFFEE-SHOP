@@ -230,3 +230,12 @@
 .page-link:hover {
     color: #555;
 }
+
+/* admin only */
+.edit-product-admin {
+    color: var(--hover-color);
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: underline;
+    line-height: 30px;
+}

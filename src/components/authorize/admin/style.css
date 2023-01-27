@@ -42,15 +42,8 @@
     display: none;
 }
 
-.Add-product-wrapper {
-    margin: 50px auto auto auto;
-    width: 100%;
-    border-top: 1px solid rgba(145, 145, 145, 0.63);
-}
-
-.breadcrumb {
-    background-color: white;
-    padding-left: 100px;
+.breadcrumb{
+    margin-left: 1.5rem;
 }
 
 .breadcrumb>li+li:before {
@@ -92,29 +85,6 @@
     object-position: center;
 }
 
-.btn-take-picture {
-    width: 70%;
-    height: 80px;
-    background-color: #0B132A;
-    border-radius: 20px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: #FFFFFF;
-    margin: 20px auto;
-}
-
-.btn-add-byGallery {
-    margin: 20px auto;
-    height: 80px;
-    border-radius: 20px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
 .btn-save-changes {
     margin: 20px auto;
     height: 80px;
@@ -139,25 +109,9 @@
     margin-top: 30px;
 }
 
-.btn-width-container {
-    width: 70%;
-}
-
 .aside-title-input {
-    width: 90%;
     text-align: left;
     margin: auto;
-}
-
-.add-product-title {
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: #6A4029;
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
-    text-align: left;
 }
 
 .start-hour-btn {
@@ -206,6 +160,7 @@
 }
 
 .add-product-input {
+    width: 80%;
     border: none;
     border-radius: 0;
     border-bottom: 1px solid #9F9F9F;
@@ -520,7 +475,7 @@
 }
 
 .btn-downlaod-report {
-    width: 100%;
+    width: 96%;
     height: 70px;
     margin: 30px auto;
     background-color: #6A4029;
@@ -708,11 +663,7 @@
     }
 }
 
-.Add-product-wrapper {
-    margin: 50px auto auto auto;
-    width: 100%;
-    border-top: 1px solid rgba(145, 145, 145, 0.63);
-}
+
 
 .breadcrumb {
     background-color: white;
@@ -760,7 +711,7 @@
 }
 
 .btn-take-picture {
-    width: 70%;
+    width: 80%;
     height: 80px;
     background-color: #0b132a;
     border-radius: 20px;
@@ -773,6 +724,7 @@
 }
 
 .btn-add-byGallery {
+    width: 80%;
     margin: 20px auto;
     height: 80px;
     border-radius: 20px;
@@ -780,6 +732,10 @@
     font-style: normal;
     font-weight: bold;
     font-size: 1.2rem;
+}
+
+.btn-add-byGallery:hover {
+    background-color: var(--hover-color);
 }
 
 .btn-save-changes {
@@ -806,23 +762,13 @@
     margin-top: 30px;
 }
 
-.btn-width-container {
-    width: 70%;
-}
-
-.aside-title-input {
-    width: 90%;
-    text-align: left;
-    margin: auto;
-}
-
 .add-product-title {
     font-family: Rubik;
     font-style: normal;
     font-weight: bold;
     font-size: 1.2rem;
     /* width: 100%; */
-    width: 69%;
+    width: 75%;
     color: #6a4029;
     margin-top: 2rem;
     margin-bottom: 0.5rem;
@@ -889,16 +835,6 @@
     border-radius: 20px;
 }
 
-.add-product-input {
-    border: none;
-    border-radius: 0;
-    border-bottom: 1px solid #9f9f9f;
-}
-
-.add-product-input:focus {
-    border-bottom: 2px solid #e9a317;
-}
-
 .btn-radio {
     width: 70px;
     height: 70px;
@@ -932,18 +868,6 @@
 
 .btn-width-form-input-add {
     width: max(150px, 30%);
-}
-
-.btn-take-away {
-    margin: 20px auto;
-    height: 80px;
-    border-radius: 20px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.2rem;
-    background-color: rgba(186, 186, 186, 0.35);
-    color: #4f5665;
 }
 
 .font-brown-color {
@@ -1337,4 +1261,13 @@
 
 .size-selected {
     border: 2px solid crimson;
+}
+
+.delivery-hour {
+    width: 115%;
+    margin-left: -1.8rem;
+}
+
+.form-group {
+    margin-left: -5rem;
 }

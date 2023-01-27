@@ -6,7 +6,7 @@ import DashboardMain from '../../components/authorize/admin/DashboardMain';
 function Dashboard() {
 // status navbar
 const status = {
-    Product: "active-nav",
+    History: "active-nav",
 }
   return (
     <>

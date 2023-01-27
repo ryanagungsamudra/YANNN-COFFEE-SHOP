@@ -1,0 +1,110 @@
+/* Main Start */
+.hero-chat {
+    background-image: url(../../../../assets/chat&roomchat/hero.jpg);
+    background-size: cover;
+    background-position-x: center;
+    height: 165vh;
+    width: 100vw;
+}
+
+.avatar-1-chat {
+    margin-top: 0.7rem;
+}
+
+.avatar-2-chat {
+    margin-top: 0.4rem;
+}
+
+.avatar-3-chat {
+    margin-top: 0.5rem;
+}
+
+.container-1-chat {
+    border-radius: 20px;
+}
+
+.container-2-chat {
+    height: 140vh;
+    background-color: #6A4029;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.container-3-chat {
+    height: 140vh;
+    background-color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.form-control.chat {
+    background-color: #EFEEEE;
+    border-radius: 20px;
+    height: 3rem;
+}
+
+a .chat-section {
+    color: #FFFFFF;
+    margin-top: 2rem;
+}
+
+.chat-section:hover {
+    transform: scale(1.05);
+    transition-delay: 100ms;
+    transition-duration: 0.5s;
+}
+
+.line-break-side-chat {
+    border: 1px solid #FFFFFF;
+    margin-top: -0.1rem;
+}
+
+/* Main End */
+
+/* Styling start */
+.s-1-chat {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.s-2-chat {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+
+    margin-top: -1rem;
+    margin-left: 0.6rem;
+}
+
+.s-3-chat {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+
+    margin-top: -0.3rem;
+    margin-left: 0.6rem;
+}
+
+.s-4-chat {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    color: #4F5665;
+}
+
+/* Styling end */
