@@ -25,7 +25,7 @@ function InfoPanelOrder() {
     const setDecrease = () => {
         amount > 1 ? setAmount(amount - 1) : setAmount(1);
     }
-    const setIncrease = () => { 
+    const setIncrease = () => {
         amount < 15 ? setAmount(amount + 1) : setAmount(15) // angka 15 diganti jumlah stock barang nantinya
     }
 

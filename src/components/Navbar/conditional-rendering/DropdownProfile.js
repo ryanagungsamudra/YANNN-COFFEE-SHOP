@@ -54,6 +54,7 @@ function DropdownProfile(setIsLogin) {
               onClick={() => {
               localStorage.removeItem('@userLogin')
               localStorage.removeItem('@userRole')
+              // localStorage.clear();
               setIsLogin(false)
             }} />
           </ul>

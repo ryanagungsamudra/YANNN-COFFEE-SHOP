@@ -47,7 +47,7 @@ function App() {
                 {/* </Route> */}
 
                 {/* <Route element={<UserOnly />}> */}
-                <Route path='payment/' element={<Payment />} />
+                <Route path='payment' element={<Payment />} />
                 <Route path='profile' element={<Profile />} />
                 <Route path='chat' element={<Chat />} />
                 <Route path='history' element={<History />} />

@@ -13,7 +13,7 @@ function Payment() {
     useEffect(() => {
         if (!localStorage.getItem('@userLogin')) {
             navigate('/login')
-        }
+        } 
     }, [navigate])
     return (
         <>

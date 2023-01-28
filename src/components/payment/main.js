@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './main.css'
-import Order1 from "../../assets/yourcart/order1.png"
+// import Order1 from "../../assets/yourcart/order1.png"
 import Order2 from "../../assets/yourcart/order2.png"
 import Card from "../../assets/yourcart/card.svg"
 import Bank from "../../assets/yourcart/bank.svg"
@@ -8,6 +8,16 @@ import Delivery from "../../assets/yourcart/delivery.svg"
 import { Link } from 'react-router-dom'
 
 function Main() {
+    const img = localStorage.getItem('productImage')
+    const title = (JSON.parse(localStorage.getItem('productOrder'))).title
+    const price = parseInt(localStorage.getItem('productPrice'))
+    const size = localStorage.getItem('size')
+    const quantity = localStorage.getItem('quantity')
+
+    const taxvalue = (price * 0.1)
+    const totalprice = (price + taxvalue)
+    localStorage.setItem('totalPrice', totalprice.toFixed(3))
+
     return (
         <main style={{ marginTop: '6rem' }}>
             <div className="p-5 bg-primary text-white hero-payment">
@@ -28,18 +38,18 @@ function Main() {
                                         <h3 className="s-3-payment" style={{ paddingBottom: '20px' }}>Order Summary</h3>
                                         <div className="row mt-5">
                                             <div className="col">
-                                                <img src={Order1} alt="" />
+                                                <img src={img} alt="" style={{width: '75%'}}/>
                                             </div>
                                             <div className="col s-4-payment">
                                                 <p style={{ textAlign: 'start', marginLeft: '-40px' }}>
-                                                    Hazelnut Latte <br />x 1 <br />Regular
+                                                    {title} <br />x {quantity} <br />{size}
                                                 </p>
                                             </div>
                                             <div className="col s-4-payment">
-                                                <p style={{ marginTop: '28px' }}>IDR 24.0</p>
+                                                <p style={{ marginTop: '28px' }}>IDR {price.toFixed(3)}</p>
                                             </div>
                                         </div>
-                                        <div className="row mt-4">
+                                        {/* <div className="row mt-4">
                                             <div className="col">
                                                 <img src={Order2} alt="" />
                                             </div>
@@ -51,7 +61,7 @@ function Main() {
                                             <div className="col s-4-payment">
                                                 <p style={{ marginTop: '28px' }}>IDR 30.0</p>
                                             </div>
-                                        </div>
+                                        </div> */}
                                         <hr style={{ opacity: '0.2', border: '0.5px solid #000000', marginTop: '35px' }} />
                                         {/* Total tagihan start */}
                                         <div className="row mt-5">
@@ -59,7 +69,7 @@ function Main() {
                                                 <p className="s-5-payment" style={{ textAlign: 'start' }}>SUBTOTAL</p>
                                             </div>
                                             <div className="col">
-                                                <p className="s-5-payment" style={{ textAlign: 'start', marginLeft: '63px' }}>IDR 120.000</p>
+                                                <p className="s-5-payment" style={{ textAlign: 'start', marginLeft: '63px' }}>IDR {price.toFixed(3)}</p>
                                             </div>
                                         </div>
                                         <div className="row">
@@ -67,23 +77,23 @@ function Main() {
                                                 <p className="s-5-payment" style={{ textAlign: 'start' }}>TAX &amp; FEES</p>
                                             </div>
                                             <div className="col">
-                                                <p className="s-5-payment" style={{ textAlign: 'start', marginLeft: '63px' }}>IDR 20.000</p>
+                                                <p className="s-5-payment" style={{ textAlign: 'start', marginLeft: '63px' }}>IDR {taxvalue.toFixed(3)}</p>
                                             </div>
                                         </div>
-                                        <div className="row">
+                                        {/* <div className="row">
                                             <div className="col">
                                                 <p className="s-5-payment" style={{ textAlign: 'start' }}>SHIPPING</p>
                                             </div>
                                             <div className="col">
                                                 <p className="s-5-payment" style={{ textAlign: 'start', marginLeft: '63px' }}>IDR 10.000</p>
                                             </div>
-                                        </div>
+                                        </div> */}
                                         <div className="row mt-4">
                                             <div className="col">
                                                 <h3 className="s-6-payment" style={{ textAlign: 'start' }}>TOTAL</h3>
                                             </div>
                                             <div className="col">
-                                                <h3 className="s-6-payment" style={{ textAlign: 'start' }}>IDR 150.000</h3>
+                                                <h3 className="s-6-payment" style={{ textAlign: 'start' }}>IDR {totalprice.toFixed(3)}</h3>
                                             </div>
                                         </div>
                                         {/* Total tagihan end */}
@@ -97,18 +107,18 @@ function Main() {
                                         <h3 className="s-3-payment" style={{ marginTop: '-2.5rem' }}>Order Summary</h3>
                                         <div className="row mt-5">
                                             <div className="col">
-                                                <img src={Order1} alt="" />
+                                            <img src={img} alt="" style={{width: '100%'}}/>
                                             </div>
                                             <div className="col s-4-payment" style={{ marginLeft: '-1.5rem' }}>
                                                 <p style={{ textAlign: 'start' }}>
-                                                    Hazelnut Latte <br />x 1 <br />Regular
+                                                    {title} <br />x {quantity} <br />{size}
                                                 </p>
                                             </div>
                                             <div className="col s-4-payment" style={{ marginLeft: '-2rem' }}>
-                                                <p style={{ marginTop: '28px' }}>IDR 24.000</p>
+                                                <p style={{ marginTop: '28px' }}>IDR {price.toFixed(3)}</p>
                                             </div>
                                         </div>
-                                        <div className="row mt-4">
+                                        {/* <div className="row mt-4">
                                             <div className="col">
                                                 <img src={Order2} alt="" />
                                             </div>
@@ -120,7 +130,7 @@ function Main() {
                                             <div className="col s-4-payment" style={{ marginLeft: '-2rem' }}>
                                                 <p style={{ marginTop: '28px' }}>IDR 30.000</p>
                                             </div>
-                                        </div>
+                                        </div> */}
                                         <hr style={{ opacity: '0.2', border: '0.5px solid #000000', marginTop: '0rem' }} />
                                         {/* Total tagihan start */}
                                         <div className="row">
@@ -128,7 +138,7 @@ function Main() {
                                                 <p className="s-5-payment" style={{ textAlign: 'start', marginLeft: '-2rem' }}>SUBTOTAL</p>
                                             </div>
                                             <div className="col">
-                                                <p className="s-5-payment" style={{ textAlign: 'start' }}>IDR 120.000</p>
+                                                <p className="s-5-payment" style={{ textAlign: 'start' }}>IDR {price.toFixed(3)}</p>
                                             </div>
                                         </div>
                                         <div className="row">
@@ -136,23 +146,23 @@ function Main() {
                                                 <p className="s-5-payment" style={{ textAlign: 'start', marginLeft: '-2rem' }}>TAX &amp; FEES</p>
                                             </div>
                                             <div className="col">
-                                                <p className="s-5-payment" style={{ textAlign: 'start' }}>IDR 20.000</p>
+                                                <p className="s-5-payment" style={{ textAlign: 'start' }}>IDR {taxvalue.toFixed(3)}</p>
                                             </div>
                                         </div>
-                                        <div className="row">
+                                        {/* <div className="row">
                                             <div className="col">
                                                 <p className="s-5-payment" style={{ textAlign: 'start', marginLeft: '-2rem' }}>SHIPPING</p>
                                             </div>
                                             <div className="col">
                                                 <p className="s-5-payment" style={{ textAlign: 'start' }}>IDR 10.000</p>
                                             </div>
-                                        </div>
+                                        </div> */}
                                         <div className="row">
                                             <div className="col">
                                                 <h3 className="s-6-payment" style={{ textAlign: 'start', marginLeft: '-2rem' }}>TOTAL</h3>
                                             </div>
                                             <div className="col">
-                                                <h3 className="s-6-payment" style={{ textAlign: 'start', marginLeft: '-4rem' }}>IDR 150.000</h3>
+                                                <h3 className="s-6-payment" style={{ textAlign: 'start', marginLeft: '-4rem' }}>IDR {totalprice.toFixed(3)}</h3>
                                             </div>
                                         </div>
                                         {/* Total tagihan end */}
