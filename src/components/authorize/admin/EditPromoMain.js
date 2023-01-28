@@ -1,35 +1,33 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import imagePlaceHolder from '../../../assets/product/placeholder.png'
+// import placeholder from '../../../assets/product/placeholder.png'
 import extraLarge from "../../../assets/product-detail/XL.png"
 import small from "../../../assets/product-detail/R.png"
 import large from "../../../assets/product-detail/L.png"
 import gr250 from "../../../assets/admin/250gr.png"
 import gr300 from "../../../assets/admin/300gr.png"
 import gr500 from "../../../assets/admin/500gr.png"
+import PromoProduct from  "../../../assets/admin/editpromo.png"
 import './style.css'
 import axios from 'axios';
 
-function AddProductsMain() {
+function EditProductsMain() {
     const token = JSON.parse(localStorage.getItem('@userLogin')).token
     const url = process.env.REACT_APP_HOST
 
-    const [image, setImage] = useState('')
     const [title, setTitle] = useState('')
     const [price, setPrice] = useState('')
-    const [category, setCategory] = useState('')
+    const [image, setImage] = useState('')
     const [imagePreview, setImagePreview] = useState('')
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         // console.log('title', title);
         // console.log('price', price);
-        // console.log('category' ,category);
         // console.log('image', image);
         const body = new FormData();
         body.append('title', title);
         body.append('price', price);
-        body.append('category', category);
         body.append('img', image);
 
         try {
@@ -60,75 +58,60 @@ function AddProductsMain() {
                         </Link>
                     </li>
                     <li className='breadcrumb-item'>
-                        <Link className='active-page' to='/addproducts'>
-                            Add new product
+                        <Link className='active-page' to='/addpromo'>
+                            Edit promo
                         </Link>
                     </li>
+                    <Link className='active-page' style={{marginLeft: '50rem', textDecoration: 'underline'}} to='#'>
+                        Cancel
+                    </Link>
                 </ol>
             </div>
             <form onSubmit={handleSubmit}>
                 <div className='row add-product-content'>
                     <aside className='col col-md-4'>
-                        <div>
-                            {imagePreview ? <img src={imagePreview} className='add-image' alt='Product' /> : <img src={imagePlaceHolder} className='add-image' alt='Product' />}
+                        <div className='container-editpromo' style={{marginLeft: '2.4rem', marginTop: '1rem'}}>
+                            <img src={PromoProduct} alt='product' style={{width: '220px', height: '220px', marginTop: '2rem'}}/>
+                            <h4 style={{marginTop: '-2.5rem'}}>Beef Spaghetti <br /> 20% OFF</h4>
+                            <p>Buy 1 Choco Oreo and get <br/> 20% off for Beef Spaghetti</p>
+                            <hr style={{borderTop: 'dotted 4px'}}/>
+                            <p className='mt-4'>COUPON CODE</p>
+                            <h4>FNPR15RG</h4>
+                            <p>Valid untill October 10th 2020</p>
                         </div>
-                        <button
-                            className='btn btn-block btn-take-picture'
-                        >
-                            Take a picture
-                        </button>
-                        <button 
-                            className='btn btn-block btn-add-byGallery btn-yellow-color font-brown-color' 
-                            style={{ marginTop: '-0.3rem' }}
-                            type='file'
-                            onClick={() => document.querySelector(".input-field").click()}>
-                            Choose from gallery
-                        </button>
-                        <input 
-                            type='file' 
-                            className='input-field'
-                            hidden
-                            onChange={(e) => onImageUpload(e)}/>
                         <div className='form-wrapper'>
-                            <p className='add-product-title aside-title-input' style={{ paddingTop: '2.5rem' }}>
-                                Delivery Hour :
+                            <p className='add-product-title aside-title-input' style={{ marginTop: '3.5rem' }}>
+                                Expire date :
                             </p>
-                            <div className='delivery-hour'>
+                            <div className='delivery-hour' style={{ marginTop: '1.5rem' }}>
+                                <p>Select start date</p>
                                 <input
-                                    // type='file'
-                                    name='image'
-                                    id='image'
-                                    hidden
-                                />
-                                <input
-                                    type='time'
-                                    name='deliveryStart'
-                                    className='start-hour-btn px-3'
-                                    defaultValue={'12:00'}
-                                    placeholder='Select start hour'
-                                />
-                            </div>
-                            <div className='delivery-hour'>
-                                <input
-                                    type='time'
+                                    type='date'
                                     name='deliveryEnd'
                                     className='start-hour-btn px-3'
-                                    defaultValue={'21:00'}
-                                    placeholder='Select end hour'
+                                    placeholder='Select start date'
+                                    style={{ marginTop: '-2rem' }}
+                                />
+                                <p>Select end date</p>
+                                <input
+                                    type='date'
+                                    name='deliveryEnd'
+                                    className='start-hour-btn px-3'
+                                    placeholder='Select start date'
+                                    style={{ marginTop: '-2rem' }}
                                 />
                             </div>
                         </div>
-                        <div>
+                        <div style={{ marginTop: '-2.8rem' }}>
                             <p className='add-product-title aside-title-input' style={{ paddingTop: '2.5rem' }}>
-                                Input Stock:
+                                Input coupon code :
                             </p>
                             <div className='delivery-hour'>
                                 <input
-                                    type='number'
-                                    min={1}
-                                    name='stock'
+                                    type='text'
+                                    name='coupon'
                                     className='start-hour-btn px-3'
-                                    placeholder='Input stock'
+                                    placeholder='Input code'
                                 />
                             </div>
                         </div>
@@ -147,18 +130,6 @@ function AddProductsMain() {
                                 value={title}
                                 onChange={(e) => setTitle(e.target.value)}
                             />
-                        </div>
-                        <div className='form-group'>
-                            <label className='add-product-title' htmlFor='category'>
-                                Category :
-                            </label>
-                            <select name='category' id='category' className='form-control add-product-input' onChange={(e) => setCategory(e.target.value)}>
-                                <option selected>Select category</option>
-                                <option>Coffee</option>
-                                <option>Non Coffee</option>
-                                <option>Foods</option>
-                                <option>Add-on</option>
-                            </select>
                         </div>
                         <div className='form-group'>
                             <label className='add-product-title'>Price :</label>
@@ -185,7 +156,7 @@ function AddProductsMain() {
                         <div className='form-group'>
                             <p className='add-product-title'>Input product size :</p>
                             <p className='form-desc'>
-                                Click size you want to use for this product
+                                Click size you want to use for this promo
                             </p>
                             <div className="row">
                                 <div className="col">
@@ -211,9 +182,9 @@ function AddProductsMain() {
                         <div className='form-group'>
                             <p className='add-product-title'>Input delivery methods :</p>
                             <p className='form-desc'>
-                                Click methods you want to use for this product
+                                Click methods you want to use for this promo
                             </p>
-                            <div className='row w-75' style={{ marginLeft: '1rem' }}>
+                            <div className='row w-75 h-25' style={{ marginLeft: '1rem' }}>
                                 <button
                                     type='button'
                                     className='col-11 col-md col-lg mx-1 btn-add-byGallery border-0 btn-width-form-input-add cursor-pointer btn-yellow-color'
@@ -222,7 +193,7 @@ function AddProductsMain() {
                                 </button>
                                 <button
                                     type='button'
-                                    className='col-11 col-md col-lg mx-1 btn-add-byGallery border-0 btn-width-form-input-add cursor-pointer btn-yellow-color px-2 mx-2'
+                                    className='col-11 col-md col-lg mx-1 btn-add-byGallery border-0 btn-width-form-input-add cursor-pointer btn-yellow-color'
                                 >
                                     Dine In
                                 </button>
@@ -234,17 +205,25 @@ function AddProductsMain() {
                                 </button>
                             </div>
                         </div>
-                        <div className='form-group my-5'>
-                            <button 
+                        <div className='form-wrapper' style={{marginTop: '-1.4rem'}}>
+                            <p className='add-product-title aside-title-input' style={{ marginLeft: '6.8rem' }}>
+                                Enter the discount :
+                            </p>
+                            <div className='delivery-hour'>
+                                <input
+                                    type='text'
+                                    name='deliveryStart'
+                                    className='start-hour-btn px-3'
+                                    placeholder='Input discount in percent'
+                                    style={{width: '40%', marginLeft: '5.6rem'}}
+                                />
+                            </div>
+                        </div>
+                        <div className='form-group my-1'>
+                            <button
                                 className='col-12 col-md col-lg btn btn-add-byGallery btn-brown-color font-white-color'
                                 type='submit'>
-                                Save Product
-                            </button>
-                            <button
-                                type='reset'
-                                className='col-12 col-md col-lg btn btn-take-away'
-                                style={{ width: '80%', marginTop: '-0.3rem' }}>
-                                Cancel
+                                Save change
                             </button>
                         </div>
                     </div>
@@ -254,4 +233,4 @@ function AddProductsMain() {
     )
 }
 
-export default AddProductsMain
+export default EditProductsMain

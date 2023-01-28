@@ -4,10 +4,10 @@ import Footer from '../../components/footer';
 import DashboardMain from '../../components/authorize/admin/DashboardMain';
 
 function Dashboard() {
-// status navbar
-const status = {
-    History: "active-nav",
-}
+  // status navbar
+  const status = {
+      History: "active-nav",
+  }
   return (
     <>
         <Navbar status={status} />

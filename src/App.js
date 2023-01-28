@@ -16,6 +16,9 @@ import Chat from './pages/userOnly/Chat';
 import Dashboard from './pages/admin/Dashboard';
 import AddProduct from './pages/admin/AddProduct';
 import EditProduct from './pages/admin/EditProduct';
+import ManageOrder from './pages/admin/ManageOrder.js'
+import AddPromo from './pages/admin/AddPromo.js'
+import EditPromo from './pages/admin/EditPromo.js'
 
 import InvalidRoute from './pages/InvalidRoute';
 import ScrollToTop from './components/utility/ScrollToTop';
@@ -38,9 +41,9 @@ function App() {
                 <Route path='dashboard' element={<Dashboard />} />
                 <Route path='addproducts' element={<AddProduct />} />
                 <Route path='editproducts' element={<EditProduct />} />
-                {/* <Route path='order' element={<ManageOrder />} /> */}
-                {/* <Route path='addpromo' element={<Addpromo />} /> */}
-                {/* <Route path='editpromo/:id' element={<Editpromo />} /> */}
+                <Route path='orderlist' element={<ManageOrder />} />
+                <Route path='addpromo' element={<AddPromo />} />
+                <Route path='editpromo' element={<EditPromo />} />
                 {/* </Route> */}
 
                 {/* <Route element={<UserOnly />}> */}

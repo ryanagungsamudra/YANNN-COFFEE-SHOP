@@ -123,7 +123,7 @@
     color: #9F9F9F;
     width: 70%;
     margin: 10px auto;
-    height: 80px;
+    height: 50px;
     background-color: white;
     border: 1px solid #9F9F9F;
     border-radius: 20px;
@@ -254,13 +254,14 @@
 .edit-product-input {
     font-family: Poppins;
     font-style: normal;
-    font-weight: 900;
-    font-size: 3rem;
+    font-weight: 700;
+    font-size: 1.2rem;
     color: #000000;
     border: none;
-    border-radius: 0;
-    border-bottom: 1px solid #9F9F9F;
+    border-radius: 20px;
+    border: 1px solid #9F9F9F;
     width: 70%;
+    height: 50px;
 }
 
 .edit-product-input:focus {
@@ -270,43 +271,48 @@
 .edit-product-input::placeholder {
     font-family: Poppins;
     font-style: normal;
-    font-weight: 900;
-    font-size: 3rem;
-    color: #000000;
+    font-weight: normal;
+    font-size: 1rem;
+    color: #9F9F9F;
 }
 
 .edit-product-input-price {
     font-family: Poppins;
     font-style: normal;
-    font-weight: 300;
-    font-size: 2.5rem;
+    font-weight: 400;
+    font-size: 1rem;
     color: #000000;
     width: 70%;
+    height: 50px;
+    border: 1px solid #9F9F9F;
 }
 
 .edit-product-input-price::placeholder {
     font-family: Poppins;
     font-style: normal;
-    font-weight: 400;
-    font-size: 2.5rem;
-    color: #000000;
+    font-weight: normal;
+    font-size: 1rem;
+    color: #9F9F9F;
 }
 
 .description-product-input {
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: #000000;
+    border: 1px solid #9F9F9F;
+    padding-top: 0.7rem;
     width: 70%;
+    height: 50px;
 }
 
-.description-product-inpute::placeholder {
+.description-product-input::placeholder {
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.3rem;
-    color: #000000;
+    font-size: 1rem;
+    color: #9F9F9F;
 }
 
 .save-change-btn {
@@ -506,165 +512,6 @@
     color: #7C828A;
 }
 
-@media screen and (max-width: 1024px) {
-    .breadcrumb {
-        padding-left: 20px;
-        font-size: 0.8rem;
-    }
-    .add-image {
-        width: 200px;
-        height: 200px;
-    }
-    .btn-take-picture {
-        width: 90%;
-        font-size: 1rem;
-        margin: 5px;
-    }
-    .btn-add-byGallery {
-        font-size: 0.9rem;
-        width: 100%;
-        border-radius: 10px;
-        height: 60px;
-        margin: 5px;
-    }
-    .btn-add-toCart {
-        font-size: 1rem;
-        width: 90%;
-        border-radius: 10px;
-        height: 40px;
-    }
-    .count-wrapper {
-        height: 43px;
-        margin: auto 19px auto 17px;
-    }
-    .btn-take-picture {
-        font-size: 1rem;
-        width: 90%;
-        border-radius: 10px;
-        height: 60px;
-    }
-    .btn-take-away {
-        font-size: 1rem;
-        width: 100%;
-        border-radius: 10px;
-        height: 60px;
-        margin: 5px;
-    }
-    .start-hour-btn {
-        border-radius: 10px;
-        font-size: 1rem;
-        width: 100%;
-        height: 40px;
-    }
-    .btn-radio {
-        width: 50px;
-        height: 50px;
-        font-size: 1rem;
-    }
-    .btn-radio-load {
-        width: 50px;
-        height: 50px;
-        font-size: 0.8rem;
-    }
-    .add-product-title {
-        font-size: 1rem;
-        text-align: left;
-    }
-    .edit-product-input {
-        font-size: 2rem;
-        width: 90%;
-    }
-    .edit-product-input-price {
-        font-size: 1.5rem;
-        width: 90%;
-    }
-    .description-product-input {
-        font-size: 1rem;
-        width: 90%;
-    }
-    .card-coupon-edit {
-        width: 100%;
-    }
-    .coupon-edit-img {
-        width: 140px;
-        height: 140px;
-        border-radius: 80px;
-        margin-top: 20%;
-    }
-    .dashed {
-        margin: 2rem auto;
-    }
-    .change-promo-img-btn {
-        top: 143px;
-        right: 117px;
-    }
-    .coupon-edit-card-title {
-        font-size: 1.8rem;
-    }
-    .coupon-edit-card-desc-product {
-        font-size: 1rem;
-    }
-    .coupon-edit-card-desc-title {
-        font-size: 1.8rem;
-    }
-    .coupon-edit-card-regulation {
-        font-size: 0.9rem;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .btn-take-away {
-        font-size: 0.8rem;
-        width: 100%;
-        margin: 5px auto;
-    }
-    .btn-add-byGallery {
-        font-size: 0.8rem;
-        width: 100%;
-        margin: 5px auto;
-    }
-    .start-hour-btn-coupon {
-        font-size: 0.9rem;
-        width: 100%;
-    }
-    .btn-take-picture {
-        width: 100%;
-        margin: auto;
-    }
-}
-
-@media screen and (max-width: 426px) {
-    .edit-product-btn-count {
-        font-size: 1rem;
-    }
-    .bi-trash {
-        font-size: 1rem;
-    }
-    .change-img-btn {
-        border: 3px solid #e9a317;
-    }
-    .edit-product-input {
-        font-size: 1.5rem;
-        width: 90%;
-    }
-    .edit-product-input::placeholder {
-        font-size: 1rem;
-    }
-    .edit-product-input-price {
-        font-size: 1rem;
-        width: 90%;
-    }
-    .edit-product-input-price::placeholder {
-        font-size: 1rem;
-    }
-    .description-product-input {
-        font-size: 0.8rem;
-        width: 90%;
-    }
-}
-
-
-
 .breadcrumb {
     background-color: white;
     padding-left: 100px;
@@ -775,21 +622,6 @@
     text-align: left;
 }
 
-.start-hour-btn {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.1rem;
-    text-align: left;
-    color: #9f9f9f;
-    width: 70%;
-    margin: 10px auto;
-    height: 80px;
-    background-color: white;
-    border: 1px solid #9f9f9f;
-    border-radius: 20px;
-}
-
 .start-hour-btn-ctg {
     font-family: Poppins;
     font-style: normal;
@@ -887,219 +719,38 @@
     box-shadow: 0px 6px 20px rgba(106, 64, 41, 0.4);
 }
 
-
-/* EDIT PRODUCT */
-
-.edit-product-input {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 3rem;
-    color: #000000;
-    border: none;
-    border-radius: 0;
-    border-bottom: 1px solid #9f9f9f;
-    width: 70%;
-}
-
-.edit-product-input:focus {
-    border-bottom: 2px solid #e9a317;
-}
-
-.edit-product-input::placeholder {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 3rem;
-    color: #000000;
-}
-
-.edit-product-input-price {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 2.5rem;
-    color: #000000;
-    width: 70%;
-}
-
-.edit-product-input-price::placeholder {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2.5rem;
-    color: #000000;
-}
-
-.description-product-input {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.3rem;
-    color: #000000;
-    width: 70%;
-}
-
-.description-product-inpute::placeholder {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.3rem;
-    color: #000000;
-}
-
-.save-change-btn {
-    width: 70%;
-    float: left;
-}
-
-.count-wrapper {
-    width: 89px;
-    height: 66px;
-    margin: auto 10px auto 0;
-    align-items: center;
-    text-align: center;
-    background-color: #ffffff;
-    border: 1px solid #9f9f9f;
-    box-sizing: border-box;
-    border-radius: 10px;
-}
-
-.edit-product-btn-count {
-    margin: auto;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 1.3rem;
-    color: #9f9f9f;
-}
-
-.edit-product-number {
-    margin: auto;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.3rem;
-    color: #000000;
-}
-
-.edit-image {
-    width: 100%;
-    height: max(100%, 600px);
-    margin: auto auto 20px auto;
-}
-
-.product-img-edit {
-    width: 100%;
-    height: max(100%, 600px);
-    position: relative;
-}
-
-.change-img-btn {
-    position: absolute;
-    top: 20px;
-    right: 35px;
-    border-radius: 35px;
-    border: 0.5rem solid #e9a317;
-}
-
-.bi-trash {
-    font-size: 2rem;
-}
-
-.product-time-desc {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.3rem;
-    text-align: left;
-    color: #000000;
-}
-
-.card-coupon-edit {
-    width: 80%;
-    margin: auto;
-    height: 650px;
-    background-color: #ffcb65;
-    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.35);
+.btn-primary.editproduct {
+    background-color: #6A4029;
     border-radius: 20px;
-    vertical-align: baseline;
-}
-
-.coupon-edit-card-title {
-    font-family: Poppins;
+    width: 70%;
+    font-family: 'Poppins';
     font-style: normal;
-    font-weight: bold;
-    font-size: 2.3rem;
-    margin: auto 20px;
-    text-align: center;
-    color: #000000;
+    font-weight: 700;
+    font-size: 20px;
 }
 
-.coupon-edit-card-desc-title {
-    font-family: Poppins;
+.btn-primary.editproduct:hover {
+    background-color: #FFBA33;
+    color: #6A4029;
+    border: #FFBA33;
+}
+
+.btn-warning.editproduct {
+    background-color: #FFBA33;
+    color: #6A4029;
+    border-radius: 20px;
+    width: 200px;
+
+    font-family: 'Poppins';
     font-style: normal;
-    font-weight: bold;
-    font-size: 2rem;
-    text-align: center;
-    color: #000000;
+    font-weight: 700;
+    font-size: 20px;
 }
 
-.coupon-edit-card-desc-product {
-    margin: 20px 30px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 1.3rem;
-    text-align: center;
-    color: #000000;
-}
-
-.coupon-edit-card-regulation {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.1rem;
-    text-align: center;
-    color: #000000;
-}
-
-.dashed {
-    border-top: 3px dashed rgb(7, 7, 7);
-}
-
-.coupon-edit-img {
-    width: 180px;
-    height: 180px;
-    border-radius: 90px;
-    border: none;
-    margin: 30px auto;
-    display: relative;
-}
-
-.change-promo-img-btn {
-    position: absolute;
-    top: 172px;
-    right: 168px;
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    border: none;
-    background-color: #6a4029;
-    color: white;
-}
-
-.btn-cancel-edit-promo {
-    height: 30px;
-    text-align: center;
-    padding-bottom: 3px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.2rem;
-    text-decoration-line: underline;
-    color: #6a4029;
-    background-color: white;
+.btn-warning.editproduct:hover {
+    background-color: #6A4029;
+    color: #FFFFFF;
+    border: #6A4029;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1270,4 +921,12 @@
 
 .form-group {
     margin-left: -5rem;
+}
+
+.container-editpromo {
+    background-color: #FFCB65;
+    width: 82%;
+    height: 80vh;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
 }

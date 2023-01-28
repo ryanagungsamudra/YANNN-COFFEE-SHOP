@@ -159,8 +159,8 @@ function Main() {
         if (role === 'admin') {
             return (
                 <div className='text-start' style={{marginTop: '3.5rem', paddingBottom: '3rem'}}>
-                    <Link to='#'><h5 className='edit-product-admin'>Edit promo</h5></Link>
-                    <Link to='#'><h5 className='edit-product-admin'>Add new promo</h5></Link>
+                    <Link to='/editpromo'><h5 className='edit-product-admin'>Edit promo</h5></Link>
+                    <Link to='/addpromo'><h5 className='edit-product-admin'>Add new promo</h5></Link>
                 </div>
             )
         } else {
@@ -287,7 +287,7 @@ function Main() {
                                 <Link to="#" onClick={() => category("Foods")} className='nav-link products'>Foods</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="#" onClick={() => category("Add On")} className='nav-link products'>Add-on</Link>
+                                <Link to="#" onClick={() => category("add-on")} className='nav-link products'>Add-on</Link>
                             </li>
                         </ul>
                         {/* Navs & Tabs End */}

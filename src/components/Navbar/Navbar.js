@@ -17,7 +17,7 @@ const Navbar = ({status}) => {
         <>
           <Link to="/" className={status.Home}>Home</Link>
           <Link to="/products" className={status.Product}>Product</Link>
-          <Link to="/payment" className={status.Payment}>Order</Link>
+          <Link to="/orderlist" className={status.Payment}>Order</Link>
           <Link to="/dashboard" className={status.History}>Dashboard</Link>
         </>
       )
