@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import imagePlaceHolder from '../../../assets/product/placeholder.png'
 import extraLarge from "../../../assets/product-detail/XL.png"
 import small from "../../../assets/product-detail/R.png"
@@ -13,6 +13,7 @@ import axios from 'axios';
 function AddProductsMain() {
     const token = JSON.parse(localStorage.getItem('@userLogin')).token
     const url = process.env.REACT_APP_HOST
+    const navigate = useNavigate()
 
     const [image, setImage] = useState('')
     const [title, setTitle] = useState('')
@@ -38,12 +39,15 @@ function AddProductsMain() {
                 headers: {
                     'Content-type': 'multipart/form-data',
                     'token': `${token}`,
-                }
+                } 
+            })
+            .then((e) => {
+                alert('Product successfully added!')
+                navigate('/products')
             })
         } catch (error) {
             console.log(error.response.data.message);
         }
-
     }
     const onImageUpload = (e) => {
         const file = e.target.files[0];

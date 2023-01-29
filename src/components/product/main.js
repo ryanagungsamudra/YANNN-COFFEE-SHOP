@@ -21,7 +21,7 @@ function Main() {
     const [searchData, setSearchData] = useState([]);
     const [keyword, setKeyword] = useState('');
     // Pagination
-    const [pageLimit] = useState(4) //set page limit
+    const [pageLimit] = useState(12) //set page limit
     const [currentPage, setCurrentPage] = useState(1)
 
     // get data product
