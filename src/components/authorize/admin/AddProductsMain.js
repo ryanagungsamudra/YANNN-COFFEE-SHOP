@@ -23,10 +23,6 @@ function AddProductsMain() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        // console.log('title', title);
-        // console.log('price', price);
-        // console.log('category' ,category);
-        // console.log('image', image);
         const body = new FormData();
         body.append('title', title);
         body.append('price', price);
@@ -41,10 +37,8 @@ function AddProductsMain() {
                     'token': `${token}`,
                 } 
             })
-            .then((e) => {
-                alert('Product successfully added!')
-                navigate('/products')
-            })
+            alert('Product successfully added!')
+            navigate('/products')
         } catch (error) {
             console.log(error.response.data.message);
         }
@@ -61,6 +55,11 @@ function AddProductsMain() {
                     <li className='breadcrumb-item'>
                         <Link className='breadcrumb-page' to='/products'>
                             Favorite & Promo
+                        </Link>
+                    </li>
+                    <li className='breadcrumb-item'>
+                        <Link className='breadcrumb-page' to='/productlist'>
+                            Edit Product
                         </Link>
                     </li>
                     <li className='breadcrumb-item'>
@@ -88,11 +87,7 @@ function AddProductsMain() {
                             onClick={() => document.querySelector(".input-field").click()}>
                             Choose from gallery
                         </button>
-                        <input 
-                            type='file' 
-                            className='input-field'
-                            hidden
-                            onChange={(e) => onImageUpload(e)}/>
+                        <input type='file' className='input-field' hidden onChange={(e) => onImageUpload(e)}/>
                         <div className='form-wrapper'>
                             <p className='add-product-title aside-title-input' style={{ paddingTop: '2.5rem' }}>
                                 Delivery Hour :

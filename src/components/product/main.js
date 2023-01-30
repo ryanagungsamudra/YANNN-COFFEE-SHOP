@@ -172,7 +172,7 @@ function Main() {
         if (role === 'admin') {
             return (
                 <div className='text-start' style={{ marginTop: '3.5rem', marginLeft: '1rem' }}>
-                    <Link to='/editproducts'><h5 className='edit-product-admin'>Edit product</h5></Link>
+                    <Link to='/productlist'><h5 className='edit-product-admin'>Edit product</h5></Link>
                     <Link to='/addproducts'><h5 className='edit-product-admin'>Add new product</h5></Link>
                 </div>
             )

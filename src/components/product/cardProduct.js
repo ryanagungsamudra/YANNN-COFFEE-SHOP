@@ -4,10 +4,11 @@ import axios from 'axios'
 import LoadingProduct from './errorHandling'
 
 function CardProduct() {
+    const url = process.env.REACT_APP_HOST
 
     const [dataProduct, setDataProduct] = useState([])
     useEffect(() => {
-        axios.get('http://localhost:5000/api/products')
+        axios.get(`${url}/api/products`)
             .then(res => setDataProduct(res.data.data))
             .catch((err) => console.log(err))
     }, [])
@@ -17,7 +18,7 @@ function CardProduct() {
             <div className="row row-cols-1 row-cols-md-4 g-4 mt-5">
                 {dataProduct.length === 0 ? (<LoadingProduct />) : dataProduct.map((item) => {
                     // console.log(item.images[0].filename);
-                    const img = `http://localhost:5000/uploads/images/${item.images[0].filename}`
+                    const img = `${url}/uploads/images/${item.images[0].filename}`
                     return (
                         <div key={item.id} className="col-lg-3 col-6 text-start my-5 popup">
                             <div className="card card-product" style={{ height: '212px', width: '156px' }}>
