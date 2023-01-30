@@ -1,13 +1,14 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import './main.css'
 // import Order1 from "../../assets/yourcart/order1.png"
-import Order2 from "../../assets/yourcart/order2.png"
+// import Order2 from "../../assets/yourcart/order2.png"
 import Card from "../../assets/yourcart/card.svg"
 import Bank from "../../assets/yourcart/bank.svg"
 import Delivery from "../../assets/yourcart/delivery.svg"
 import { Link } from 'react-router-dom'
 
 function Main() {
+
     const img = localStorage.getItem('productImage')
     const title = (JSON.parse(localStorage.getItem('productOrder'))).title
     const price = parseInt(localStorage.getItem('productPrice'))
@@ -17,6 +18,25 @@ function Main() {
     const taxvalue = (price * 0.1)
     const totalprice = (price + taxvalue)
     localStorage.setItem('totalPrice', totalprice.toFixed(3))
+
+    // const handleOrder = async () => {
+    //     // const body = new FormData();
+    //     const body = new URLSearchParams()
+    //     body.append('title', title);
+    //     body.append('quantity', quantity);
+    //     body.append('price', totalprice);
+
+    //     try {
+    //         await axios.post(`${url}/api/order`, body, {
+    //             method: 'POST',
+    //             headers: {
+    //                 'Content-type': 'application/x-www-form-urlencoded',
+    //             } 
+    //         })
+    //     } catch (error) {
+    //         console.log(error.response.data.message);
+    //     }
+    // }
 
     return (
         <main style={{ marginTop: '6rem' }}>

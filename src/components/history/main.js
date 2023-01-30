@@ -1,9 +1,42 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './main.css'
 import { Link } from 'react-router-dom'
 import CardHistory from './cardHistory.js'
+import axios from 'axios'
 
 function Main() {
+    const url = process.env.REACT_APP_HOST
+
+    const userId = (JSON.parse(localStorage.getItem('productOrder'))).id
+    const title = (JSON.parse(localStorage.getItem('productOrder'))).title
+    const price = parseInt(localStorage.getItem('productPrice'))
+    const quantity = localStorage.getItem('quantity')
+    const taxvalue = (price * 0.1)
+    const totalprice = (price + taxvalue)
+
+    useEffect(() => {
+        handleOrder()
+    }, [])
+    
+    const handleOrder = async () => {
+        // const body = new FormData();
+        const body = new URLSearchParams()
+        body.append('id_user', userId)
+        body.append('title', title);
+        body.append('quantity', quantity);
+        body.append('price', totalprice.toFixed(3));
+
+        try {
+            await axios.post(`${url}/api/order`, body, {
+                method: 'POST',
+                headers: {
+                    'Content-type': 'application/x-www-form-urlencoded',
+                }
+            })
+        } catch (error) {
+            console.log(error.response.data.message);
+        }
+    }
     return (
         <main style={{ marginTop: '6rem' }}>
             <div className="p-5 bg-primary text-white hero-history">

@@ -50,7 +50,7 @@ function DropdownProfile(setIsLogin) {
             <DropdownItem img = {inbox} text = {"Inbox"} link = {"/chat"}/>
             <DropdownItem img = {settings} text = {"Settings"} link = {"#"}/>
             <DropdownItem img = {help} text = {"Helps"} link = {"#"}/>
-            <DropdownItem img = {logout} text={"Logout"} link={"#"} 
+            <DropdownItem img = {logout} text={"Logout"} link={"/products"} 
               onClick={() => {
               localStorage.removeItem('@userLogin')
               localStorage.removeItem('@userRole')

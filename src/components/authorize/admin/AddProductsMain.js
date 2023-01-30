@@ -87,7 +87,7 @@ function AddProductsMain() {
                             onClick={() => document.querySelector(".input-field").click()}>
                             Choose from gallery
                         </button>
-                        <input type='file' className='input-field' hidden onChange={(e) => onImageUpload(e)}/>
+                        <input type='file' className='input-field' multiple hidden onChange={(e) => onImageUpload(e)}/>
                         <div className='form-wrapper'>
                             <p className='add-product-title aside-title-input' style={{ paddingTop: '2.5rem' }}>
                                 Delivery Hour :

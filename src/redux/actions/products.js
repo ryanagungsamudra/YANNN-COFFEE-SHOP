@@ -8,7 +8,7 @@ const getAllproductsFail = (err) => { return { type: 'GET_ALL_PRODUCT_FAIL', pay
 export const getAllproducts = () => {
     return (dispatch) => {
         dispatch(getAllproductsRequest())
-        return axios.get(`${url}/api/products`)
+        return axios.get(`${url}/api/products/`)
             .then((res) => {
                 dispatch(getAllproductsSuccess(res.data))
             }).catch((err) => {
