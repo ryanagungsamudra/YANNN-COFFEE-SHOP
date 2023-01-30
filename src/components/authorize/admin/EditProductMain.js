@@ -66,12 +66,31 @@ function EditProductMain() {
             if (id === item.id) {
                 const imgSelectedProduct = `${url}/uploads/images/${item.images[0].filename}`
                 return (
-                    <div className='Add-product-wrapper' style={{ marginTop: '9.5rem' }}>
+                    <div className='Add-product-wrapper' style={{ marginTop: '8.5rem' }}>
+                        <div aria-label='breadcrumb'>
+                            <ol className='breadcrumb'>
+                                <li className='breadcrumb-item'>
+                                    <Link className='breadcrumb-page' to='/products'>
+                                        Favorite & Promo
+                                    </Link>
+                                </li>
+                                <li className='breadcrumb-item'>
+                                    <Link className='active-page' to='/productlist'>
+                                        Edit Product
+                                    </Link>
+                                </li>
+                                <li className='breadcrumb-item'>
+                                    <Link className='breadcrumb-page' to='/addproducts'>
+                                        Add new product
+                                    </Link>
+                                </li>
+                            </ol>
+                        </div>
                         <form onSubmit={updateProduct} style={{ marginTop: '3rem' }}>
                             <div className='row add-product-content'>
                                 <aside className='col-11 col-sm-11 col-md-10 col-lg-5'>
-                                    <div style={{ marginTop: '3rem' }}
-                                    >
+                                    <h3>{item.title}</h3>
+                                    <div style={{ marginTop: '3rem' }}>
                                         {imagePreview ? <img src={imagePreview} className='add-image' alt='Product' /> : <img src={imgSelectedProduct} className='add-image' alt='Product' />}
                                     </div>
                                     <button
@@ -149,7 +168,7 @@ function EditProductMain() {
                                             </select>
                                         </div>
                                     </div>
-        
+
                                     <div className='form-group' style={{ marginLeft: '2rem' }}>
                                         <div className='row' style={{ marginLeft: '1rem', marginTop: '1rem' }}>
                                             <div className="col d-flex mt-3">

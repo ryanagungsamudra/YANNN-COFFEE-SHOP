@@ -19,7 +19,7 @@ import EditProduct from './pages/admin/EditProduct';
 import ManageOrder from './pages/admin/ManageOrder.js'
 import AddPromo from './pages/admin/AddPromo.js'
 import EditPromo from './pages/admin/EditPromo.js'
-import AdminPanel from './pages/admin/AdminPanel.js'
+import ProductList from './pages/admin/ProductList.js'
 
 import InvalidRoute from './pages/InvalidRoute';
 import ScrollToTop from './components/utility/ScrollToTop';
@@ -44,7 +44,7 @@ function App() {
                     {/* Private Route */}
                     {/* <Route element={<PrivateRoute />}> */}
                     {/* <Route element={<AdminOnly />}> */}
-                    <Route path='productlist' element={<AdminPanel/>} />
+                    <Route path='productlist' element={<ProductList />} />
                     <Route path='addproducts' element={<AddProduct />} />
                     <Route path='editproducts/:id' element={<EditProduct />} />
                     <Route path='addpromo' element={<AddPromo />} />
