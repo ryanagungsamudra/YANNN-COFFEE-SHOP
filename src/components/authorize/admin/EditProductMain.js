@@ -9,6 +9,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 function EditProductMain() {
     const url = process.env.REACT_APP_HOST
+    const urlImage = process.env.REACT_APP_IMG
     const token = JSON.parse(localStorage.getItem('@userLogin')).token
     const navigate = useNavigate()
 
@@ -64,7 +65,7 @@ function EditProductMain() {
     return (
         data.map((item) => {
             if (id === item.id) {
-                const imgSelectedProduct = `${url}/uploads/images/${item.images[0].filename}`
+                const imgSelectedProduct = `${urlImage}/${item.images[0].filename}`
                 return (
                     <div className='Add-product-wrapper' style={{ marginTop: '8.5rem' }}>
                         <div aria-label='breadcrumb'>

@@ -13,6 +13,8 @@ function Order() {
 
     // GET DATA ORDER BY ID START
     const url = process.env.REACT_APP_HOST
+    const urlImage = process.env.REACT_APP_IMG
+
     const [dataProduct, setDataProduct] = useState([])
     let { id } = useParams()
 
@@ -34,7 +36,7 @@ function Order() {
     return (
         dataProduct.map((item) => {
             if (id === item.id) {
-                const img = `${url}/uploads/images/${item.images[0].filename}`
+                const img = `${urlImage}/${item.images[0].filename}`
                 localStorage.setItem('productOrder', JSON.stringify(item))
                 localStorage.setItem('productImage', img)
                 localStorage.setItem('productPrice', (item.price * amount).toFixed(3))
@@ -77,19 +79,19 @@ function Order() {
                                                         <img src={small}
                                                             style={{ width: '55px', height: '55px', cursor: 'pointer' }} alt=""
                                                             onClick={(e) => localStorage.setItem('size', e.target.name)}
-                                                            name='Regular'/>
+                                                            name='Regular' />
                                                     </div>
                                                     <div className="col">
                                                         <img src={large}
                                                             style={{ width: '55px', height: '55px', marginTop: '6px', cursor: 'pointer' }} alt=""
                                                             onClick={(e) => localStorage.setItem('size', e.target.name)}
-                                                            name='Large'/>
+                                                            name='Large' />
                                                     </div>
                                                     <div className="col" style={{ marginRight: '120px' }}>
                                                         <img src={extraLarge}
                                                             style={{ width: '55px', height: '55px', marginTop: '6px', cursor: 'pointer' }} alt=""
                                                             onClick={(e) => localStorage.setItem('size', e.target.name)}
-                                                            name='Extra Large'/>
+                                                            name='Extra Large' />
                                                     </div>
                                                 </div>
                                             </div>
@@ -102,24 +104,24 @@ function Order() {
                                                 <p className="s-5-order" style={{ paddingLeft: '6rem', marginTop: '-3rem' }}>Choose a size</p>
                                                 <div className="row">
                                                     <div className="col-2">
-                                                        <img 
+                                                        <img
                                                             src={small} alt='size' style={{ width: '50px', height: '50px', marginLeft: '5rem' }}
                                                             onClick={(e) => localStorage.setItem('size', e.target.name)}
                                                             name='Regular'
-                                                            />
+                                                        />
                                                     </div>
                                                     <div className="col-2 mx-1">
-                                                        <img 
-                                                            src={large} alt='size' style={{ width: '50px', height: '50px', marginLeft: '5rem' }} 
+                                                        <img
+                                                            src={large} alt='size' style={{ width: '50px', height: '50px', marginLeft: '5rem' }}
                                                             onClick={(e) => localStorage.setItem('size', e.target.name)}
                                                             name='Large'
-                                                            />
+                                                        />
                                                     </div>
                                                     <div className="col-2" style={{ marginRight: '120px' }}>
-                                                        <img 
+                                                        <img
                                                             src={extraLarge} alt='size' style={{ width: '50px', height: '50px', marginLeft: '5rem' }}
                                                             name='Extra Large'
-                                                            />
+                                                        />
                                                     </div>
                                                 </div>
                                             </div>

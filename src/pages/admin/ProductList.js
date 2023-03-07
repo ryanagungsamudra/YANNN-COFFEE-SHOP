@@ -4,11 +4,12 @@ import { Link } from 'react-router-dom'
 import { getAllproducts } from '../../redux/actions/products'
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/footer'
-import Search from "../../assets/product/search.svg"
+// import Search from "../../assets/product/search.svg"
 import axios from 'axios'
 
 function ProductList() {
     const url = process.env.REACT_APP_HOST
+    const urlImage = process.env.REACT_APP_IMG
     const token = JSON.parse(localStorage.getItem('@userLogin')).token
     // status navbar
     const status = {
@@ -61,7 +62,7 @@ function ProductList() {
             <div className="container" style={{ marginTop: '-1rem' }}>
                 <div className="row row-cols-1 row-cols-md-4 g-4 mt-5">
                     {data.map((item) => {
-                        const img = `${url}/uploads/images/${item.images[0].filename}`
+                        const img = `${urlImage}/${item.images[0].filename}`
                         // const idProduct = item.images[0].id_product;
                         return (
                             <div key={item.id} className="col-lg-2 col-6 text-start my-5">

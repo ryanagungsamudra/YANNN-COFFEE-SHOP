@@ -13,6 +13,9 @@ import LoadingProduct from './errorHandling/loadingProduct'
 import DataNotFound from './errorHandling/dataNotFound'
 // url backend
 const url = process.env.REACT_APP_HOST
+const urlImage = process.env.REACT_APP_IMG
+// console.log(url);
+// console.log(urlImage);
 
 function Main() {
     // Load data product
@@ -65,7 +68,7 @@ function Main() {
             });
     }
     const renderPagination = () => {
-        
+
         const rulesOne = (currentPage > pageLimit - 1 && searchData.length === pageLimit)
         const rulesTwo = (currentPage < pageLimit - 1 && searchData.length === pageLimit)
 
@@ -78,7 +81,7 @@ function Main() {
                             <Link to="#" className="page-link">1</Link>
                         </li>
                         <li className="page-item">
-                            <Link to="#" className="page-link" onClick={() => loadProductData(pageLimit,2,1)}>Next</Link>
+                            <Link to="#" className="page-link" onClick={() => loadProductData(pageLimit, 2, 1)}>Next</Link>
                         </li>
                     </ul>
                 </nav>
@@ -119,19 +122,19 @@ function Main() {
 
     // Handle server error or data not found!
     const isLoad = () => {
-        if (dataProduct.length === 0 ) {
+        if (dataProduct.length === 0) {
             return (<LoadingProduct />)
-        } else if ( searchData.length === 0 ) {
-            return (<DataNotFound/>)
+        } else if (searchData.length === 0) {
+            return (<DataNotFound />)
         }
     }
     // Product content
     const loopCard = () => {
-        return(
+        return (
             <div className="container" style={{ marginTop: '-1rem' }}>
                 <div className="row row-cols-1 row-cols-md-4 g-4 mt-5">
                     {searchData.length === 0 ? isLoad() : searchData.map((item) => {
-                        const img = `${url}/uploads/images/${item.images[0].filename}`
+                        const img = `${urlImage}/${item.images[0].filename}`
                         const idProduct = item.images[0].id_product;
                         // console.log(item.images[0].id_product);
                         return (
@@ -158,7 +161,7 @@ function Main() {
         const role = localStorage.getItem('@userRole')
         if (role === 'admin') {
             return (
-                <div className='text-start' style={{marginTop: '3.5rem', paddingBottom: '3rem'}}>
+                <div className='text-start' style={{ marginTop: '3.5rem', paddingBottom: '3rem' }}>
                     <Link to='/editpromo'><h5 className='edit-product-admin'>Edit promo</h5></Link>
                     <Link to='/addpromo'><h5 className='edit-product-admin'>Add new promo</h5></Link>
                 </div>
@@ -245,7 +248,7 @@ function Main() {
                         <Link to="#">
                             <button className="btn btn-warning product" style={{ margin: '50px 20px 90px 0px' }}>Apply Coupon</button>
                         </Link>
-                        <p className="text-start s-3-product" style={{marginTop: '-1rem'}}>
+                        <p className="text-start s-3-product" style={{ marginTop: '-1rem' }}>
                             <b>Terms and Condition</b><br />
                             1. You can only apply 1 coupon per day<br />
                             2. It only for dine in<br />
@@ -257,20 +260,20 @@ function Main() {
                     {/* RIGHT SIDE */}
                     <div className="col-lg-8">
 
-                            {/* sort by start */}
-                            <select className="form-select product mobile" aria-label="Default select example" onChange={handleSort}>
-                                <option selected>Sort price by</option>
-                                <option value="asc">Lowest price</option>
-                                <option value="desc">Highest price</option>
-                            </select>
-                            {/* sort by end */}
+                        {/* sort by start */}
+                        <select className="form-select product mobile" aria-label="Default select example" onChange={handleSort}>
+                            <option selected>Sort price by</option>
+                            <option value="asc">Lowest price</option>
+                            <option value="desc">Highest price</option>
+                        </select>
+                        {/* sort by end */}
 
-                            {/* search bar start */}
-                            <div className="searchBox mobile">
-                                <input type="text" placeholder="Search Anything You Want..." onChange={(e) => setKeyword(e.target.value)} />
-                                <img src={Search} alt="searchBox" />
-                            </div>
-                            {/* search bar end */}
+                        {/* search bar start */}
+                        <div className="searchBox mobile">
+                            <input type="text" placeholder="Search Anything You Want..." onChange={(e) => setKeyword(e.target.value)} />
+                            <img src={Search} alt="searchBox" />
+                        </div>
+                        {/* search bar end */}
 
                         {/* Navs & Tabs Start*/}
                         <ul className="nav justify-content-center mt-4">
@@ -294,9 +297,9 @@ function Main() {
 
                         {/* Card-Product Start */}
                         {loopCard()}
-                            {/* Pagination start */}
-                            {renderPagination()}
-                            {/* Pagination end */}
+                        {/* Pagination start */}
+                        {renderPagination()}
+                        {/* Pagination end */}
 
                         <p className="s-5-product ms-3">*the price has been cutted by discount appears</p>
                         {/* Card-Product End */}
